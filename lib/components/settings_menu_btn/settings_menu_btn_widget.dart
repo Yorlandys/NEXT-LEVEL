@@ -1,8 +1,6 @@
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
-import 'package:provider/provider.dart';
 import 'settings_menu_btn_model.dart';
 export 'settings_menu_btn_model.dart';
 
@@ -52,14 +50,14 @@ class _SettingsMenuBtnWidgetState extends State<SettingsMenuBtnWidget> {
         borderRadius: BorderRadius.circular(10.0),
       ),
       child: Padding(
-        padding: EdgeInsetsDirectional.fromSTEB(16.0, 0.0, 16.0, 0.0),
+        padding: const EdgeInsetsDirectional.fromSTEB(16.0, 0.0, 16.0, 0.0),
         child: Row(
           mainAxisSize: MainAxisSize.max,
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
             Text(
               valueOrDefault<String>(
-                widget!.title,
+                widget.title,
                 'na',
               ),
               style: FlutterFlowTheme.of(context).bodyMedium.override(
@@ -72,7 +70,7 @@ class _SettingsMenuBtnWidgetState extends State<SettingsMenuBtnWidget> {
             ),
             Text(
               valueOrDefault<String>(
-                widget!.subtitle,
+                widget.subtitle,
                 'na',
               ),
               style: FlutterFlowTheme.of(context).bodyMedium.override(

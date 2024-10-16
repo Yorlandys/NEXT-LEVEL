@@ -3,12 +3,8 @@ import '/flutter_flow/flutter_flow_animations.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import '/flutter_flow/flutter_flow_widgets.dart';
-import 'dart:math';
 import 'package:flutter/material.dart';
-import 'package:flutter/scheduler.dart';
 import 'package:flutter_animate/flutter_animate.dart';
-import 'package:google_fonts/google_fonts.dart';
-import 'package:provider/provider.dart';
 import 'exercise_feedback_model.dart';
 export 'exercise_feedback_model.dart';
 
@@ -54,8 +50,8 @@ class _ExerciseFeedbackWidgetState extends State<ExerciseFeedbackWidget>
             curve: Curves.easeInOut,
             delay: 0.0.ms,
             duration: 300.0.ms,
-            begin: Offset(0.0, 320.0),
-            end: Offset(0.0, 0.0),
+            begin: const Offset(0.0, 320.0),
+            end: const Offset(0.0, 0.0),
           ),
         ],
       ),
@@ -72,12 +68,12 @@ class _ExerciseFeedbackWidgetState extends State<ExerciseFeedbackWidget>
   @override
   Widget build(BuildContext context) {
     return Align(
-      alignment: AlignmentDirectional(0.0, 1.0),
+      alignment: const AlignmentDirectional(0.0, 1.0),
       child: Container(
         width: double.infinity,
         decoration: BoxDecoration(
           color: FlutterFlowTheme.of(context).primaryBackground2,
-          borderRadius: BorderRadius.only(
+          borderRadius: const BorderRadius.only(
             bottomLeft: Radius.circular(0.0),
             bottomRight: Radius.circular(0.0),
             topLeft: Radius.circular(16.0),
@@ -85,7 +81,7 @@ class _ExerciseFeedbackWidgetState extends State<ExerciseFeedbackWidget>
           ),
         ),
         child: Padding(
-          padding: EdgeInsetsDirectional.fromSTEB(16.0, 20.0, 16.0, 20.0),
+          padding: const EdgeInsetsDirectional.fromSTEB(16.0, 20.0, 16.0, 20.0),
           child: Column(
             mainAxisSize: MainAxisSize.min,
             crossAxisAlignment: CrossAxisAlignment.start,
@@ -97,7 +93,7 @@ class _ExerciseFeedbackWidgetState extends State<ExerciseFeedbackWidget>
                 children: [
                   Padding(
                     padding:
-                        EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 20.0),
+                        const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 20.0),
                     child: Column(
                       mainAxisSize: MainAxisSize.max,
                       crossAxisAlignment: CrossAxisAlignment.start,
@@ -125,12 +121,12 @@ class _ExerciseFeedbackWidgetState extends State<ExerciseFeedbackWidget>
                                 fontWeight: FontWeight.w600,
                               ),
                         ),
-                      ].divide(SizedBox(height: 6.0)),
+                      ].divide(const SizedBox(height: 6.0)),
                     ),
                   ),
                   Padding(
                     padding:
-                        EdgeInsetsDirectional.fromSTEB(16.0, 0.0, 0.0, 0.0),
+                        const EdgeInsetsDirectional.fromSTEB(16.0, 0.0, 0.0, 0.0),
                     child: InkWell(
                       splashColor: Colors.transparent,
                       focusColor: Colors.transparent,
@@ -142,12 +138,12 @@ class _ExerciseFeedbackWidgetState extends State<ExerciseFeedbackWidget>
                       child: Container(
                         width: 32.0,
                         height: 32.0,
-                        decoration: BoxDecoration(
+                        decoration: const BoxDecoration(
                           color: Color(0x67BDBDBD),
                           shape: BoxShape.circle,
                         ),
                         child: Align(
-                          alignment: AlignmentDirectional(0.0, 0.0),
+                          alignment: const AlignmentDirectional(0.0, 0.0),
                           child: Icon(
                             FFIcons.kx,
                             color: FlutterFlowTheme.of(context).info,
@@ -160,7 +156,7 @@ class _ExerciseFeedbackWidgetState extends State<ExerciseFeedbackWidget>
                 ],
               ),
               Padding(
-                padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 12.0),
+                padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 12.0),
                 child: Container(
                   decoration: BoxDecoration(
                     color: FlutterFlowTheme.of(context).secondaryBackground2,
@@ -180,7 +176,7 @@ class _ExerciseFeedbackWidgetState extends State<ExerciseFeedbackWidget>
                           safeSetState(() {});
                         },
                         child: Container(
-                          decoration: BoxDecoration(),
+                          decoration: const BoxDecoration(),
                           child: Container(
                             height: 56.0,
                             decoration: BoxDecoration(
@@ -189,7 +185,7 @@ class _ExerciseFeedbackWidgetState extends State<ExerciseFeedbackWidget>
                               borderRadius: BorderRadius.circular(10.0),
                             ),
                             child: Padding(
-                              padding: EdgeInsetsDirectional.fromSTEB(
+                              padding: const EdgeInsetsDirectional.fromSTEB(
                                   14.0, 0.0, 14.0, 0.0),
                               child: Row(
                                 mainAxisSize: MainAxisSize.max,
@@ -213,7 +209,7 @@ class _ExerciseFeedbackWidgetState extends State<ExerciseFeedbackWidget>
                                               fontWeight: FontWeight.w600,
                                             ),
                                       ),
-                                    ].divide(SizedBox(width: 16.0)),
+                                    ].divide(const SizedBox(width: 16.0)),
                                   ),
                                   Container(
                                     width: 24.0,
@@ -236,9 +232,9 @@ class _ExerciseFeedbackWidgetState extends State<ExerciseFeedbackWidget>
                                             Colors.transparent,
                                           )
                                         ],
-                                        stops: [0.0, 1.0],
-                                        begin: AlignmentDirectional(1.0, 0.0),
-                                        end: AlignmentDirectional(-1.0, 0),
+                                        stops: const [0.0, 1.0],
+                                        begin: const AlignmentDirectional(1.0, 0.0),
+                                        end: const AlignmentDirectional(-1.0, 0),
                                       ),
                                       shape: BoxShape.circle,
                                       border: Border.all(
@@ -254,7 +250,7 @@ class _ExerciseFeedbackWidgetState extends State<ExerciseFeedbackWidget>
                                       ),
                                     ),
                                     child: Align(
-                                      alignment: AlignmentDirectional(0.0, 0.0),
+                                      alignment: const AlignmentDirectional(0.0, 0.0),
                                       child: Icon(
                                         FFIcons.kcheck,
                                         color: FlutterFlowTheme.of(context)
@@ -287,7 +283,7 @@ class _ExerciseFeedbackWidgetState extends State<ExerciseFeedbackWidget>
                           safeSetState(() {});
                         },
                         child: Container(
-                          decoration: BoxDecoration(),
+                          decoration: const BoxDecoration(),
                           child: Container(
                             height: 56.0,
                             decoration: BoxDecoration(
@@ -296,7 +292,7 @@ class _ExerciseFeedbackWidgetState extends State<ExerciseFeedbackWidget>
                               borderRadius: BorderRadius.circular(10.0),
                             ),
                             child: Padding(
-                              padding: EdgeInsetsDirectional.fromSTEB(
+                              padding: const EdgeInsetsDirectional.fromSTEB(
                                   14.0, 0.0, 14.0, 0.0),
                               child: Row(
                                 mainAxisSize: MainAxisSize.max,
@@ -320,7 +316,7 @@ class _ExerciseFeedbackWidgetState extends State<ExerciseFeedbackWidget>
                                               fontWeight: FontWeight.w600,
                                             ),
                                       ),
-                                    ].divide(SizedBox(width: 16.0)),
+                                    ].divide(const SizedBox(width: 16.0)),
                                   ),
                                   Container(
                                     width: 24.0,
@@ -343,9 +339,9 @@ class _ExerciseFeedbackWidgetState extends State<ExerciseFeedbackWidget>
                                             Colors.transparent,
                                           )
                                         ],
-                                        stops: [0.0, 1.0],
-                                        begin: AlignmentDirectional(1.0, 0.0),
-                                        end: AlignmentDirectional(-1.0, 0),
+                                        stops: const [0.0, 1.0],
+                                        begin: const AlignmentDirectional(1.0, 0.0),
+                                        end: const AlignmentDirectional(-1.0, 0),
                                       ),
                                       shape: BoxShape.circle,
                                       border: Border.all(
@@ -361,7 +357,7 @@ class _ExerciseFeedbackWidgetState extends State<ExerciseFeedbackWidget>
                                       ),
                                     ),
                                     child: Align(
-                                      alignment: AlignmentDirectional(0.0, 0.0),
+                                      alignment: const AlignmentDirectional(0.0, 0.0),
                                       child: Icon(
                                         FFIcons.kcheck,
                                         color: FlutterFlowTheme.of(context)
@@ -394,7 +390,7 @@ class _ExerciseFeedbackWidgetState extends State<ExerciseFeedbackWidget>
                           safeSetState(() {});
                         },
                         child: Container(
-                          decoration: BoxDecoration(),
+                          decoration: const BoxDecoration(),
                           child: Container(
                             height: 56.0,
                             decoration: BoxDecoration(
@@ -403,7 +399,7 @@ class _ExerciseFeedbackWidgetState extends State<ExerciseFeedbackWidget>
                               borderRadius: BorderRadius.circular(10.0),
                             ),
                             child: Padding(
-                              padding: EdgeInsetsDirectional.fromSTEB(
+                              padding: const EdgeInsetsDirectional.fromSTEB(
                                   14.0, 0.0, 14.0, 0.0),
                               child: Row(
                                 mainAxisSize: MainAxisSize.max,
@@ -427,7 +423,7 @@ class _ExerciseFeedbackWidgetState extends State<ExerciseFeedbackWidget>
                                               fontWeight: FontWeight.w600,
                                             ),
                                       ),
-                                    ].divide(SizedBox(width: 16.0)),
+                                    ].divide(const SizedBox(width: 16.0)),
                                   ),
                                   Container(
                                     width: 24.0,
@@ -450,9 +446,9 @@ class _ExerciseFeedbackWidgetState extends State<ExerciseFeedbackWidget>
                                             Colors.transparent,
                                           )
                                         ],
-                                        stops: [0.0, 1.0],
-                                        begin: AlignmentDirectional(1.0, 0.0),
-                                        end: AlignmentDirectional(-1.0, 0),
+                                        stops: const [0.0, 1.0],
+                                        begin: const AlignmentDirectional(1.0, 0.0),
+                                        end: const AlignmentDirectional(-1.0, 0),
                                       ),
                                       shape: BoxShape.circle,
                                       border: Border.all(
@@ -468,7 +464,7 @@ class _ExerciseFeedbackWidgetState extends State<ExerciseFeedbackWidget>
                                       ),
                                     ),
                                     child: Align(
-                                      alignment: AlignmentDirectional(0.0, 0.0),
+                                      alignment: const AlignmentDirectional(0.0, 0.0),
                                       child: Icon(
                                         FFIcons.kcheck,
                                         color: FlutterFlowTheme.of(context)
@@ -501,7 +497,7 @@ class _ExerciseFeedbackWidgetState extends State<ExerciseFeedbackWidget>
                           safeSetState(() {});
                         },
                         child: Container(
-                          decoration: BoxDecoration(),
+                          decoration: const BoxDecoration(),
                           child: Container(
                             height: 56.0,
                             decoration: BoxDecoration(
@@ -510,7 +506,7 @@ class _ExerciseFeedbackWidgetState extends State<ExerciseFeedbackWidget>
                               borderRadius: BorderRadius.circular(10.0),
                             ),
                             child: Padding(
-                              padding: EdgeInsetsDirectional.fromSTEB(
+                              padding: const EdgeInsetsDirectional.fromSTEB(
                                   14.0, 0.0, 14.0, 0.0),
                               child: Row(
                                 mainAxisSize: MainAxisSize.max,
@@ -534,7 +530,7 @@ class _ExerciseFeedbackWidgetState extends State<ExerciseFeedbackWidget>
                                               fontWeight: FontWeight.w600,
                                             ),
                                       ),
-                                    ].divide(SizedBox(width: 16.0)),
+                                    ].divide(const SizedBox(width: 16.0)),
                                   ),
                                   Container(
                                     width: 24.0,
@@ -557,9 +553,9 @@ class _ExerciseFeedbackWidgetState extends State<ExerciseFeedbackWidget>
                                             Colors.transparent,
                                           )
                                         ],
-                                        stops: [0.0, 1.0],
-                                        begin: AlignmentDirectional(1.0, 0.0),
-                                        end: AlignmentDirectional(-1.0, 0),
+                                        stops: const [0.0, 1.0],
+                                        begin: const AlignmentDirectional(1.0, 0.0),
+                                        end: const AlignmentDirectional(-1.0, 0),
                                       ),
                                       shape: BoxShape.circle,
                                       border: Border.all(
@@ -575,7 +571,7 @@ class _ExerciseFeedbackWidgetState extends State<ExerciseFeedbackWidget>
                                       ),
                                     ),
                                     child: Align(
-                                      alignment: AlignmentDirectional(0.0, 0.0),
+                                      alignment: const AlignmentDirectional(0.0, 0.0),
                                       child: Icon(
                                         FFIcons.kcheck,
                                         color: FlutterFlowTheme.of(context)
@@ -608,7 +604,7 @@ class _ExerciseFeedbackWidgetState extends State<ExerciseFeedbackWidget>
                           safeSetState(() {});
                         },
                         child: Container(
-                          decoration: BoxDecoration(),
+                          decoration: const BoxDecoration(),
                           child: Container(
                             height: 56.0,
                             decoration: BoxDecoration(
@@ -617,7 +613,7 @@ class _ExerciseFeedbackWidgetState extends State<ExerciseFeedbackWidget>
                               borderRadius: BorderRadius.circular(10.0),
                             ),
                             child: Padding(
-                              padding: EdgeInsetsDirectional.fromSTEB(
+                              padding: const EdgeInsetsDirectional.fromSTEB(
                                   14.0, 0.0, 14.0, 0.0),
                               child: Row(
                                 mainAxisSize: MainAxisSize.max,
@@ -641,7 +637,7 @@ class _ExerciseFeedbackWidgetState extends State<ExerciseFeedbackWidget>
                                               fontWeight: FontWeight.w600,
                                             ),
                                       ),
-                                    ].divide(SizedBox(width: 16.0)),
+                                    ].divide(const SizedBox(width: 16.0)),
                                   ),
                                   Container(
                                     width: 24.0,
@@ -664,9 +660,9 @@ class _ExerciseFeedbackWidgetState extends State<ExerciseFeedbackWidget>
                                             Colors.transparent,
                                           )
                                         ],
-                                        stops: [0.0, 1.0],
-                                        begin: AlignmentDirectional(1.0, 0.0),
-                                        end: AlignmentDirectional(-1.0, 0),
+                                        stops: const [0.0, 1.0],
+                                        begin: const AlignmentDirectional(1.0, 0.0),
+                                        end: const AlignmentDirectional(-1.0, 0),
                                       ),
                                       shape: BoxShape.circle,
                                       border: Border.all(
@@ -682,7 +678,7 @@ class _ExerciseFeedbackWidgetState extends State<ExerciseFeedbackWidget>
                                       ),
                                     ),
                                     child: Align(
-                                      alignment: AlignmentDirectional(0.0, 0.0),
+                                      alignment: const AlignmentDirectional(0.0, 0.0),
                                       child: Icon(
                                         FFIcons.kcheck,
                                         color: FlutterFlowTheme.of(context)
@@ -699,7 +695,7 @@ class _ExerciseFeedbackWidgetState extends State<ExerciseFeedbackWidget>
                       ),
                       if (_model.duration == 'Other')
                         Padding(
-                          padding: EdgeInsetsDirectional.fromSTEB(
+                          padding: const EdgeInsetsDirectional.fromSTEB(
                               14.0, 0.0, 14.0, 14.0),
                           child: TextFormField(
                             controller: _model.textController,
@@ -783,7 +779,7 @@ class _ExerciseFeedbackWidgetState extends State<ExerciseFeedbackWidget>
                 child: wrapWithModel(
                   model: _model.customButtonModel,
                   updateCallback: () => safeSetState(() {}),
-                  child: CustomButtonWidget(
+                  child: const CustomButtonWidget(
                     title: 'Done',
                   ),
                 ),
@@ -796,9 +792,9 @@ class _ExerciseFeedbackWidgetState extends State<ExerciseFeedbackWidget>
                 options: FFButtonOptions(
                   width: double.infinity,
                   height: 44.0,
-                  padding: EdgeInsetsDirectional.fromSTEB(24.0, 0.0, 24.0, 0.0),
+                  padding: const EdgeInsetsDirectional.fromSTEB(24.0, 0.0, 24.0, 0.0),
                   iconPadding:
-                      EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
+                      const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
                   color: Colors.transparent,
                   textStyle: FlutterFlowTheme.of(context).titleSmall.override(
                         fontFamily: 'Roboto',
@@ -806,14 +802,14 @@ class _ExerciseFeedbackWidgetState extends State<ExerciseFeedbackWidget>
                         letterSpacing: 0.0,
                       ),
                   elevation: 0.0,
-                  borderSide: BorderSide(
+                  borderSide: const BorderSide(
                     color: Color(0xFF0E448B),
                     width: 1.5,
                   ),
                   borderRadius: BorderRadius.circular(50.0),
                 ),
               ),
-            ].divide(SizedBox(height: 20.0)),
+            ].divide(const SizedBox(height: 20.0)),
           ),
         ),
       ).animateOnPageLoad(animationsMap['containerOnPageLoadAnimation']!),

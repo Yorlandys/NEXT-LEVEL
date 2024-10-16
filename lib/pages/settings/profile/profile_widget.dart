@@ -4,14 +4,9 @@ import '/components/settings_card2/settings_card2_widget.dart';
 import '/flutter_flow/flutter_flow_animations.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
-import '/flutter_flow/flutter_flow_widgets.dart';
-import 'dart:math';
 import 'package:flutter/material.dart';
-import 'package:flutter/scheduler.dart';
 import 'package:flutter_animate/flutter_animate.dart';
-import 'package:google_fonts/google_fonts.dart';
 import 'package:percent_indicator/percent_indicator.dart';
-import 'package:provider/provider.dart';
 import 'profile_model.dart';
 export 'profile_model.dart';
 
@@ -55,8 +50,8 @@ class _ProfileWidgetState extends State<ProfileWidget>
             curve: Curves.linear,
             delay: 1400.0.ms,
             duration: 600.0.ms,
-            begin: Offset(0.0, -100.0),
-            end: Offset(0.0, 0.0),
+            begin: const Offset(0.0, -100.0),
+            end: const Offset(0.0, 0.0),
           ),
           FadeEffect(
             curve: Curves.linear,
@@ -74,8 +69,8 @@ class _ProfileWidgetState extends State<ProfileWidget>
             curve: Curves.elasticOut,
             delay: 400.0.ms,
             duration: 800.0.ms,
-            begin: Offset(2.0, 2.0),
-            end: Offset(1.0, 1.0),
+            begin: const Offset(2.0, 2.0),
+            end: const Offset(1.0, 1.0),
           ),
           FadeEffect(
             curve: Curves.elasticOut,
@@ -93,8 +88,8 @@ class _ProfileWidgetState extends State<ProfileWidget>
             curve: Curves.elasticOut,
             delay: 600.0.ms,
             duration: 800.0.ms,
-            begin: Offset(2.0, 2.0),
-            end: Offset(1.0, 1.0),
+            begin: const Offset(2.0, 2.0),
+            end: const Offset(1.0, 1.0),
           ),
           FadeEffect(
             curve: Curves.elasticOut,
@@ -119,8 +114,8 @@ class _ProfileWidgetState extends State<ProfileWidget>
             curve: Curves.easeInOutQuint,
             delay: 600.0.ms,
             duration: 600.0.ms,
-            begin: Offset(0.0, 0.0),
-            end: Offset(1.0, 1.0),
+            begin: const Offset(0.0, 0.0),
+            end: const Offset(1.0, 1.0),
           ),
         ],
       ),
@@ -143,8 +138,8 @@ class _ProfileWidgetState extends State<ProfileWidget>
             curve: Curves.easeInOutQuint,
             delay: 1000.0.ms,
             duration: 600.0.ms,
-            begin: Offset(-100.0, 0.0),
-            end: Offset(0.0, 0.0),
+            begin: const Offset(-100.0, 0.0),
+            end: const Offset(0.0, 0.0),
           ),
           FadeEffect(
             curve: Curves.easeInOut,
@@ -169,8 +164,8 @@ class _ProfileWidgetState extends State<ProfileWidget>
             curve: Curves.easeInOutQuint,
             delay: 1000.0.ms,
             duration: 600.0.ms,
-            begin: Offset(0.0, 0.0),
-            end: Offset(1.0, 1.0),
+            begin: const Offset(0.0, 0.0),
+            end: const Offset(1.0, 1.0),
           ),
         ],
       ),
@@ -181,8 +176,8 @@ class _ProfileWidgetState extends State<ProfileWidget>
             curve: Curves.easeInOutQuint,
             delay: 1000.0.ms,
             duration: 600.0.ms,
-            begin: Offset(100.0, 0.0),
-            end: Offset(0.0, 0.0),
+            begin: const Offset(100.0, 0.0),
+            end: const Offset(0.0, 0.0),
           ),
           FadeEffect(
             curve: Curves.easeInOut,
@@ -207,8 +202,8 @@ class _ProfileWidgetState extends State<ProfileWidget>
             curve: Curves.easeInOutQuint,
             delay: 1000.0.ms,
             duration: 600.0.ms,
-            begin: Offset(0.0, 0.0),
-            end: Offset(1.0, 1.0),
+            begin: const Offset(0.0, 0.0),
+            end: const Offset(1.0, 1.0),
           ),
         ],
       ),
@@ -248,7 +243,7 @@ class _ProfileWidgetState extends State<ProfileWidget>
               mainAxisSize: MainAxisSize.max,
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                Container(
+                SizedBox(
                   height: 424.0,
                   child: Stack(
                     children: [
@@ -285,7 +280,7 @@ class _ProfileWidgetState extends State<ProfileWidget>
                                       blurRadius: 60.0,
                                       color: FlutterFlowTheme.of(context)
                                           .primaryBackground2,
-                                      offset: Offset(
+                                      offset: const Offset(
                                         0.0,
                                         2.0,
                                       ),
@@ -302,11 +297,11 @@ class _ProfileWidgetState extends State<ProfileWidget>
                       Container(
                         width: double.infinity,
                         height: double.infinity,
-                        decoration: BoxDecoration(
+                        decoration: const BoxDecoration(
                           color: Color(0xB3083168),
                         ),
                         child: Padding(
-                          padding: EdgeInsetsDirectional.fromSTEB(
+                          padding: const EdgeInsetsDirectional.fromSTEB(
                               16.0, 20.0, 16.0, 0.0),
                           child: Column(
                             mainAxisSize: MainAxisSize.max,
@@ -318,11 +313,11 @@ class _ProfileWidgetState extends State<ProfileWidget>
                                   Container(
                                     height: 30.0,
                                     decoration: BoxDecoration(
-                                      color: Color(0x33FFFFFF),
+                                      color: const Color(0x33FFFFFF),
                                       borderRadius: BorderRadius.circular(50.0),
                                     ),
                                     child: Padding(
-                                      padding: EdgeInsetsDirectional.fromSTEB(
+                                      padding: const EdgeInsetsDirectional.fromSTEB(
                                           16.0, 0.0, 16.0, 0.0),
                                       child: Row(
                                         mainAxisSize: MainAxisSize.max,
@@ -346,7 +341,7 @@ class _ProfileWidgetState extends State<ProfileWidget>
                                                   fontWeight: FontWeight.w500,
                                                 ),
                                           ),
-                                        ].divide(SizedBox(width: 6.0)),
+                                        ].divide(const SizedBox(width: 6.0)),
                                       ),
                                     ),
                                   ).animateOnPageLoad(animationsMap[
@@ -354,7 +349,7 @@ class _ProfileWidgetState extends State<ProfileWidget>
                                 ],
                               ),
                               Padding(
-                                padding: EdgeInsetsDirectional.fromSTEB(
+                                padding: const EdgeInsetsDirectional.fromSTEB(
                                     0.0, 60.0, 0.0, 50.0),
                                 child: Column(
                                   mainAxisSize: MainAxisSize.max,
@@ -363,7 +358,7 @@ class _ProfileWidgetState extends State<ProfileWidget>
                                       width: 100.0,
                                       height: 100.0,
                                       clipBehavior: Clip.antiAlias,
-                                      decoration: BoxDecoration(
+                                      decoration: const BoxDecoration(
                                         shape: BoxShape.circle,
                                       ),
                                       child: Image.network(
@@ -386,7 +381,7 @@ class _ProfileWidgetState extends State<ProfileWidget>
                                           ),
                                     ).animateOnPageLoad(animationsMap[
                                         'textOnPageLoadAnimation']!),
-                                  ].divide(SizedBox(height: 20.0)),
+                                  ].divide(const SizedBox(height: 20.0)),
                                 ),
                               ),
                               Container(
@@ -398,7 +393,7 @@ class _ProfileWidgetState extends State<ProfileWidget>
                                   borderRadius: BorderRadius.circular(10.0),
                                 ),
                                 child: Padding(
-                                  padding: EdgeInsetsDirectional.fromSTEB(
+                                  padding: const EdgeInsetsDirectional.fromSTEB(
                                       8.0, 0.0, 16.0, 0.0),
                                   child: Row(
                                     mainAxisSize: MainAxisSize.max,
@@ -407,11 +402,11 @@ class _ProfileWidgetState extends State<ProfileWidget>
                                     children: [
                                       Stack(
                                         alignment:
-                                            AlignmentDirectional(0.0, 0.0),
+                                            const AlignmentDirectional(0.0, 0.0),
                                         children: [
                                           Align(
                                             alignment:
-                                                AlignmentDirectional(0.0, 0.0),
+                                                const AlignmentDirectional(0.0, 0.0),
                                             child: CircularPercentIndicator(
                                               percent: 0.8,
                                               radius: 35.0,
@@ -428,7 +423,7 @@ class _ProfileWidgetState extends State<ProfileWidget>
                                           ),
                                           Align(
                                             alignment:
-                                                AlignmentDirectional(0.0, 0.0),
+                                                const AlignmentDirectional(0.0, 0.0),
                                             child: CircularPercentIndicator(
                                               percent: 0.6,
                                               radius: 25.0,
@@ -445,7 +440,7 @@ class _ProfileWidgetState extends State<ProfileWidget>
                                           ),
                                           Align(
                                             alignment:
-                                                AlignmentDirectional(0.0, 0.0),
+                                                const AlignmentDirectional(0.0, 0.0),
                                             child: CircularPercentIndicator(
                                               percent: 0.75,
                                               radius: 15.0,
@@ -500,7 +495,7 @@ class _ProfileWidgetState extends State<ProfileWidget>
                                                         letterSpacing: 0.0,
                                                       ),
                                             ),
-                                          ].divide(SizedBox(height: 4.0)),
+                                          ].divide(const SizedBox(height: 4.0)),
                                         ),
                                       ),
                                       Icon(
@@ -509,7 +504,7 @@ class _ProfileWidgetState extends State<ProfileWidget>
                                             .bgColor,
                                         size: 28.0,
                                       ),
-                                    ].divide(SizedBox(width: 12.0)),
+                                    ].divide(const SizedBox(width: 12.0)),
                                   ),
                                 ),
                               ).animateOnPageLoad(animationsMap[
@@ -522,13 +517,13 @@ class _ProfileWidgetState extends State<ProfileWidget>
                   ),
                 ),
                 Padding(
-                  padding: EdgeInsetsDirectional.fromSTEB(16.0, 0.0, 16.0, 0.0),
+                  padding: const EdgeInsetsDirectional.fromSTEB(16.0, 0.0, 16.0, 0.0),
                   child: Column(
                     mainAxisSize: MainAxisSize.max,
                     children: [
                       Padding(
                         padding:
-                            EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 8.0),
+                            const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 8.0),
                         child: Row(
                           mainAxisSize: MainAxisSize.max,
                           mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -549,11 +544,11 @@ class _ProfileWidgetState extends State<ProfileWidget>
                             Container(
                               height: 30.0,
                               decoration: BoxDecoration(
-                                color: Color(0x33FFFFFF),
+                                color: const Color(0x33FFFFFF),
                                 borderRadius: BorderRadius.circular(50.0),
                               ),
                               child: Padding(
-                                padding: EdgeInsetsDirectional.fromSTEB(
+                                padding: const EdgeInsetsDirectional.fromSTEB(
                                     16.0, 0.0, 16.0, 0.0),
                                 child: Row(
                                   mainAxisSize: MainAxisSize.max,
@@ -575,7 +570,7 @@ class _ProfileWidgetState extends State<ProfileWidget>
                                             fontWeight: FontWeight.w500,
                                           ),
                                     ),
-                                  ].divide(SizedBox(width: 6.0)),
+                                  ].divide(const SizedBox(width: 6.0)),
                                 ),
                               ),
                             ),
@@ -634,7 +629,7 @@ class _ProfileWidgetState extends State<ProfileWidget>
                             ).animateOnPageLoad(
                                 animationsMap['myStatusOnPageLoadAnimation3']!),
                           ),
-                        ].divide(SizedBox(width: 8.0)),
+                        ].divide(const SizedBox(width: 8.0)),
                       ),
                       InkWell(
                         splashColor: Colors.transparent,
@@ -645,7 +640,7 @@ class _ProfileWidgetState extends State<ProfileWidget>
                           context.pushNamed(
                             'Achievements',
                             extra: <String, dynamic>{
-                              kTransitionInfoKey: TransitionInfo(
+                              kTransitionInfoKey: const TransitionInfo(
                                 hasTransition: true,
                                 transitionType: PageTransitionType.rightToLeft,
                                 duration: Duration(milliseconds: 200),
@@ -662,7 +657,7 @@ class _ProfileWidgetState extends State<ProfileWidget>
                             borderRadius: BorderRadius.circular(10.0),
                           ),
                           child: Padding(
-                            padding: EdgeInsetsDirectional.fromSTEB(
+                            padding: const EdgeInsetsDirectional.fromSTEB(
                                 8.0, 0.0, 16.0, 0.0),
                             child: Row(
                               mainAxisSize: MainAxisSize.max,
@@ -699,7 +694,7 @@ class _ProfileWidgetState extends State<ProfileWidget>
                                             ),
                                       ),
                                       Padding(
-                                        padding: EdgeInsetsDirectional.fromSTEB(
+                                        padding: const EdgeInsetsDirectional.fromSTEB(
                                             0.0, 0.0, 0.0, 8.0),
                                         child: Text(
                                           '215/463',
@@ -727,10 +722,10 @@ class _ProfileWidgetState extends State<ProfileWidget>
                                         backgroundColor:
                                             FlutterFlowTheme.of(context)
                                                 .primaryBackground2,
-                                        barRadius: Radius.circular(50.0),
+                                        barRadius: const Radius.circular(50.0),
                                         padding: EdgeInsets.zero,
                                       ),
-                                    ].divide(SizedBox(height: 2.0)),
+                                    ].divide(const SizedBox(height: 2.0)),
                                   ),
                                 ),
                                 Icon(
@@ -738,24 +733,24 @@ class _ProfileWidgetState extends State<ProfileWidget>
                                   color: FlutterFlowTheme.of(context).bgColor,
                                   size: 28.0,
                                 ),
-                              ].divide(SizedBox(width: 12.0)),
+                              ].divide(const SizedBox(width: 12.0)),
                             ),
                           ),
                         ),
                       ).animateOnPageLoad(
                           animationsMap['containerOnPageLoadAnimation4']!),
-                    ].divide(SizedBox(height: 8.0)),
+                    ].divide(const SizedBox(height: 8.0)),
                   ),
                 ),
                 Padding(
                   padding:
-                      EdgeInsetsDirectional.fromSTEB(16.0, 24.0, 16.0, 0.0),
+                      const EdgeInsetsDirectional.fromSTEB(16.0, 24.0, 16.0, 0.0),
                   child: Column(
                     mainAxisSize: MainAxisSize.max,
                     children: [
                       Padding(
                         padding:
-                            EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 8.0),
+                            const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 8.0),
                         child: Row(
                           mainAxisSize: MainAxisSize.max,
                           mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -797,7 +792,7 @@ class _ProfileWidgetState extends State<ProfileWidget>
                                   context.pushNamed(
                                     'ProfileEdit',
                                     extra: <String, dynamic>{
-                                      kTransitionInfoKey: TransitionInfo(
+                                      kTransitionInfoKey: const TransitionInfo(
                                         hasTransition: true,
                                         transitionType:
                                             PageTransitionType.rightToLeft,
@@ -829,7 +824,7 @@ class _ProfileWidgetState extends State<ProfileWidget>
                                   context.pushNamed(
                                     'ExercisePacks',
                                     extra: <String, dynamic>{
-                                      kTransitionInfoKey: TransitionInfo(
+                                      kTransitionInfoKey: const TransitionInfo(
                                         hasTransition: true,
                                         transitionType:
                                             PageTransitionType.rightToLeft,
@@ -861,7 +856,7 @@ class _ProfileWidgetState extends State<ProfileWidget>
                                   context.pushNamed(
                                     'FoodSetting',
                                     extra: <String, dynamic>{
-                                      kTransitionInfoKey: TransitionInfo(
+                                      kTransitionInfoKey: const TransitionInfo(
                                         hasTransition: true,
                                         transitionType:
                                             PageTransitionType.rightToLeft,
@@ -893,7 +888,7 @@ class _ProfileWidgetState extends State<ProfileWidget>
                                   context.pushNamed(
                                     'Reminders',
                                     extra: <String, dynamic>{
-                                      kTransitionInfoKey: TransitionInfo(
+                                      kTransitionInfoKey: const TransitionInfo(
                                         hasTransition: true,
                                         transitionType:
                                             PageTransitionType.rightToLeft,
@@ -925,7 +920,7 @@ class _ProfileWidgetState extends State<ProfileWidget>
                                   context.pushNamed(
                                     'SoundSettings',
                                     extra: <String, dynamic>{
-                                      kTransitionInfoKey: TransitionInfo(
+                                      kTransitionInfoKey: const TransitionInfo(
                                         hasTransition: true,
                                         transitionType:
                                             PageTransitionType.rightToLeft,
@@ -957,7 +952,7 @@ class _ProfileWidgetState extends State<ProfileWidget>
                                   context.pushNamed(
                                     'Integrations',
                                     extra: <String, dynamic>{
-                                      kTransitionInfoKey: TransitionInfo(
+                                      kTransitionInfoKey: const TransitionInfo(
                                         hasTransition: true,
                                         transitionType:
                                             PageTransitionType.rightToLeft,
@@ -984,19 +979,19 @@ class _ProfileWidgetState extends State<ProfileWidget>
                           ),
                         ),
                       ),
-                    ].divide(SizedBox(height: 8.0)),
+                    ].divide(const SizedBox(height: 8.0)),
                   ).animateOnPageLoad(
                       animationsMap['columnOnPageLoadAnimation']!),
                 ),
                 Padding(
                   padding:
-                      EdgeInsetsDirectional.fromSTEB(16.0, 24.0, 16.0, 0.0),
+                      const EdgeInsetsDirectional.fromSTEB(16.0, 24.0, 16.0, 0.0),
                   child: Column(
                     mainAxisSize: MainAxisSize.max,
                     children: [
                       Padding(
                         padding:
-                            EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 8.0),
+                            const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 8.0),
                         child: Row(
                           mainAxisSize: MainAxisSize.max,
                           mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -1026,7 +1021,7 @@ class _ProfileWidgetState extends State<ProfileWidget>
                           context.pushNamed(
                             'ExerciesList',
                             extra: <String, dynamic>{
-                              kTransitionInfoKey: TransitionInfo(
+                              kTransitionInfoKey: const TransitionInfo(
                                 hasTransition: true,
                                 transitionType: PageTransitionType.rightToLeft,
                                 duration: Duration(milliseconds: 200),
@@ -1047,18 +1042,18 @@ class _ProfileWidgetState extends State<ProfileWidget>
                           ),
                         ),
                       ),
-                    ].divide(SizedBox(height: 8.0)),
+                    ].divide(const SizedBox(height: 8.0)),
                   ),
                 ),
                 Padding(
                   padding:
-                      EdgeInsetsDirectional.fromSTEB(16.0, 24.0, 16.0, 0.0),
+                      const EdgeInsetsDirectional.fromSTEB(16.0, 24.0, 16.0, 0.0),
                   child: Column(
                     mainAxisSize: MainAxisSize.max,
                     children: [
                       Padding(
                         padding:
-                            EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 8.0),
+                            const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 8.0),
                         child: Row(
                           mainAxisSize: MainAxisSize.max,
                           mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -1121,18 +1116,18 @@ class _ProfileWidgetState extends State<ProfileWidget>
                           ),
                         ),
                       ),
-                    ].divide(SizedBox(height: 8.0)),
+                    ].divide(const SizedBox(height: 8.0)),
                   ),
                 ),
                 Padding(
                   padding:
-                      EdgeInsetsDirectional.fromSTEB(16.0, 24.0, 16.0, 0.0),
+                      const EdgeInsetsDirectional.fromSTEB(16.0, 24.0, 16.0, 0.0),
                   child: Column(
                     mainAxisSize: MainAxisSize.max,
                     children: [
                       Padding(
                         padding:
-                            EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 8.0),
+                            const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 8.0),
                         child: Row(
                           mainAxisSize: MainAxisSize.max,
                           mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -1210,7 +1205,7 @@ class _ProfileWidgetState extends State<ProfileWidget>
                       ),
                       Padding(
                         padding:
-                            EdgeInsetsDirectional.fromSTEB(0.0, 12.0, 0.0, 0.0),
+                            const EdgeInsetsDirectional.fromSTEB(0.0, 12.0, 0.0, 0.0),
                         child: InkWell(
                           splashColor: Colors.transparent,
                           focusColor: Colors.transparent,
@@ -1236,10 +1231,10 @@ class _ProfileWidgetState extends State<ProfileWidget>
                           ),
                         ),
                       ),
-                    ].divide(SizedBox(height: 8.0)),
+                    ].divide(const SizedBox(height: 8.0)),
                   ),
                 ),
-              ].addToEnd(SizedBox(height: 32.0)),
+              ].addToEnd(const SizedBox(height: 32.0)),
             ),
           ),
         ),

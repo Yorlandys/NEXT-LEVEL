@@ -1,8 +1,6 @@
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
-import 'package:provider/provider.dart';
 import 'custom_btn_model.dart';
 export 'custom_btn_model.dart';
 
@@ -45,14 +43,14 @@ class _CustomBtnWidgetState extends State<CustomBtnWidget> {
   @override
   Widget build(BuildContext context) {
     return Container(
-      decoration: BoxDecoration(),
+      decoration: const BoxDecoration(),
       child: Row(
         mainAxisSize: MainAxisSize.max,
         children: [
-          widget!.icon!,
+          widget.icon!,
           Text(
             valueOrDefault<String>(
-              widget!.title,
+              widget.title,
               'na',
             ),
             style: FlutterFlowTheme.of(context).bodyMedium.override(
@@ -62,7 +60,7 @@ class _CustomBtnWidgetState extends State<CustomBtnWidget> {
                   letterSpacing: 0.0,
                 ),
           ),
-        ].divide(SizedBox(width: 4.0)),
+        ].divide(const SizedBox(width: 4.0)),
       ),
     );
   }

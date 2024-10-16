@@ -1,12 +1,8 @@
 import '/flutter_flow/flutter_flow_animations.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
-import 'dart:math';
 import 'package:flutter/material.dart';
-import 'package:flutter/scheduler.dart';
 import 'package:flutter_animate/flutter_animate.dart';
-import 'package:google_fonts/google_fonts.dart';
-import 'package:provider/provider.dart';
 import 'sitting_model.dart';
 export 'sitting_model.dart';
 
@@ -49,8 +45,8 @@ class _SittingWidgetState extends State<SittingWidget>
             curve: Curves.easeInOut,
             delay: 0.0.ms,
             duration: 300.0.ms,
-            begin: Offset(0.0, 320.0),
-            end: Offset(0.0, 0.0),
+            begin: const Offset(0.0, 320.0),
+            end: const Offset(0.0, 0.0),
           ),
         ],
       ),
@@ -61,8 +57,8 @@ class _SittingWidgetState extends State<SittingWidget>
             curve: Curves.easeInOut,
             delay: 700.0.ms,
             duration: 400.0.ms,
-            begin: Offset(0.0, 200.0),
-            end: Offset(0.0, 0.0),
+            begin: const Offset(0.0, 200.0),
+            end: const Offset(0.0, 0.0),
           ),
           FadeEffect(
             curve: Curves.easeInOut,
@@ -80,8 +76,8 @@ class _SittingWidgetState extends State<SittingWidget>
             curve: Curves.easeInOut,
             delay: 700.0.ms,
             duration: 400.0.ms,
-            begin: Offset(0.0, 200.0),
-            end: Offset(0.0, 0.0),
+            begin: const Offset(0.0, 200.0),
+            end: const Offset(0.0, 0.0),
           ),
           FadeEffect(
             curve: Curves.easeInOut,
@@ -105,13 +101,13 @@ class _SittingWidgetState extends State<SittingWidget>
   @override
   Widget build(BuildContext context) {
     return Align(
-      alignment: AlignmentDirectional(0.0, 1.0),
+      alignment: const AlignmentDirectional(0.0, 1.0),
       child: Container(
         width: double.infinity,
         height: 340.0,
         decoration: BoxDecoration(
           color: FlutterFlowTheme.of(context).primaryBackground,
-          borderRadius: BorderRadius.only(
+          borderRadius: const BorderRadius.only(
             bottomLeft: Radius.circular(0.0),
             bottomRight: Radius.circular(0.0),
             topLeft: Radius.circular(16.0),
@@ -119,13 +115,13 @@ class _SittingWidgetState extends State<SittingWidget>
           ),
         ),
         child: Padding(
-          padding: EdgeInsetsDirectional.fromSTEB(20.0, 0.0, 20.0, 0.0),
+          padding: const EdgeInsetsDirectional.fromSTEB(20.0, 0.0, 20.0, 0.0),
           child: Column(
             mainAxisSize: MainAxisSize.max,
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               Padding(
-                padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 16.0),
+                padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 16.0),
                 child: Text(
                   'Are you typically on your feet or\nsitting most of the day?',
                   style: FlutterFlowTheme.of(context).bodyMedium.override(
@@ -138,7 +134,7 @@ class _SittingWidgetState extends State<SittingWidget>
                 ),
               ),
               Padding(
-                padding: EdgeInsetsDirectional.fromSTEB(0.0, 20.0, 0.0, 0.0),
+                padding: const EdgeInsetsDirectional.fromSTEB(0.0, 20.0, 0.0, 0.0),
                 child: InkWell(
                   splashColor: Colors.transparent,
                   focusColor: Colors.transparent,
@@ -171,7 +167,7 @@ class _SittingWidgetState extends State<SittingWidget>
                       ),
                       child: Padding(
                         padding:
-                            EdgeInsetsDirectional.fromSTEB(12.0, 0.0, 0.0, 0.0),
+                            const EdgeInsetsDirectional.fromSTEB(12.0, 0.0, 0.0, 0.0),
                         child: Row(
                           mainAxisSize: MainAxisSize.max,
                           mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -189,7 +185,7 @@ class _SittingWidgetState extends State<SittingWidget>
                             ),
                             if (_model.select == 'Yes')
                               Padding(
-                                padding: EdgeInsetsDirectional.fromSTEB(
+                                padding: const EdgeInsetsDirectional.fromSTEB(
                                     0.0, 0.0, 16.0, 0.0),
                                 child: Container(
                                   width: 24.0,
@@ -200,7 +196,7 @@ class _SittingWidgetState extends State<SittingWidget>
                                     shape: BoxShape.circle,
                                   ),
                                   child: Align(
-                                    alignment: AlignmentDirectional(0.0, 0.0),
+                                    alignment: const AlignmentDirectional(0.0, 0.0),
                                     child: Icon(
                                       FFIcons.kcheck,
                                       color: FlutterFlowTheme.of(context).info,
@@ -249,7 +245,7 @@ class _SittingWidgetState extends State<SittingWidget>
                     ),
                     child: Padding(
                       padding:
-                          EdgeInsetsDirectional.fromSTEB(12.0, 0.0, 0.0, 0.0),
+                          const EdgeInsetsDirectional.fromSTEB(12.0, 0.0, 0.0, 0.0),
                       child: Row(
                         mainAxisSize: MainAxisSize.max,
                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -267,7 +263,7 @@ class _SittingWidgetState extends State<SittingWidget>
                           ),
                           if (_model.select == 'No')
                             Padding(
-                              padding: EdgeInsetsDirectional.fromSTEB(
+                              padding: const EdgeInsetsDirectional.fromSTEB(
                                   0.0, 0.0, 16.0, 0.0),
                               child: Container(
                                 width: 24.0,
@@ -277,7 +273,7 @@ class _SittingWidgetState extends State<SittingWidget>
                                   shape: BoxShape.circle,
                                 ),
                                 child: Align(
-                                  alignment: AlignmentDirectional(0.0, 0.0),
+                                  alignment: const AlignmentDirectional(0.0, 0.0),
                                   child: Icon(
                                     FFIcons.kcheck,
                                     color: FlutterFlowTheme.of(context).info,
@@ -294,9 +290,9 @@ class _SittingWidgetState extends State<SittingWidget>
               ).animateOnPageLoad(
                   animationsMap['containerOnPageLoadAnimation3']!),
             ]
-                .divide(SizedBox(height: 12.0))
-                .addToStart(SizedBox(height: 28.0))
-                .addToEnd(SizedBox(height: 24.0)),
+                .divide(const SizedBox(height: 12.0))
+                .addToStart(const SizedBox(height: 28.0))
+                .addToEnd(const SizedBox(height: 24.0)),
           ),
         ),
       ).animateOnPageLoad(animationsMap['containerOnPageLoadAnimation1']!),

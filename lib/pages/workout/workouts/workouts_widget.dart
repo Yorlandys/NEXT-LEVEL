@@ -1,9 +1,6 @@
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
-import '/flutter_flow/flutter_flow_widgets.dart';
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
-import 'package:provider/provider.dart';
 import 'workouts_model.dart';
 export 'workouts_model.dart';
 
@@ -54,7 +51,7 @@ class _WorkoutsWidgetState extends State<WorkoutsWidget> {
           ),
           actions: [
             Padding(
-              padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 16.0, 0.0),
+              padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 16.0, 0.0),
               child: InkWell(
                 splashColor: Colors.transparent,
                 focusColor: Colors.transparent,
@@ -64,7 +61,7 @@ class _WorkoutsWidgetState extends State<WorkoutsWidget> {
                   context.pushNamed(
                     'ExerciesList',
                     extra: <String, dynamic>{
-                      kTransitionInfoKey: TransitionInfo(
+                      kTransitionInfoKey: const TransitionInfo(
                         hasTransition: true,
                         transitionType: PageTransitionType.rightToLeft,
                         duration: Duration(milliseconds: 200),
@@ -75,7 +72,7 @@ class _WorkoutsWidgetState extends State<WorkoutsWidget> {
                 child: Container(
                   width: 40.0,
                   height: 40.0,
-                  decoration: BoxDecoration(
+                  decoration: const BoxDecoration(
                     color: Color(0xFF0F4388),
                     shape: BoxShape.circle,
                   ),
@@ -98,7 +95,7 @@ class _WorkoutsWidgetState extends State<WorkoutsWidget> {
               mainAxisSize: MainAxisSize.max,
               children: [
                 Padding(
-                  padding: EdgeInsetsDirectional.fromSTEB(16.0, 0.0, 16.0, 0.0),
+                  padding: const EdgeInsetsDirectional.fromSTEB(16.0, 0.0, 16.0, 0.0),
                   child: Column(
                     mainAxisSize: MainAxisSize.max,
                     children: [
@@ -111,7 +108,7 @@ class _WorkoutsWidgetState extends State<WorkoutsWidget> {
                           context.pushNamed(
                             'WorkoutList',
                             extra: <String, dynamic>{
-                              kTransitionInfoKey: TransitionInfo(
+                              kTransitionInfoKey: const TransitionInfo(
                                 hasTransition: true,
                                 transitionType: PageTransitionType.rightToLeft,
                                 duration: Duration(milliseconds: 200),
@@ -137,7 +134,7 @@ class _WorkoutsWidgetState extends State<WorkoutsWidget> {
                           context.pushNamed(
                             'WorkoutList',
                             extra: <String, dynamic>{
-                              kTransitionInfoKey: TransitionInfo(
+                              kTransitionInfoKey: const TransitionInfo(
                                 hasTransition: true,
                                 transitionType: PageTransitionType.rightToLeft,
                                 duration: Duration(milliseconds: 200),
@@ -163,7 +160,7 @@ class _WorkoutsWidgetState extends State<WorkoutsWidget> {
                           context.pushNamed(
                             'WorkoutList',
                             extra: <String, dynamic>{
-                              kTransitionInfoKey: TransitionInfo(
+                              kTransitionInfoKey: const TransitionInfo(
                                 hasTransition: true,
                                 transitionType: PageTransitionType.rightToLeft,
                                 duration: Duration(milliseconds: 200),
@@ -189,7 +186,7 @@ class _WorkoutsWidgetState extends State<WorkoutsWidget> {
                           context.pushNamed(
                             'WorkoutList',
                             extra: <String, dynamic>{
-                              kTransitionInfoKey: TransitionInfo(
+                              kTransitionInfoKey: const TransitionInfo(
                                 hasTransition: true,
                                 transitionType: PageTransitionType.rightToLeft,
                                 duration: Duration(milliseconds: 200),
@@ -215,7 +212,7 @@ class _WorkoutsWidgetState extends State<WorkoutsWidget> {
                           context.pushNamed(
                             'WorkoutList',
                             extra: <String, dynamic>{
-                              kTransitionInfoKey: TransitionInfo(
+                              kTransitionInfoKey: const TransitionInfo(
                                 hasTransition: true,
                                 transitionType: PageTransitionType.rightToLeft,
                                 duration: Duration(milliseconds: 200),
@@ -241,7 +238,7 @@ class _WorkoutsWidgetState extends State<WorkoutsWidget> {
                           borderRadius: BorderRadius.circular(10.0),
                         ),
                         child: Padding(
-                          padding: EdgeInsetsDirectional.fromSTEB(
+                          padding: const EdgeInsetsDirectional.fromSTEB(
                               20.0, 20.0, 20.0, 20.0),
                           child: Row(
                             mainAxisSize: MainAxisSize.max,
@@ -277,7 +274,7 @@ class _WorkoutsWidgetState extends State<WorkoutsWidget> {
                                             letterSpacing: 0.0,
                                           ),
                                     ),
-                                  ].divide(SizedBox(height: 6.0)),
+                                  ].divide(const SizedBox(height: 6.0)),
                                 ),
                               ),
                               Icon(
@@ -290,9 +287,9 @@ class _WorkoutsWidgetState extends State<WorkoutsWidget> {
                         ),
                       ),
                     ]
-                        .divide(SizedBox(height: 16.0))
-                        .addToStart(SizedBox(height: 12.0))
-                        .addToEnd(SizedBox(height: 32.0)),
+                        .divide(const SizedBox(height: 16.0))
+                        .addToStart(const SizedBox(height: 12.0))
+                        .addToEnd(const SizedBox(height: 32.0)),
                   ),
                 ),
               ],

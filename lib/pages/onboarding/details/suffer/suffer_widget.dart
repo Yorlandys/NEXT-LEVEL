@@ -1,14 +1,9 @@
 import '/flutter_flow/flutter_flow_animations.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
-import '/flutter_flow/flutter_flow_widgets.dart';
-import 'dart:math';
 import 'package:flutter/material.dart';
-import 'package:flutter/scheduler.dart';
 import 'package:flutter_animate/flutter_animate.dart';
-import 'package:google_fonts/google_fonts.dart';
 import 'package:percent_indicator/percent_indicator.dart';
-import 'package:provider/provider.dart';
 import 'suffer_model.dart';
 export 'suffer_model.dart';
 
@@ -40,8 +35,8 @@ class _SufferWidgetState extends State<SufferWidget>
             curve: Curves.easeInOutQuint,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(-300.0, 0.0),
-            end: Offset(0.0, 0.0),
+            begin: const Offset(-300.0, 0.0),
+            end: const Offset(0.0, 0.0),
           ),
           FadeEffect(
             curve: Curves.easeInOut,
@@ -59,8 +54,8 @@ class _SufferWidgetState extends State<SufferWidget>
             curve: Curves.easeInOut,
             delay: 300.0.ms,
             duration: 400.0.ms,
-            begin: Offset(0.0, 200.0),
-            end: Offset(0.0, 0.0),
+            begin: const Offset(0.0, 200.0),
+            end: const Offset(0.0, 0.0),
           ),
           FadeEffect(
             curve: Curves.easeInOut,
@@ -78,8 +73,8 @@ class _SufferWidgetState extends State<SufferWidget>
             curve: Curves.easeInOut,
             delay: 400.0.ms,
             duration: 400.0.ms,
-            begin: Offset(0.0, 200.0),
-            end: Offset(0.0, 0.0),
+            begin: const Offset(0.0, 200.0),
+            end: const Offset(0.0, 0.0),
           ),
           FadeEffect(
             curve: Curves.easeInOut,
@@ -97,8 +92,8 @@ class _SufferWidgetState extends State<SufferWidget>
             curve: Curves.easeInOut,
             delay: 0.0.ms,
             duration: 400.0.ms,
-            begin: Offset(0.0, 200.0),
-            end: Offset(0.0, 0.0),
+            begin: const Offset(0.0, 200.0),
+            end: const Offset(0.0, 0.0),
           ),
           FadeEffect(
             curve: Curves.easeInOut,
@@ -116,8 +111,8 @@ class _SufferWidgetState extends State<SufferWidget>
             curve: Curves.easeInOut,
             delay: 100.0.ms,
             duration: 400.0.ms,
-            begin: Offset(0.0, 200.0),
-            end: Offset(0.0, 0.0),
+            begin: const Offset(0.0, 200.0),
+            end: const Offset(0.0, 0.0),
           ),
           FadeEffect(
             curve: Curves.easeInOut,
@@ -148,7 +143,7 @@ class _SufferWidgetState extends State<SufferWidget>
         body: SafeArea(
           top: true,
           child: Padding(
-            padding: EdgeInsetsDirectional.fromSTEB(20.0, 0.0, 20.0, 0.0),
+            padding: const EdgeInsetsDirectional.fromSTEB(20.0, 0.0, 20.0, 0.0),
             child: Column(
               mainAxisSize: MainAxisSize.max,
               crossAxisAlignment: CrossAxisAlignment.start,
@@ -173,7 +168,7 @@ class _SufferWidgetState extends State<SufferWidget>
                           shape: BoxShape.circle,
                         ),
                         child: Align(
-                          alignment: AlignmentDirectional(0.0, 0.0),
+                          alignment: const AlignmentDirectional(0.0, 0.0),
                           child: Icon(
                             FFIcons.kchevronLeft,
                             color: FlutterFlowTheme.of(context).primaryText,
@@ -194,7 +189,7 @@ class _SufferWidgetState extends State<SufferWidget>
                   ],
                 ),
                 Padding(
-                  padding: EdgeInsetsDirectional.fromSTEB(0.0, 32.0, 0.0, 0.0),
+                  padding: const EdgeInsetsDirectional.fromSTEB(0.0, 32.0, 0.0, 0.0),
                   child: Column(
                     mainAxisSize: MainAxisSize.max,
                     crossAxisAlignment: CrossAxisAlignment.start,
@@ -210,11 +205,11 @@ class _SufferWidgetState extends State<SufferWidget>
                             ),
                       ).animateOnPageLoad(
                           animationsMap['textOnPageLoadAnimation']!),
-                    ].divide(SizedBox(height: 6.0)),
+                    ].divide(const SizedBox(height: 6.0)),
                   ),
                 ),
                 Padding(
-                  padding: EdgeInsetsDirectional.fromSTEB(0.0, 40.0, 0.0, 0.0),
+                  padding: const EdgeInsetsDirectional.fromSTEB(0.0, 40.0, 0.0, 0.0),
                   child: Column(
                     mainAxisSize: MainAxisSize.max,
                     children: [
@@ -232,7 +227,7 @@ class _SufferWidgetState extends State<SufferWidget>
                           context.pushNamed(
                             'Statement2',
                             extra: <String, dynamic>{
-                              kTransitionInfoKey: TransitionInfo(
+                              kTransitionInfoKey: const TransitionInfo(
                                 hasTransition: true,
                                 transitionType: PageTransitionType.rightToLeft,
                                 duration: Duration(milliseconds: 200),
@@ -262,7 +257,7 @@ class _SufferWidgetState extends State<SufferWidget>
                               ),
                             ),
                             child: Padding(
-                              padding: EdgeInsetsDirectional.fromSTEB(
+                              padding: const EdgeInsetsDirectional.fromSTEB(
                                   12.0, 0.0, 0.0, 0.0),
                               child: Row(
                                 mainAxisSize: MainAxisSize.max,
@@ -282,7 +277,7 @@ class _SufferWidgetState extends State<SufferWidget>
                                   ),
                                   if (_model.suffer == 'Flabby')
                                     Padding(
-                                      padding: EdgeInsetsDirectional.fromSTEB(
+                                      padding: const EdgeInsetsDirectional.fromSTEB(
                                           0.0, 0.0, 16.0, 0.0),
                                       child: Container(
                                         width: 24.0,
@@ -294,7 +289,7 @@ class _SufferWidgetState extends State<SufferWidget>
                                         ),
                                         child: Align(
                                           alignment:
-                                              AlignmentDirectional(0.0, 0.0),
+                                              const AlignmentDirectional(0.0, 0.0),
                                           child: Icon(
                                             FFIcons.kcheck,
                                             color: FlutterFlowTheme.of(context)
@@ -342,7 +337,7 @@ class _SufferWidgetState extends State<SufferWidget>
                               ),
                             ),
                             child: Padding(
-                              padding: EdgeInsetsDirectional.fromSTEB(
+                              padding: const EdgeInsetsDirectional.fromSTEB(
                                   12.0, 0.0, 0.0, 0.0),
                               child: Row(
                                 mainAxisSize: MainAxisSize.max,
@@ -362,7 +357,7 @@ class _SufferWidgetState extends State<SufferWidget>
                                   ),
                                   if (_model.suffer == 'Male')
                                     Padding(
-                                      padding: EdgeInsetsDirectional.fromSTEB(
+                                      padding: const EdgeInsetsDirectional.fromSTEB(
                                           0.0, 0.0, 16.0, 0.0),
                                       child: Container(
                                         width: 24.0,
@@ -374,7 +369,7 @@ class _SufferWidgetState extends State<SufferWidget>
                                         ),
                                         child: Align(
                                           alignment:
-                                              AlignmentDirectional(0.0, 0.0),
+                                              const AlignmentDirectional(0.0, 0.0),
                                           child: Icon(
                                             FFIcons.kcheck,
                                             color: FlutterFlowTheme.of(context)
@@ -391,19 +386,19 @@ class _SufferWidgetState extends State<SufferWidget>
                         ),
                       ).animateOnPageLoad(
                           animationsMap['containerOnPageLoadAnimation2']!),
-                    ].divide(SizedBox(height: 10.0)),
+                    ].divide(const SizedBox(height: 10.0)),
                   ),
                 ),
                 if (_model.suffer == 'Male')
                   Padding(
                     padding:
-                        EdgeInsetsDirectional.fromSTEB(0.0, 32.0, 0.0, 0.0),
+                        const EdgeInsetsDirectional.fromSTEB(0.0, 32.0, 0.0, 0.0),
                     child: Column(
                       mainAxisSize: MainAxisSize.max,
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
                         Padding(
-                          padding: EdgeInsetsDirectional.fromSTEB(
+                          padding: const EdgeInsetsDirectional.fromSTEB(
                               0.0, 0.0, 0.0, 12.0),
                           child: Text(
                             'How serious are your problems?',
@@ -431,7 +426,7 @@ class _SufferWidgetState extends State<SufferWidget>
                             context.pushNamed(
                               'Yourknees',
                               extra: <String, dynamic>{
-                                kTransitionInfoKey: TransitionInfo(
+                                kTransitionInfoKey: const TransitionInfo(
                                   hasTransition: true,
                                   transitionType:
                                       PageTransitionType.rightToLeft,
@@ -462,7 +457,7 @@ class _SufferWidgetState extends State<SufferWidget>
                                 ),
                               ),
                               child: Padding(
-                                padding: EdgeInsetsDirectional.fromSTEB(
+                                padding: const EdgeInsetsDirectional.fromSTEB(
                                     12.0, 0.0, 0.0, 0.0),
                                 child: Row(
                                   mainAxisSize: MainAxisSize.max,
@@ -501,11 +496,11 @@ class _SufferWidgetState extends State<SufferWidget>
                                                 fontWeight: FontWeight.normal,
                                               ),
                                         ),
-                                      ].divide(SizedBox(height: 4.0)),
+                                      ].divide(const SizedBox(height: 4.0)),
                                     ),
                                     if (_model.serious == 'Mild pain')
                                       Padding(
-                                        padding: EdgeInsetsDirectional.fromSTEB(
+                                        padding: const EdgeInsetsDirectional.fromSTEB(
                                             0.0, 0.0, 16.0, 0.0),
                                         child: Container(
                                           width: 24.0,
@@ -517,7 +512,7 @@ class _SufferWidgetState extends State<SufferWidget>
                                           ),
                                           child: Align(
                                             alignment:
-                                                AlignmentDirectional(0.0, 0.0),
+                                                const AlignmentDirectional(0.0, 0.0),
                                             child: Icon(
                                               FFIcons.kcheck,
                                               color:
@@ -549,7 +544,7 @@ class _SufferWidgetState extends State<SufferWidget>
                             context.pushNamed(
                               'Yourknees',
                               extra: <String, dynamic>{
-                                kTransitionInfoKey: TransitionInfo(
+                                kTransitionInfoKey: const TransitionInfo(
                                   hasTransition: true,
                                   transitionType:
                                       PageTransitionType.rightToLeft,
@@ -580,7 +575,7 @@ class _SufferWidgetState extends State<SufferWidget>
                                 ),
                               ),
                               child: Padding(
-                                padding: EdgeInsetsDirectional.fromSTEB(
+                                padding: const EdgeInsetsDirectional.fromSTEB(
                                     12.0, 0.0, 0.0, 0.0),
                                 child: Row(
                                   mainAxisSize: MainAxisSize.max,
@@ -619,11 +614,11 @@ class _SufferWidgetState extends State<SufferWidget>
                                                 fontWeight: FontWeight.normal,
                                               ),
                                         ),
-                                      ].divide(SizedBox(height: 4.0)),
+                                      ].divide(const SizedBox(height: 4.0)),
                                     ),
                                     if (_model.suffer == 'Quite serious')
                                       Padding(
-                                        padding: EdgeInsetsDirectional.fromSTEB(
+                                        padding: const EdgeInsetsDirectional.fromSTEB(
                                             0.0, 0.0, 16.0, 0.0),
                                         child: Container(
                                           width: 24.0,
@@ -635,7 +630,7 @@ class _SufferWidgetState extends State<SufferWidget>
                                           ),
                                           child: Align(
                                             alignment:
-                                                AlignmentDirectional(0.0, 0.0),
+                                                const AlignmentDirectional(0.0, 0.0),
                                             child: Icon(
                                               FFIcons.kcheck,
                                               color:
@@ -653,12 +648,12 @@ class _SufferWidgetState extends State<SufferWidget>
                           ),
                         ).animateOnPageLoad(
                             animationsMap['containerOnPageLoadAnimation4']!),
-                      ].divide(SizedBox(height: 10.0)),
+                      ].divide(const SizedBox(height: 10.0)),
                     ),
                   ),
               ]
-                  .addToStart(SizedBox(height: 24.0))
-                  .addToEnd(SizedBox(height: 24.0)),
+                  .addToStart(const SizedBox(height: 24.0))
+                  .addToEnd(const SizedBox(height: 24.0)),
             ),
           ),
         ),

@@ -1,8 +1,6 @@
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
-import 'package:provider/provider.dart';
 import 'categories_card_model.dart';
 export 'categories_card_model.dart';
 
@@ -51,7 +49,7 @@ class _CategoriesCardWidgetState extends State<CategoriesCardWidget> {
         color: FlutterFlowTheme.of(context).secondaryBackground2,
       ),
       child: Padding(
-        padding: EdgeInsetsDirectional.fromSTEB(12.0, 0.0, 12.0, 0.0),
+        padding: const EdgeInsetsDirectional.fromSTEB(12.0, 0.0, 12.0, 0.0),
         child: Row(
           mainAxisSize: MainAxisSize.max,
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -60,14 +58,14 @@ class _CategoriesCardWidgetState extends State<CategoriesCardWidget> {
               mainAxisSize: MainAxisSize.max,
               children: [
                 Image.network(
-                  widget!.icon!,
+                  widget.icon!,
                   width: 26.0,
                   height: 26.0,
                   fit: BoxFit.cover,
                 ),
                 Text(
                   valueOrDefault<String>(
-                    widget!.title,
+                    widget.title,
                     'na',
                   ),
                   style: FlutterFlowTheme.of(context).bodyMedium.override(
@@ -78,7 +76,7 @@ class _CategoriesCardWidgetState extends State<CategoriesCardWidget> {
                         fontWeight: FontWeight.w600,
                       ),
                 ),
-              ].divide(SizedBox(width: 12.0)),
+              ].divide(const SizedBox(width: 12.0)),
             ),
             Icon(
               FFIcons.kchevronRight,

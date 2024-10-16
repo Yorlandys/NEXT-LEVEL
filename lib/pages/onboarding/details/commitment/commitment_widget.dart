@@ -1,15 +1,9 @@
 import '/flutter_flow/flutter_flow_animations.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
-import '/flutter_flow/flutter_flow_widgets.dart';
-import 'dart:math';
-import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/scheduler.dart';
 import 'package:flutter_animate/flutter_animate.dart';
-import 'package:google_fonts/google_fonts.dart';
 import 'package:percent_indicator/percent_indicator.dart';
-import 'package:provider/provider.dart';
 import 'commitment_model.dart';
 export 'commitment_model.dart';
 
@@ -41,8 +35,8 @@ class _CommitmentWidgetState extends State<CommitmentWidget>
             curve: Curves.easeInOutQuint,
             delay: 300.0.ms,
             duration: 600.0.ms,
-            begin: Offset(-300.0, 0.0),
-            end: Offset(0.0, 0.0),
+            begin: const Offset(-300.0, 0.0),
+            end: const Offset(0.0, 0.0),
           ),
           FadeEffect(
             curve: Curves.easeInOut,
@@ -61,8 +55,8 @@ class _CommitmentWidgetState extends State<CommitmentWidget>
             curve: Curves.easeInOut,
             delay: 0.0.ms,
             duration: 1200.0.ms,
-            begin: Offset(1.0, 1.0),
-            end: Offset(1.5, 1.5),
+            begin: const Offset(1.0, 1.0),
+            end: const Offset(1.5, 1.5),
           ),
           FadeEffect(
             curve: Curves.easeInOut,
@@ -81,8 +75,8 @@ class _CommitmentWidgetState extends State<CommitmentWidget>
             curve: Curves.easeInOut,
             delay: 0.0.ms,
             duration: 3000.0.ms,
-            begin: Offset(1.0, 1.0),
-            end: Offset(12.0, 12.0),
+            begin: const Offset(1.0, 1.0),
+            end: const Offset(12.0, 12.0),
           ),
         ],
       ),
@@ -116,7 +110,7 @@ class _CommitmentWidgetState extends State<CommitmentWidget>
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               Padding(
-                padding: EdgeInsetsDirectional.fromSTEB(20.0, 0.0, 20.0, 0.0),
+                padding: const EdgeInsetsDirectional.fromSTEB(20.0, 0.0, 20.0, 0.0),
                 child: Row(
                   mainAxisSize: MainAxisSize.max,
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -137,7 +131,7 @@ class _CommitmentWidgetState extends State<CommitmentWidget>
                           shape: BoxShape.circle,
                         ),
                         child: Align(
-                          alignment: AlignmentDirectional(0.0, 0.0),
+                          alignment: const AlignmentDirectional(0.0, 0.0),
                           child: Icon(
                             FFIcons.kchevronLeft,
                             color: FlutterFlowTheme.of(context).primaryText,
@@ -159,14 +153,14 @@ class _CommitmentWidgetState extends State<CommitmentWidget>
                 ),
               ),
               Padding(
-                padding: EdgeInsetsDirectional.fromSTEB(0.0, 24.0, 0.0, 0.0),
+                padding: const EdgeInsetsDirectional.fromSTEB(0.0, 24.0, 0.0, 0.0),
                 child: Column(
                   mainAxisSize: MainAxisSize.max,
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     Padding(
                       padding:
-                          EdgeInsetsDirectional.fromSTEB(20.0, 0.0, 20.0, 0.0),
+                          const EdgeInsetsDirectional.fromSTEB(20.0, 0.0, 20.0, 0.0),
                       child: RichText(
                         textScaler: MediaQuery.of(context).textScaler,
                         text: TextSpan(
@@ -195,11 +189,11 @@ class _CommitmentWidgetState extends State<CommitmentWidget>
                       ).animateOnPageLoad(
                           animationsMap['richTextOnPageLoadAnimation']!),
                     ),
-                  ].divide(SizedBox(height: 4.0)),
+                  ].divide(const SizedBox(height: 4.0)),
                 ),
               ),
               Padding(
-                padding: EdgeInsetsDirectional.fromSTEB(20.0, 0.0, 0.0, 0.0),
+                padding: const EdgeInsetsDirectional.fromSTEB(20.0, 0.0, 0.0, 0.0),
                 child: RichText(
                   textScaler: MediaQuery.of(context).textScaler,
                   text: TextSpan(
@@ -230,7 +224,7 @@ class _CommitmentWidgetState extends State<CommitmentWidget>
                 ),
               ),
               Padding(
-                padding: EdgeInsetsDirectional.fromSTEB(20.0, 32.0, 0.0, 0.0),
+                padding: const EdgeInsetsDirectional.fromSTEB(20.0, 32.0, 0.0, 0.0),
                 child: Text(
                   'I will work consistently towards reaching my fitness\ngoals. Iwill remain patient with myself and my\nprogress.',
                   style: FlutterFlowTheme.of(context).bodyMedium.override(
@@ -285,7 +279,7 @@ class _CommitmentWidgetState extends State<CommitmentWidget>
                                 context.pushNamed(
                                   'PlanPreference',
                                   extra: <String, dynamic>{
-                                    kTransitionInfoKey: TransitionInfo(
+                                    kTransitionInfoKey: const TransitionInfo(
                                       hasTransition: true,
                                       transitionType: PageTransitionType.fade,
                                       duration: Duration(milliseconds: 0),
@@ -308,7 +302,7 @@ class _CommitmentWidgetState extends State<CommitmentWidget>
                           ],
                         ),
                         Padding(
-                          padding: EdgeInsetsDirectional.fromSTEB(
+                          padding: const EdgeInsetsDirectional.fromSTEB(
                               0.0, 24.0, 0.0, 0.0),
                           child: Text(
                             'Tap the button to continue.',
@@ -329,8 +323,8 @@ class _CommitmentWidgetState extends State<CommitmentWidget>
                 ),
               ),
             ]
-                .addToStart(SizedBox(height: 24.0))
-                .addToEnd(SizedBox(height: 24.0)),
+                .addToStart(const SizedBox(height: 24.0))
+                .addToEnd(const SizedBox(height: 24.0)),
           ),
         ),
       ),

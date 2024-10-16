@@ -1,8 +1,6 @@
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
-import 'package:provider/provider.dart';
 import 'exercies_card_model.dart';
 export 'exercies_card_model.dart';
 
@@ -53,7 +51,7 @@ class _ExerciesCardWidgetState extends State<ExerciesCardWidget> {
         context.pushNamed(
           'Instructions',
           extra: <String, dynamic>{
-            kTransitionInfoKey: TransitionInfo(
+            kTransitionInfoKey: const TransitionInfo(
               hasTransition: true,
               transitionType: PageTransitionType.rightToLeft,
               duration: Duration(milliseconds: 200),
@@ -62,7 +60,7 @@ class _ExerciesCardWidgetState extends State<ExerciesCardWidget> {
         );
       },
       child: Container(
-        decoration: BoxDecoration(),
+        decoration: const BoxDecoration(),
         child: Column(
           mainAxisSize: MainAxisSize.max,
           children: [
@@ -80,14 +78,14 @@ class _ExerciesCardWidgetState extends State<ExerciesCardWidget> {
                 color: FlutterFlowTheme.of(context).secondaryBackground2,
               ),
               child: Padding(
-                padding: EdgeInsetsDirectional.fromSTEB(8.0, 8.0, 0.0, 8.0),
+                padding: const EdgeInsetsDirectional.fromSTEB(8.0, 8.0, 0.0, 8.0),
                 child: Row(
                   mainAxisSize: MainAxisSize.max,
                   children: [
                     ClipRRect(
                       borderRadius: BorderRadius.circular(10.0),
                       child: Image.network(
-                        widget!.cover!,
+                        widget.cover!,
                         width: 66.0,
                         height: double.infinity,
                         fit: BoxFit.cover,
@@ -95,7 +93,7 @@ class _ExerciesCardWidgetState extends State<ExerciesCardWidget> {
                     ),
                     Text(
                       valueOrDefault<String>(
-                        widget!.title,
+                        widget.title,
                         'na',
                       ),
                       style: FlutterFlowTheme.of(context).bodyMedium.override(
@@ -106,7 +104,7 @@ class _ExerciesCardWidgetState extends State<ExerciesCardWidget> {
                             fontWeight: FontWeight.w500,
                           ),
                     ),
-                  ].divide(SizedBox(width: 12.0)),
+                  ].divide(const SizedBox(width: 12.0)),
                 ),
               ),
             ),

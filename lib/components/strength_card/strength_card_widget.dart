@@ -1,8 +1,6 @@
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
-import 'package:provider/provider.dart';
 import 'strength_card_model.dart';
 export 'strength_card_model.dart';
 
@@ -53,7 +51,7 @@ class _StrengthCardWidgetState extends State<StrengthCardWidget> {
         context.pushNamed(
           'WorkoutDetails',
           extra: <String, dynamic>{
-            kTransitionInfoKey: TransitionInfo(
+            kTransitionInfoKey: const TransitionInfo(
               hasTransition: true,
               transitionType: PageTransitionType.rightToLeft,
               duration: Duration(milliseconds: 200),
@@ -69,14 +67,14 @@ class _StrengthCardWidgetState extends State<StrengthCardWidget> {
           borderRadius: BorderRadius.circular(10.0),
         ),
         child: Padding(
-          padding: EdgeInsets.all(8.0),
+          padding: const EdgeInsets.all(8.0),
           child: Row(
             mainAxisSize: MainAxisSize.max,
             children: [
               ClipRRect(
                 borderRadius: BorderRadius.circular(4.0),
                 child: Image.network(
-                  widget!.cover!,
+                  widget.cover!,
                   width: 86.0,
                   height: double.infinity,
                   fit: BoxFit.cover,
@@ -84,7 +82,7 @@ class _StrengthCardWidgetState extends State<StrengthCardWidget> {
               ),
               Text(
                 valueOrDefault<String>(
-                  widget!.title,
+                  widget.title,
                   'na',
                 ),
                 style: FlutterFlowTheme.of(context).bodyMedium.override(
@@ -95,7 +93,7 @@ class _StrengthCardWidgetState extends State<StrengthCardWidget> {
                       fontWeight: FontWeight.w600,
                     ),
               ),
-            ].divide(SizedBox(width: 12.0)),
+            ].divide(const SizedBox(width: 12.0)),
           ),
         ),
       ),

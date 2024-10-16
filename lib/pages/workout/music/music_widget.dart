@@ -2,10 +2,7 @@ import '/components/music_card/music_card_widget.dart';
 import '/components/settings_card2/settings_card2_widget.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
-import '/flutter_flow/flutter_flow_widgets.dart';
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
-import 'package:provider/provider.dart';
 import 'music_model.dart';
 export 'music_model.dart';
 
@@ -52,13 +49,13 @@ class _MusicWidgetState extends State<MusicWidget> {
                   children: [
                     Container(
                       height: 220.0,
-                      decoration: BoxDecoration(),
+                      decoration: const BoxDecoration(),
                       child: Stack(
                         children: [
                           ClipRRect(
                             child: Container(
                               height: 420.0,
-                              decoration: BoxDecoration(),
+                              decoration: const BoxDecoration(),
                               child: Column(
                                 mainAxisSize: MainAxisSize.max,
                                 children: [
@@ -80,7 +77,7 @@ class _MusicWidgetState extends State<MusicWidget> {
                                           blurRadius: 40.0,
                                           color: FlutterFlowTheme.of(context)
                                               .primaryBackground2,
-                                          offset: Offset(
+                                          offset: const Offset(
                                             0.0,
                                             2.0,
                                           ),
@@ -94,9 +91,9 @@ class _MusicWidgetState extends State<MusicWidget> {
                             ),
                           ),
                           Align(
-                            alignment: AlignmentDirectional(-1.0, 1.0),
+                            alignment: const AlignmentDirectional(-1.0, 1.0),
                             child: Padding(
-                              padding: EdgeInsetsDirectional.fromSTEB(
+                              padding: const EdgeInsetsDirectional.fromSTEB(
                                   16.0, 0.0, 16.0, 0.0),
                               child: Column(
                                 mainAxisSize: MainAxisSize.min,
@@ -130,7 +127,7 @@ class _MusicWidgetState extends State<MusicWidget> {
                                           lineHeight: 1.4,
                                         ),
                                   ),
-                                ].divide(SizedBox(height: 12.0)),
+                                ].divide(const SizedBox(height: 12.0)),
                               ),
                             ),
                           ),
@@ -139,7 +136,7 @@ class _MusicWidgetState extends State<MusicWidget> {
                     ),
                     Padding(
                       padding:
-                          EdgeInsetsDirectional.fromSTEB(16.0, 0.0, 16.0, 0.0),
+                          const EdgeInsetsDirectional.fromSTEB(16.0, 0.0, 16.0, 0.0),
                       child: Column(
                         mainAxisSize: MainAxisSize.max,
                         children: [
@@ -156,7 +153,7 @@ class _MusicWidgetState extends State<MusicWidget> {
                                   context.pushNamed(
                                     'SoundSettings',
                                     extra: <String, dynamic>{
-                                      kTransitionInfoKey: TransitionInfo(
+                                      kTransitionInfoKey: const TransitionInfo(
                                         hasTransition: true,
                                         transitionType:
                                             PageTransitionType.rightToLeft,
@@ -179,21 +176,21 @@ class _MusicWidgetState extends State<MusicWidget> {
                                   ),
                                 ),
                               ),
-                            ].divide(SizedBox(height: 16.0)),
+                            ].divide(const SizedBox(height: 16.0)),
                           ),
-                        ].divide(SizedBox(height: 24.0)),
+                        ].divide(const SizedBox(height: 24.0)),
                       ),
                     ),
                     Padding(
                       padding:
-                          EdgeInsetsDirectional.fromSTEB(16.0, 0.0, 16.0, 0.0),
+                          const EdgeInsetsDirectional.fromSTEB(16.0, 0.0, 16.0, 0.0),
                       child: Column(
                         mainAxisSize: MainAxisSize.max,
                         children: [
                           wrapWithModel(
                             model: _model.musicCardModel1,
                             updateCallback: () => safeSetState(() {}),
-                            child: MusicCardWidget(
+                            child: const MusicCardWidget(
                               cover:
                                   'https://storage.googleapis.com/flutterflow-io-6f20.appspot.com/projects/fiti-plus-qvr2h3/assets/vg6yo97bmbnu/o5.jpg',
                               title: 'Pop & Electro Workout',
@@ -202,7 +199,7 @@ class _MusicWidgetState extends State<MusicWidget> {
                           wrapWithModel(
                             model: _model.musicCardModel2,
                             updateCallback: () => safeSetState(() {}),
-                            child: MusicCardWidget(
+                            child: const MusicCardWidget(
                               cover:
                                   'https://storage.googleapis.com/flutterflow-io-6f20.appspot.com/projects/fiti-plus-qvr2h3/assets/ydeb6pyd2gs9/o6.jpeg',
                               title: 'Rap Workout',
@@ -211,7 +208,7 @@ class _MusicWidgetState extends State<MusicWidget> {
                           wrapWithModel(
                             model: _model.musicCardModel3,
                             updateCallback: () => safeSetState(() {}),
-                            child: MusicCardWidget(
+                            child: const MusicCardWidget(
                               cover:
                                   'https://storage.googleapis.com/flutterflow-io-6f20.appspot.com/projects/fiti-plus-qvr2h3/assets/ofvnxmqlkx9u/o7.jpg',
                               title: 'Rock Workout',
@@ -220,7 +217,7 @@ class _MusicWidgetState extends State<MusicWidget> {
                           wrapWithModel(
                             model: _model.musicCardModel4,
                             updateCallback: () => safeSetState(() {}),
-                            child: MusicCardWidget(
+                            child: const MusicCardWidget(
                               cover:
                                   'https://storage.googleapis.com/flutterflow-io-6f20.appspot.com/projects/fiti-plus-qvr2h3/assets/9186sxpzmicg/o8.jpeg',
                               title: 'Hardcore Workout',
@@ -229,7 +226,7 @@ class _MusicWidgetState extends State<MusicWidget> {
                           wrapWithModel(
                             model: _model.musicCardModel5,
                             updateCallback: () => safeSetState(() {}),
-                            child: MusicCardWidget(
+                            child: const MusicCardWidget(
                               cover:
                                   'https://storage.googleapis.com/flutterflow-io-6f20.appspot.com/projects/fiti-plus-qvr2h3/assets/3i83tveezm5j/o99.png',
                               title: 'Epic Instrumental Workout',
@@ -238,22 +235,22 @@ class _MusicWidgetState extends State<MusicWidget> {
                           wrapWithModel(
                             model: _model.musicCardModel6,
                             updateCallback: () => safeSetState(() {}),
-                            child: MusicCardWidget(
+                            child: const MusicCardWidget(
                               cover:
                                   'https://storage.googleapis.com/flutterflow-io-6f20.appspot.com/projects/fiti-plus-qvr2h3/assets/2emwcd2gfz0c/o10.jpeg',
                               title: 'Yoga & Stretching',
                             ),
                           ),
-                        ].divide(SizedBox(height: 16.0)),
+                        ].divide(const SizedBox(height: 16.0)),
                       ),
                     ),
                   ]
-                      .divide(SizedBox(height: 24.0))
-                      .addToEnd(SizedBox(height: 32.0)),
+                      .divide(const SizedBox(height: 24.0))
+                      .addToEnd(const SizedBox(height: 32.0)),
                 ),
               ),
               Padding(
-                padding: EdgeInsetsDirectional.fromSTEB(16.0, 16.0, 0.0, 0.0),
+                padding: const EdgeInsetsDirectional.fromSTEB(16.0, 16.0, 0.0, 0.0),
                 child: InkWell(
                   splashColor: Colors.transparent,
                   focusColor: Colors.transparent,
@@ -265,12 +262,12 @@ class _MusicWidgetState extends State<MusicWidget> {
                   child: Container(
                     width: 32.0,
                     height: 32.0,
-                    decoration: BoxDecoration(
+                    decoration: const BoxDecoration(
                       color: Color(0x67BDBDBD),
                       shape: BoxShape.circle,
                     ),
                     child: Align(
-                      alignment: AlignmentDirectional(0.0, 0.0),
+                      alignment: const AlignmentDirectional(0.0, 0.0),
                       child: Icon(
                         FFIcons.kchevronLeft,
                         color: FlutterFlowTheme.of(context).info,

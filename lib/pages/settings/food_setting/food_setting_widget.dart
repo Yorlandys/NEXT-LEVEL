@@ -3,10 +3,7 @@ import '/components/modals/excluded_ingredients/excluded_ingredients_widget.dart
 import '/components/settings_menu_btn/settings_menu_btn_widget.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
-import '/flutter_flow/flutter_flow_widgets.dart';
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
-import 'package:provider/provider.dart';
 import 'food_setting_model.dart';
 export 'food_setting_model.dart';
 
@@ -47,13 +44,13 @@ class _FoodSettingWidgetState extends State<FoodSettingWidget> {
           child: Stack(
             children: [
               Align(
-                alignment: AlignmentDirectional(0.0, -1.0),
+                alignment: const AlignmentDirectional(0.0, -1.0),
                 child: Padding(
                   padding:
-                      EdgeInsetsDirectional.fromSTEB(16.0, 20.0, 16.0, 0.0),
+                      const EdgeInsetsDirectional.fromSTEB(16.0, 20.0, 16.0, 0.0),
                   child: Container(
                     height: 34.0,
-                    decoration: BoxDecoration(),
+                    decoration: const BoxDecoration(),
                   ),
                 ),
               ),
@@ -63,7 +60,7 @@ class _FoodSettingWidgetState extends State<FoodSettingWidget> {
                   children: [
                     Padding(
                       padding:
-                          EdgeInsetsDirectional.fromSTEB(16.0, 20.0, 16.0, 0.0),
+                          const EdgeInsetsDirectional.fromSTEB(16.0, 20.0, 16.0, 0.0),
                       child: Column(
                         mainAxisSize: MainAxisSize.min,
                         children: [
@@ -73,7 +70,7 @@ class _FoodSettingWidgetState extends State<FoodSettingWidget> {
                             crossAxisAlignment: CrossAxisAlignment.center,
                             children: [
                               Align(
-                                alignment: AlignmentDirectional(-1.0, 0.0),
+                                alignment: const AlignmentDirectional(-1.0, 0.0),
                                 child: InkWell(
                                   splashColor: Colors.transparent,
                                   focusColor: Colors.transparent,
@@ -85,12 +82,12 @@ class _FoodSettingWidgetState extends State<FoodSettingWidget> {
                                   child: Container(
                                     width: 32.0,
                                     height: 32.0,
-                                    decoration: BoxDecoration(
+                                    decoration: const BoxDecoration(
                                       color: Color(0x67BDBDBD),
                                       shape: BoxShape.circle,
                                     ),
                                     child: Align(
-                                      alignment: AlignmentDirectional(0.0, 0.0),
+                                      alignment: const AlignmentDirectional(0.0, 0.0),
                                       child: Icon(
                                         FFIcons.kchevronLeft,
                                         color:
@@ -103,9 +100,9 @@ class _FoodSettingWidgetState extends State<FoodSettingWidget> {
                               ),
                               Expanded(
                                 child: Align(
-                                  alignment: AlignmentDirectional(0.0, 0.0),
+                                  alignment: const AlignmentDirectional(0.0, 0.0),
                                   child: Padding(
-                                    padding: EdgeInsetsDirectional.fromSTEB(
+                                    padding: const EdgeInsetsDirectional.fromSTEB(
                                         0.0, 0.0, 32.0, 0.0),
                                     child: Text(
                                       'Food',
@@ -145,7 +142,7 @@ class _FoodSettingWidgetState extends State<FoodSettingWidget> {
                                     onTap: () async {
                                       showModalBottomSheet(
                                         isScrollControlled: true,
-                                        backgroundColor: Color(0x34000000),
+                                        backgroundColor: const Color(0x34000000),
                                         context: context,
                                         builder: (context) {
                                           return GestureDetector(
@@ -154,7 +151,7 @@ class _FoodSettingWidgetState extends State<FoodSettingWidget> {
                                             child: Padding(
                                               padding: MediaQuery.viewInsetsOf(
                                                   context),
-                                              child: DietaryPreferencesWidget(),
+                                              child: const DietaryPreferencesWidget(),
                                             ),
                                           );
                                         },
@@ -163,7 +160,7 @@ class _FoodSettingWidgetState extends State<FoodSettingWidget> {
                                     child: wrapWithModel(
                                       model: _model.settingsMenuBtnModel1,
                                       updateCallback: () => safeSetState(() {}),
-                                      child: SettingsMenuBtnWidget(
+                                      child: const SettingsMenuBtnWidget(
                                         title: 'Dietary Preferences',
                                         subtitle: 'None',
                                       ),
@@ -185,7 +182,7 @@ class _FoodSettingWidgetState extends State<FoodSettingWidget> {
                                     onTap: () async {
                                       showModalBottomSheet(
                                         isScrollControlled: true,
-                                        backgroundColor: Color(0x34000000),
+                                        backgroundColor: const Color(0x34000000),
                                         context: context,
                                         builder: (context) {
                                           return GestureDetector(
@@ -195,7 +192,7 @@ class _FoodSettingWidgetState extends State<FoodSettingWidget> {
                                               padding: MediaQuery.viewInsetsOf(
                                                   context),
                                               child:
-                                                  ExcludedIngredientsWidget(),
+                                                  const ExcludedIngredientsWidget(),
                                             ),
                                           );
                                         },
@@ -204,7 +201,7 @@ class _FoodSettingWidgetState extends State<FoodSettingWidget> {
                                     child: wrapWithModel(
                                       model: _model.settingsMenuBtnModel2,
                                       updateCallback: () => safeSetState(() {}),
-                                      child: SettingsMenuBtnWidget(
+                                      child: const SettingsMenuBtnWidget(
                                         title: 'Excluded Ingredients',
                                         subtitle: '0',
                                       ),
@@ -215,8 +212,8 @@ class _FoodSettingWidgetState extends State<FoodSettingWidget> {
                             ),
                           ),
                         ]
-                            .divide(SizedBox(height: 24.0))
-                            .addToEnd(SizedBox(height: 32.0)),
+                            .divide(const SizedBox(height: 24.0))
+                            .addToEnd(const SizedBox(height: 32.0)),
                       ),
                     ),
                   ],

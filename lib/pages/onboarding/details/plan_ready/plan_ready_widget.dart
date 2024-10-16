@@ -5,8 +5,6 @@ import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import '/flutter_flow/flutter_flow_widgets.dart';
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
-import 'package:provider/provider.dart';
 import 'plan_ready_model.dart';
 export 'plan_ready_model.dart';
 
@@ -47,7 +45,7 @@ class _PlanReadyWidgetState extends State<PlanReadyWidget> {
           child: Stack(
             children: [
               Padding(
-                padding: EdgeInsetsDirectional.fromSTEB(20.0, 0.0, 20.0, 0.0),
+                padding: const EdgeInsetsDirectional.fromSTEB(20.0, 0.0, 20.0, 0.0),
                 child: SingleChildScrollView(
                   child: Column(
                     mainAxisSize: MainAxisSize.max,
@@ -73,7 +71,7 @@ class _PlanReadyWidgetState extends State<PlanReadyWidget> {
                                   ),
                                 ),
                                 child: Align(
-                                  alignment: AlignmentDirectional(0.0, 0.0),
+                                  alignment: const AlignmentDirectional(0.0, 0.0),
                                   child: Icon(
                                     FFIcons.kcheck,
                                     color:
@@ -93,26 +91,26 @@ class _PlanReadyWidgetState extends State<PlanReadyWidget> {
                                       fontWeight: FontWeight.w900,
                                     ),
                               ),
-                            ].divide(SizedBox(height: 16.0)),
+                            ].divide(const SizedBox(height: 16.0)),
                           ),
                         ],
                       ),
                       Padding(
                         padding:
-                            EdgeInsetsDirectional.fromSTEB(0.0, 6.0, 0.0, 0.0),
-                        child: Container(
+                            const EdgeInsetsDirectional.fromSTEB(0.0, 6.0, 0.0, 0.0),
+                        child: SizedBox(
                           height: 320.0,
                           child: Stack(
                             children: [
                               Align(
-                                alignment: AlignmentDirectional(0.0, 1.0),
+                                alignment: const AlignmentDirectional(0.0, 1.0),
                                 child: Container(
                                   width: double.infinity,
                                   height: 302.0,
                                   decoration: BoxDecoration(
                                     color: FlutterFlowTheme.of(context)
                                         .secondaryBackground,
-                                    boxShadow: [
+                                    boxShadow: const [
                                       BoxShadow(
                                         blurRadius: 8.0,
                                         color: Color(0x09000000),
@@ -125,7 +123,7 @@ class _PlanReadyWidgetState extends State<PlanReadyWidget> {
                                     borderRadius: BorderRadius.circular(10.0),
                                   ),
                                   child: Padding(
-                                    padding: EdgeInsetsDirectional.fromSTEB(
+                                    padding: const EdgeInsetsDirectional.fromSTEB(
                                         16.0, 16.0, 140.0, 16.0),
                                     child: Column(
                                       mainAxisSize: MainAxisSize.max,
@@ -146,7 +144,7 @@ class _PlanReadyWidgetState extends State<PlanReadyWidget> {
                                         ),
                                         Padding(
                                           padding:
-                                              EdgeInsetsDirectional.fromSTEB(
+                                              const EdgeInsetsDirectional.fromSTEB(
                                                   0.0, 16.0, 0.0, 0.0),
                                           child: wrapWithModel(
                                             model: _model.goalModel1,
@@ -213,21 +211,21 @@ class _PlanReadyWidgetState extends State<PlanReadyWidget> {
                                             subtitle: 'Intermediate',
                                           ),
                                         ),
-                                      ].divide(SizedBox(height: 12.0)),
+                                      ].divide(const SizedBox(height: 12.0)),
                                     ),
                                   ),
                                 ),
                               ),
                               Align(
-                                alignment: AlignmentDirectional(1.0, 0.0),
-                                child: Container(
+                                alignment: const AlignmentDirectional(1.0, 0.0),
+                                child: SizedBox(
                                   width: 128.0,
                                   height: double.infinity,
                                   child: Stack(
                                     children: [
                                       Align(
                                         alignment:
-                                            AlignmentDirectional(1.0, 0.0),
+                                            const AlignmentDirectional(1.0, 0.0),
                                         child: ClipRRect(
                                           borderRadius:
                                               BorderRadius.circular(8.0),
@@ -241,12 +239,12 @@ class _PlanReadyWidgetState extends State<PlanReadyWidget> {
                                       ),
                                       Align(
                                         alignment:
-                                            AlignmentDirectional(0.54, 0.51),
+                                            const AlignmentDirectional(0.54, 0.51),
                                         child: Container(
                                           width: 44.0,
                                           height: 44.0,
                                           decoration: BoxDecoration(
-                                            color: Color(0x4C007AFF),
+                                            color: const Color(0x4C007AFF),
                                             shape: BoxShape.circle,
                                             border: Border.all(
                                               color:
@@ -259,12 +257,12 @@ class _PlanReadyWidgetState extends State<PlanReadyWidget> {
                                       ),
                                       Align(
                                         alignment:
-                                            AlignmentDirectional(-1.11, -0.32),
+                                            const AlignmentDirectional(-1.11, -0.32),
                                         child: Container(
                                           width: 44.0,
                                           height: 44.0,
                                           decoration: BoxDecoration(
-                                            color: Color(0x4C007AFF),
+                                            color: const Color(0x4C007AFF),
                                             shape: BoxShape.circle,
                                             border: Border.all(
                                               color:
@@ -277,12 +275,12 @@ class _PlanReadyWidgetState extends State<PlanReadyWidget> {
                                       ),
                                       Align(
                                         alignment:
-                                            AlignmentDirectional(0.45, -0.25),
+                                            const AlignmentDirectional(0.45, -0.25),
                                         child: Container(
                                           width: 44.0,
                                           height: 44.0,
                                           decoration: BoxDecoration(
-                                            color: Color(0x4C007AFF),
+                                            color: const Color(0x4C007AFF),
                                             shape: BoxShape.circle,
                                             border: Border.all(
                                               color:
@@ -295,12 +293,12 @@ class _PlanReadyWidgetState extends State<PlanReadyWidget> {
                                       ),
                                       Align(
                                         alignment:
-                                            AlignmentDirectional(-0.34, 0.07),
+                                            const AlignmentDirectional(-0.34, 0.07),
                                         child: Container(
                                           width: 44.0,
                                           height: 44.0,
                                           decoration: BoxDecoration(
-                                            color: Color(0x4C007AFF),
+                                            color: const Color(0x4C007AFF),
                                             shape: BoxShape.circle,
                                             border: Border.all(
                                               color:
@@ -321,7 +319,7 @@ class _PlanReadyWidgetState extends State<PlanReadyWidget> {
                       ),
                       Padding(
                         padding:
-                            EdgeInsetsDirectional.fromSTEB(0.0, 12.0, 0.0, 0.0),
+                            const EdgeInsetsDirectional.fromSTEB(0.0, 12.0, 0.0, 0.0),
                         child: Row(
                           mainAxisSize: MainAxisSize.max,
                           children: [
@@ -342,7 +340,7 @@ class _PlanReadyWidgetState extends State<PlanReadyWidget> {
                                 decoration: BoxDecoration(
                                   color: FlutterFlowTheme.of(context)
                                       .secondaryBackground,
-                                  boxShadow: [
+                                  boxShadow: const [
                                     BoxShadow(
                                       blurRadius: 8.0,
                                       color: Color(0x09000000),
@@ -355,7 +353,7 @@ class _PlanReadyWidgetState extends State<PlanReadyWidget> {
                                   borderRadius: BorderRadius.circular(10.0),
                                 ),
                                 child: Padding(
-                                  padding: EdgeInsets.all(16.0),
+                                  padding: const EdgeInsets.all(16.0),
                                   child: Column(
                                     mainAxisSize: MainAxisSize.max,
                                     mainAxisAlignment:
@@ -403,7 +401,7 @@ class _PlanReadyWidgetState extends State<PlanReadyWidget> {
                                               shape: BoxShape.circle,
                                             ),
                                             child: Align(
-                                              alignment: AlignmentDirectional(
+                                              alignment: const AlignmentDirectional(
                                                   0.0, 0.0),
                                               child: Icon(
                                                 FFIcons.kcheck,
@@ -424,7 +422,7 @@ class _PlanReadyWidgetState extends State<PlanReadyWidget> {
                                               shape: BoxShape.circle,
                                             ),
                                             child: Align(
-                                              alignment: AlignmentDirectional(
+                                              alignment: const AlignmentDirectional(
                                                   0.0, 0.0),
                                               child: Icon(
                                                 FFIcons.kcheck,
@@ -445,7 +443,7 @@ class _PlanReadyWidgetState extends State<PlanReadyWidget> {
                                               shape: BoxShape.circle,
                                             ),
                                             child: Align(
-                                              alignment: AlignmentDirectional(
+                                              alignment: const AlignmentDirectional(
                                                   0.0, 0.0),
                                               child: Icon(
                                                 FFIcons.kcheck,
@@ -466,7 +464,7 @@ class _PlanReadyWidgetState extends State<PlanReadyWidget> {
                                               shape: BoxShape.circle,
                                             ),
                                             child: Align(
-                                              alignment: AlignmentDirectional(
+                                              alignment: const AlignmentDirectional(
                                                   0.0, 0.0),
                                               child: Icon(
                                                 FFIcons.kcheck,
@@ -477,7 +475,7 @@ class _PlanReadyWidgetState extends State<PlanReadyWidget> {
                                               ),
                                             ),
                                           ),
-                                        ].divide(SizedBox(width: 8.0)),
+                                        ].divide(const SizedBox(width: 8.0)),
                                       ),
                                       Row(
                                         mainAxisSize: MainAxisSize.max,
@@ -494,7 +492,7 @@ class _PlanReadyWidgetState extends State<PlanReadyWidget> {
                                               shape: BoxShape.circle,
                                             ),
                                             child: Align(
-                                              alignment: AlignmentDirectional(
+                                              alignment: const AlignmentDirectional(
                                                   0.0, 0.0),
                                               child: Icon(
                                                 FFIcons.kcheck,
@@ -515,7 +513,7 @@ class _PlanReadyWidgetState extends State<PlanReadyWidget> {
                                               shape: BoxShape.circle,
                                             ),
                                             child: Align(
-                                              alignment: AlignmentDirectional(
+                                              alignment: const AlignmentDirectional(
                                                   0.0, 0.0),
                                               child: Icon(
                                                 FFIcons.kx,
@@ -536,7 +534,7 @@ class _PlanReadyWidgetState extends State<PlanReadyWidget> {
                                               shape: BoxShape.circle,
                                             ),
                                             child: Align(
-                                              alignment: AlignmentDirectional(
+                                              alignment: const AlignmentDirectional(
                                                   0.0, 0.0),
                                               child: Icon(
                                                 FFIcons.kcheck,
@@ -547,14 +545,14 @@ class _PlanReadyWidgetState extends State<PlanReadyWidget> {
                                               ),
                                             ),
                                           ),
-                                        ].divide(SizedBox(width: 8.0)),
+                                        ].divide(const SizedBox(width: 8.0)),
                                       ),
-                                    ].divide(SizedBox(height: 4.0)),
+                                    ].divide(const SizedBox(height: 4.0)),
                                   ),
                                 ),
                               ),
                             ),
-                          ].divide(SizedBox(width: 16.0)),
+                          ].divide(const SizedBox(width: 16.0)),
                         ),
                       ),
                       Container(
@@ -563,7 +561,7 @@ class _PlanReadyWidgetState extends State<PlanReadyWidget> {
                         decoration: BoxDecoration(
                           color:
                               FlutterFlowTheme.of(context).secondaryBackground,
-                          boxShadow: [
+                          boxShadow: const [
                             BoxShadow(
                               blurRadius: 8.0,
                               color: Color(0x09000000),
@@ -580,14 +578,14 @@ class _PlanReadyWidgetState extends State<PlanReadyWidget> {
                           mainAxisAlignment: MainAxisAlignment.spaceBetween,
                           children: [
                             Padding(
-                              padding: EdgeInsets.all(16.0),
+                              padding: const EdgeInsets.all(16.0),
                               child: Column(
                                 mainAxisSize: MainAxisSize.max,
                                 mainAxisAlignment: MainAxisAlignment.start,
                                 crossAxisAlignment: CrossAxisAlignment.start,
                                 children: [
                                   Padding(
-                                    padding: EdgeInsetsDirectional.fromSTEB(
+                                    padding: const EdgeInsetsDirectional.fromSTEB(
                                         0.0, 0.0, 0.0, 8.0),
                                     child: Text(
                                       'Inside the plan',
@@ -604,45 +602,45 @@ class _PlanReadyWidgetState extends State<PlanReadyWidget> {
                                   wrapWithModel(
                                     model: _model.fetcherModel1,
                                     updateCallback: () => safeSetState(() {}),
-                                    child: FetcherWidget(
+                                    child: const FetcherWidget(
                                       title: 'Workout guides',
                                     ),
                                   ),
                                   wrapWithModel(
                                     model: _model.fetcherModel2,
                                     updateCallback: () => safeSetState(() {}),
-                                    child: FetcherWidget(
+                                    child: const FetcherWidget(
                                       title: 'Exercise  videos',
                                     ),
                                   ),
                                   wrapWithModel(
                                     model: _model.fetcherModel3,
                                     updateCallback: () => safeSetState(() {}),
-                                    child: FetcherWidget(
+                                    child: const FetcherWidget(
                                       title: 'Interactive schedule',
                                     ),
                                   ),
                                   wrapWithModel(
                                     model: _model.fetcherModel4,
                                     updateCallback: () => safeSetState(() {}),
-                                    child: FetcherWidget(
+                                    child: const FetcherWidget(
                                       title: 'Weight traking',
                                     ),
                                   ),
                                   wrapWithModel(
                                     model: _model.fetcherModel5,
                                     updateCallback: () => safeSetState(() {}),
-                                    child: FetcherWidget(
+                                    child: const FetcherWidget(
                                       title: 'Healthy recipes',
                                     ),
                                   ),
-                                ].divide(SizedBox(height: 10.0)),
+                                ].divide(const SizedBox(height: 10.0)),
                               ),
                             ),
                             Align(
-                              alignment: AlignmentDirectional(0.0, 0.0),
+                              alignment: const AlignmentDirectional(0.0, 0.0),
                               child: Padding(
-                                padding: EdgeInsetsDirectional.fromSTEB(
+                                padding: const EdgeInsetsDirectional.fromSTEB(
                                     0.0, 0.0, 12.0, 0.0),
                                 child: Image.network(
                                   'https://storage.googleapis.com/flutterflow-io-6f20.appspot.com/projects/fiti-plus-qvr2h3/assets/4imo48mo2u4q/s30.jpg',
@@ -660,7 +658,7 @@ class _PlanReadyWidgetState extends State<PlanReadyWidget> {
                         decoration: BoxDecoration(
                           color:
                               FlutterFlowTheme.of(context).secondaryBackground,
-                          boxShadow: [
+                          boxShadow: const [
                             BoxShadow(
                               blurRadius: 8.0,
                               color: Color(0x09000000),
@@ -673,7 +671,7 @@ class _PlanReadyWidgetState extends State<PlanReadyWidget> {
                           borderRadius: BorderRadius.circular(10.0),
                         ),
                         child: Padding(
-                          padding: EdgeInsets.all(16.0),
+                          padding: const EdgeInsets.all(16.0),
                           child: Column(
                             mainAxisSize: MainAxisSize.min,
                             mainAxisAlignment: MainAxisAlignment.start,
@@ -691,9 +689,9 @@ class _PlanReadyWidgetState extends State<PlanReadyWidget> {
                                       shape: BoxShape.circle,
                                     ),
                                     child: Align(
-                                      alignment: AlignmentDirectional(0.0, 0.0),
+                                      alignment: const AlignmentDirectional(0.0, 0.0),
                                       child: Padding(
-                                        padding: EdgeInsetsDirectional.fromSTEB(
+                                        padding: const EdgeInsetsDirectional.fromSTEB(
                                             0.0, 3.0, 0.0, 0.0),
                                         child: Icon(
                                           FFIcons.kheart,
@@ -715,7 +713,7 @@ class _PlanReadyWidgetState extends State<PlanReadyWidget> {
                                           lineHeight: 1.4,
                                         ),
                                   ),
-                                ].divide(SizedBox(width: 16.0)),
+                                ].divide(const SizedBox(width: 16.0)),
                               ),
                               Row(
                                 mainAxisSize: MainAxisSize.max,
@@ -729,9 +727,9 @@ class _PlanReadyWidgetState extends State<PlanReadyWidget> {
                                       shape: BoxShape.circle,
                                     ),
                                     child: Align(
-                                      alignment: AlignmentDirectional(0.0, 0.0),
+                                      alignment: const AlignmentDirectional(0.0, 0.0),
                                       child: Padding(
-                                        padding: EdgeInsetsDirectional.fromSTEB(
+                                        padding: const EdgeInsetsDirectional.fromSTEB(
                                             0.0, 3.0, 0.0, 0.0),
                                         child: Icon(
                                           FFIcons.kbrain,
@@ -753,21 +751,21 @@ class _PlanReadyWidgetState extends State<PlanReadyWidget> {
                                           lineHeight: 1.4,
                                         ),
                                   ),
-                                ].divide(SizedBox(width: 16.0)),
+                                ].divide(const SizedBox(width: 16.0)),
                               ),
-                            ].divide(SizedBox(height: 16.0)),
+                            ].divide(const SizedBox(height: 16.0)),
                           ),
                         ),
                       ),
                     ]
-                        .divide(SizedBox(height: 16.0))
-                        .addToStart(SizedBox(height: 24.0))
-                        .addToEnd(SizedBox(height: 80.0)),
+                        .divide(const SizedBox(height: 16.0))
+                        .addToStart(const SizedBox(height: 24.0))
+                        .addToEnd(const SizedBox(height: 80.0)),
                   ),
                 ),
               ),
               Align(
-                alignment: AlignmentDirectional(0.0, 1.0),
+                alignment: const AlignmentDirectional(0.0, 1.0),
                 child: Container(
                   decoration: BoxDecoration(
                     color: FlutterFlowTheme.of(context).primaryBackground,
@@ -775,7 +773,7 @@ class _PlanReadyWidgetState extends State<PlanReadyWidget> {
                       BoxShadow(
                         blurRadius: 12.0,
                         color: FlutterFlowTheme.of(context).primaryBackground,
-                        offset: Offset(
+                        offset: const Offset(
                           0.0,
                           2.0,
                         ),
@@ -785,21 +783,21 @@ class _PlanReadyWidgetState extends State<PlanReadyWidget> {
                   ),
                   child: Padding(
                     padding:
-                        EdgeInsetsDirectional.fromSTEB(20.0, 8.0, 20.0, 8.0),
+                        const EdgeInsetsDirectional.fromSTEB(20.0, 8.0, 20.0, 8.0),
                     child: FFButtonWidget(
                       onPressed: () async {
                         FFAppState().Onboarded = true;
                         safeSetState(() {});
                         showModalBottomSheet(
                           isScrollControlled: true,
-                          backgroundColor: Color(0x34000000),
+                          backgroundColor: const Color(0x34000000),
                           context: context,
                           builder: (context) {
                             return GestureDetector(
                               onTap: () => FocusScope.of(context).unfocus(),
                               child: Padding(
                                 padding: MediaQuery.viewInsetsOf(context),
-                                child: LogInAccountWidget(),
+                                child: const LogInAccountWidget(),
                               ),
                             );
                           },
@@ -809,10 +807,10 @@ class _PlanReadyWidgetState extends State<PlanReadyWidget> {
                       options: FFButtonOptions(
                         width: double.infinity,
                         height: 44.0,
-                        padding: EdgeInsetsDirectional.fromSTEB(
+                        padding: const EdgeInsetsDirectional.fromSTEB(
                             24.0, 0.0, 24.0, 0.0),
                         iconPadding:
-                            EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
+                            const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
                         color: FlutterFlowTheme.of(context).primary,
                         textStyle: FlutterFlowTheme.of(context)
                             .titleSmall
@@ -824,7 +822,7 @@ class _PlanReadyWidgetState extends State<PlanReadyWidget> {
                               fontWeight: FontWeight.bold,
                             ),
                         elevation: 0.0,
-                        borderSide: BorderSide(
+                        borderSide: const BorderSide(
                           color: Colors.transparent,
                           width: 1.0,
                         ),

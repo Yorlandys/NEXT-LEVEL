@@ -2,8 +2,6 @@ import '/components/custom_switch/custom_switch_widget.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
-import 'package:provider/provider.dart';
 import 'fitness_tools_card_model.dart';
 export 'fitness_tools_card_model.dart';
 
@@ -46,7 +44,7 @@ class _FitnessToolsCardWidgetState extends State<FitnessToolsCardWidget> {
   @override
   Widget build(BuildContext context) {
     return Container(
-      decoration: BoxDecoration(),
+      decoration: const BoxDecoration(),
       child: Row(
         mainAxisSize: MainAxisSize.max,
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -54,10 +52,10 @@ class _FitnessToolsCardWidgetState extends State<FitnessToolsCardWidget> {
           Row(
             mainAxisSize: MainAxisSize.max,
             children: [
-              widget!.icon!,
+              widget.icon!,
               Text(
                 valueOrDefault<String>(
-                  widget!.title,
+                  widget.title,
                   'na',
                 ),
                 style: FlutterFlowTheme.of(context).bodyMedium.override(
@@ -68,7 +66,7 @@ class _FitnessToolsCardWidgetState extends State<FitnessToolsCardWidget> {
                       fontWeight: FontWeight.w600,
                     ),
               ),
-            ].divide(SizedBox(width: 12.0)),
+            ].divide(const SizedBox(width: 12.0)),
           ),
           wrapWithModel(
             model: _model.customSwitchModel,
@@ -77,7 +75,7 @@ class _FitnessToolsCardWidgetState extends State<FitnessToolsCardWidget> {
               set: () async {},
             ),
           ),
-        ].divide(SizedBox(width: 16.0)),
+        ].divide(const SizedBox(width: 16.0)),
       ),
     );
   }

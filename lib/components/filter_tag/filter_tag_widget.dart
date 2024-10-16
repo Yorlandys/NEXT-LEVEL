@@ -1,8 +1,6 @@
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
-import 'package:provider/provider.dart';
 import 'filter_tag_model.dart';
 export 'filter_tag_model.dart';
 
@@ -58,21 +56,21 @@ class _FilterTagWidgetState extends State<FilterTagWidget> {
         decoration: BoxDecoration(
           color: valueOrDefault<Color>(
             _model.set
-                ? Color(0xFF1976F7)
+                ? const Color(0xFF1976F7)
                 : FlutterFlowTheme.of(context).secondaryBackground2,
             FlutterFlowTheme.of(context).secondaryBackground2,
           ),
           borderRadius: BorderRadius.circular(50.0),
         ),
         child: Padding(
-          padding: EdgeInsetsDirectional.fromSTEB(12.0, 0.0, 12.0, 0.0),
+          padding: const EdgeInsetsDirectional.fromSTEB(12.0, 0.0, 12.0, 0.0),
           child: Row(
             mainAxisSize: MainAxisSize.min,
             children: [
-              widget!.icon!,
+              widget.icon!,
               Text(
                 valueOrDefault<String>(
-                  widget!.title,
+                  widget.title,
                   'na',
                 ),
                 style: FlutterFlowTheme.of(context).bodyMedium.override(
@@ -83,7 +81,7 @@ class _FilterTagWidgetState extends State<FilterTagWidget> {
                       fontWeight: FontWeight.w500,
                     ),
               ),
-            ].divide(SizedBox(width: 8.0)),
+            ].divide(const SizedBox(width: 8.0)),
           ),
         ),
       ),

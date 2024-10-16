@@ -2,14 +2,9 @@ import '/flutter_flow/flutter_flow_animations.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import '/flutter_flow/flutter_flow_widgets.dart';
-import 'dart:math';
-import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/scheduler.dart';
 import 'package:flutter_animate/flutter_animate.dart';
-import 'package:google_fonts/google_fonts.dart';
 import 'package:percent_indicator/percent_indicator.dart';
-import 'package:provider/provider.dart';
 import 'onboarding1_model.dart';
 export 'onboarding1_model.dart';
 
@@ -41,8 +36,8 @@ class _Onboarding1WidgetState extends State<Onboarding1Widget>
             curve: Curves.easeInOutQuint,
             delay: 300.0.ms,
             duration: 600.0.ms,
-            begin: Offset(-300.0, 0.0),
-            end: Offset(0.0, 0.0),
+            begin: const Offset(-300.0, 0.0),
+            end: const Offset(0.0, 0.0),
           ),
           FadeEffect(
             curve: Curves.easeInOut,
@@ -81,7 +76,7 @@ class _Onboarding1WidgetState extends State<Onboarding1Widget>
                   children: [
                     Padding(
                       padding:
-                          EdgeInsetsDirectional.fromSTEB(20.0, 0.0, 20.0, 0.0),
+                          const EdgeInsetsDirectional.fromSTEB(20.0, 0.0, 20.0, 0.0),
                       child: Row(
                         mainAxisSize: MainAxisSize.max,
                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -102,7 +97,7 @@ class _Onboarding1WidgetState extends State<Onboarding1Widget>
                                 shape: BoxShape.circle,
                               ),
                               child: Align(
-                                alignment: AlignmentDirectional(0.0, 0.0),
+                                alignment: const AlignmentDirectional(0.0, 0.0),
                                 child: Icon(
                                   FFIcons.kchevronLeft,
                                   color:
@@ -128,13 +123,13 @@ class _Onboarding1WidgetState extends State<Onboarding1Widget>
                     ),
                     Padding(
                       padding:
-                          EdgeInsetsDirectional.fromSTEB(0.0, 24.0, 0.0, 0.0),
+                          const EdgeInsetsDirectional.fromSTEB(0.0, 24.0, 0.0, 0.0),
                       child: Column(
                         mainAxisSize: MainAxisSize.max,
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
                           Padding(
-                            padding: EdgeInsetsDirectional.fromSTEB(
+                            padding: const EdgeInsetsDirectional.fromSTEB(
                                 20.0, 0.0, 20.0, 0.0),
                             child: RichText(
                               textScaler: MediaQuery.of(context).textScaler,
@@ -166,12 +161,12 @@ class _Onboarding1WidgetState extends State<Onboarding1Widget>
                             ).animateOnPageLoad(
                                 animationsMap['richTextOnPageLoadAnimation']!),
                           ),
-                        ].divide(SizedBox(height: 4.0)),
+                        ].divide(const SizedBox(height: 4.0)),
                       ),
                     ),
                     Padding(
                       padding:
-                          EdgeInsetsDirectional.fromSTEB(0.0, 16.0, 0.0, 0.0),
+                          const EdgeInsetsDirectional.fromSTEB(0.0, 16.0, 0.0, 0.0),
                       child: Column(
                         mainAxisSize: MainAxisSize.max,
                         crossAxisAlignment: CrossAxisAlignment.start,
@@ -184,16 +179,16 @@ class _Onboarding1WidgetState extends State<Onboarding1Widget>
                               fit: BoxFit.contain,
                             ),
                           ),
-                        ].divide(SizedBox(height: 24.0)),
+                        ].divide(const SizedBox(height: 24.0)),
                       ),
                     ),
-                  ].addToEnd(SizedBox(height: 50.0)),
+                  ].addToEnd(const SizedBox(height: 50.0)),
                 ),
               ),
               Align(
-                alignment: AlignmentDirectional(0.0, 1.0),
+                alignment: const AlignmentDirectional(0.0, 1.0),
                 child: Padding(
-                  padding: EdgeInsetsDirectional.fromSTEB(20.0, 0.0, 20.0, 0.0),
+                  padding: const EdgeInsetsDirectional.fromSTEB(20.0, 0.0, 20.0, 0.0),
                   child: Row(
                     mainAxisSize: MainAxisSize.min,
                     crossAxisAlignment: CrossAxisAlignment.end,
@@ -204,7 +199,7 @@ class _Onboarding1WidgetState extends State<Onboarding1Widget>
                             context.pushNamed(
                               'Onboarding_2',
                               extra: <String, dynamic>{
-                                kTransitionInfoKey: TransitionInfo(
+                                kTransitionInfoKey: const TransitionInfo(
                                   hasTransition: true,
                                   transitionType:
                                       PageTransitionType.rightToLeft,
@@ -217,9 +212,9 @@ class _Onboarding1WidgetState extends State<Onboarding1Widget>
                           options: FFButtonOptions(
                             width: 200.0,
                             height: 44.0,
-                            padding: EdgeInsetsDirectional.fromSTEB(
+                            padding: const EdgeInsetsDirectional.fromSTEB(
                                 24.0, 0.0, 24.0, 0.0),
-                            iconPadding: EdgeInsetsDirectional.fromSTEB(
+                            iconPadding: const EdgeInsetsDirectional.fromSTEB(
                                 0.0, 0.0, 0.0, 0.0),
                             color: FlutterFlowTheme.of(context)
                                 .secondaryBackground,
@@ -249,7 +244,7 @@ class _Onboarding1WidgetState extends State<Onboarding1Widget>
                             context.pushNamed(
                               'Onboarding_2',
                               extra: <String, dynamic>{
-                                kTransitionInfoKey: TransitionInfo(
+                                kTransitionInfoKey: const TransitionInfo(
                                   hasTransition: true,
                                   transitionType:
                                       PageTransitionType.rightToLeft,
@@ -262,9 +257,9 @@ class _Onboarding1WidgetState extends State<Onboarding1Widget>
                           options: FFButtonOptions(
                             width: 200.0,
                             height: 44.0,
-                            padding: EdgeInsetsDirectional.fromSTEB(
+                            padding: const EdgeInsetsDirectional.fromSTEB(
                                 24.0, 0.0, 24.0, 0.0),
-                            iconPadding: EdgeInsetsDirectional.fromSTEB(
+                            iconPadding: const EdgeInsetsDirectional.fromSTEB(
                                 0.0, 0.0, 0.0, 0.0),
                             color: FlutterFlowTheme.of(context).primary,
                             textStyle: FlutterFlowTheme.of(context)
@@ -278,7 +273,7 @@ class _Onboarding1WidgetState extends State<Onboarding1Widget>
                                   fontWeight: FontWeight.bold,
                                 ),
                             elevation: 0.0,
-                            borderSide: BorderSide(
+                            borderSide: const BorderSide(
                               color: Colors.transparent,
                               width: 1.0,
                             ),
@@ -286,7 +281,7 @@ class _Onboarding1WidgetState extends State<Onboarding1Widget>
                           ),
                         ),
                       ),
-                    ].divide(SizedBox(width: 20.0)),
+                    ].divide(const SizedBox(width: 20.0)),
                   ),
                 ),
               ),

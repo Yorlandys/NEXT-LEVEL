@@ -1,8 +1,6 @@
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
-import 'package:provider/provider.dart';
 import 'custom_switch_model.dart';
 export 'custom_switch_model.dart';
 
@@ -65,7 +63,7 @@ class _CustomSwitchWidgetState extends State<CustomSwitchWidget> {
           borderRadius: BorderRadius.circular(50.0),
         ),
         child: Padding(
-          padding: EdgeInsets.all(4.0),
+          padding: const EdgeInsets.all(4.0),
           child: Row(
             mainAxisSize: MainAxisSize.max,
             children: [

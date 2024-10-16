@@ -1,12 +1,8 @@
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
-import '/flutter_flow/flutter_flow_widgets.dart';
 import 'package:carousel_slider/carousel_slider.dart';
-import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
 import 'package:percent_indicator/percent_indicator.dart';
-import 'package:provider/provider.dart';
 import 'achievements_model.dart';
 export 'achievements_model.dart';
 
@@ -51,7 +47,7 @@ class _AchievementsWidgetState extends State<AchievementsWidget> {
                   mainAxisSize: MainAxisSize.max,
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-                    Container(
+                    SizedBox(
                       height: 600.0,
                       child: Stack(
                         children: [
@@ -88,7 +84,7 @@ class _AchievementsWidgetState extends State<AchievementsWidget> {
                                           blurRadius: 60.0,
                                           color: FlutterFlowTheme.of(context)
                                               .primaryBackground2,
-                                          offset: Offset(
+                                          offset: const Offset(
                                             0.0,
                                             2.0,
                                           ),
@@ -104,14 +100,14 @@ class _AchievementsWidgetState extends State<AchievementsWidget> {
                           Container(
                             width: double.infinity,
                             height: double.infinity,
-                            decoration: BoxDecoration(
+                            decoration: const BoxDecoration(
                               color: Color(0xB3083168),
                             ),
                           ),
                         ],
                       ),
                     ),
-                  ].addToEnd(SizedBox(height: 32.0)),
+                  ].addToEnd(const SizedBox(height: 32.0)),
                 ),
               ),
               Column(
@@ -119,17 +115,17 @@ class _AchievementsWidgetState extends State<AchievementsWidget> {
                 children: [
                   Padding(
                     padding:
-                        EdgeInsetsDirectional.fromSTEB(16.0, 20.0, 16.0, 0.0),
+                        const EdgeInsetsDirectional.fromSTEB(16.0, 20.0, 16.0, 0.0),
                     child: Container(
                       height: 33.0,
-                      decoration: BoxDecoration(),
+                      decoration: const BoxDecoration(),
                       child: Row(
                         mainAxisSize: MainAxisSize.min,
                         mainAxisAlignment: MainAxisAlignment.center,
                         crossAxisAlignment: CrossAxisAlignment.center,
                         children: [
                           Align(
-                            alignment: AlignmentDirectional(-1.0, 0.0),
+                            alignment: const AlignmentDirectional(-1.0, 0.0),
                             child: InkWell(
                               splashColor: Colors.transparent,
                               focusColor: Colors.transparent,
@@ -141,12 +137,12 @@ class _AchievementsWidgetState extends State<AchievementsWidget> {
                               child: Container(
                                 width: 32.0,
                                 height: 32.0,
-                                decoration: BoxDecoration(
+                                decoration: const BoxDecoration(
                                   color: Color(0x67BDBDBD),
                                   shape: BoxShape.circle,
                                 ),
                                 child: Align(
-                                  alignment: AlignmentDirectional(0.0, 0.0),
+                                  alignment: const AlignmentDirectional(0.0, 0.0),
                                   child: Icon(
                                     FFIcons.kchevronLeft,
                                     color: FlutterFlowTheme.of(context).info,
@@ -158,9 +154,9 @@ class _AchievementsWidgetState extends State<AchievementsWidget> {
                           ),
                           Expanded(
                             child: Align(
-                              alignment: AlignmentDirectional(0.0, 0.0),
+                              alignment: const AlignmentDirectional(0.0, 0.0),
                               child: Padding(
-                                padding: EdgeInsetsDirectional.fromSTEB(
+                                padding: const EdgeInsetsDirectional.fromSTEB(
                                     0.0, 0.0, 32.0, 0.0),
                                 child: Text(
                                   'Achievements',
@@ -221,7 +217,7 @@ class _AchievementsWidgetState extends State<AchievementsWidget> {
                         width: 180.0,
                         height: 180.0,
                         clipBehavior: Clip.antiAlias,
-                        decoration: BoxDecoration(
+                        decoration: const BoxDecoration(
                           shape: BoxShape.circle,
                         ),
                         child: Image.network(
@@ -233,7 +229,7 @@ class _AchievementsWidgetState extends State<AchievementsWidget> {
                   ),
                   Padding(
                     padding:
-                        EdgeInsetsDirectional.fromSTEB(16.0, 80.0, 16.0, 0.0),
+                        const EdgeInsetsDirectional.fromSTEB(16.0, 80.0, 16.0, 0.0),
                     child: Column(
                       mainAxisSize: MainAxisSize.max,
                       children: [
@@ -243,7 +239,7 @@ class _AchievementsWidgetState extends State<AchievementsWidget> {
                           animation: true,
                           animateFromLastPercent: true,
                           progressColor: FlutterFlowTheme.of(context).primary,
-                          backgroundColor: Color(0xFF052146),
+                          backgroundColor: const Color(0xFF052146),
                           center: Text(
                             ' ',
                             style: FlutterFlowTheme.of(context)
@@ -253,7 +249,7 @@ class _AchievementsWidgetState extends State<AchievementsWidget> {
                                   letterSpacing: 0.0,
                                 ),
                           ),
-                          barRadius: Radius.circular(50.0),
+                          barRadius: const Radius.circular(50.0),
                           padding: EdgeInsets.zero,
                         ),
                         Text(
@@ -267,13 +263,13 @@ class _AchievementsWidgetState extends State<AchievementsWidget> {
                                     fontWeight: FontWeight.w600,
                                   ),
                         ),
-                      ].divide(SizedBox(height: 14.0)),
+                      ].divide(const SizedBox(height: 14.0)),
                     ),
                   ),
                   Expanded(
                     child: Padding(
                       padding:
-                          EdgeInsetsDirectional.fromSTEB(0.0, 80.0, 0.0, 0.0),
+                          const EdgeInsetsDirectional.fromSTEB(0.0, 80.0, 0.0, 0.0),
                       child: Column(
                         mainAxisSize: MainAxisSize.max,
                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -285,7 +281,7 @@ class _AchievementsWidgetState extends State<AchievementsWidget> {
                               borderRadius: BorderRadius.circular(50.0),
                             ),
                             child: Padding(
-                              padding: EdgeInsetsDirectional.fromSTEB(
+                              padding: const EdgeInsetsDirectional.fromSTEB(
                                   24.0, 0.0, 24.0, 0.0),
                               child: Row(
                                 mainAxisSize: MainAxisSize.min,
@@ -309,11 +305,11 @@ class _AchievementsWidgetState extends State<AchievementsWidget> {
                                           fontWeight: FontWeight.bold,
                                         ),
                                   ),
-                                ].divide(SizedBox(width: 12.0)),
+                                ].divide(const SizedBox(width: 12.0)),
                               ),
                             ),
                           ),
-                          Container(
+                          SizedBox(
                             width: double.infinity,
                             height: 80.0,
                             child: CarouselSlider(

@@ -3,8 +3,6 @@ import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import '/flutter_flow/flutter_flow_widgets.dart';
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
-import 'package:provider/provider.dart';
 import 'workout_feedback_model.dart';
 export 'workout_feedback_model.dart';
 
@@ -50,7 +48,7 @@ class _WorkoutFeedbackWidgetState extends State<WorkoutFeedbackWidget> {
                 children: [
                   Padding(
                     padding:
-                        EdgeInsetsDirectional.fromSTEB(16.0, 0.0, 16.0, 0.0),
+                        const EdgeInsetsDirectional.fromSTEB(16.0, 0.0, 16.0, 0.0),
                     child: Column(
                       mainAxisSize: MainAxisSize.max,
                       children: [
@@ -87,17 +85,17 @@ class _WorkoutFeedbackWidgetState extends State<WorkoutFeedbackWidget> {
                                         letterSpacing: 0.0,
                                       ),
                                 ),
-                              ].divide(SizedBox(height: 16.0)),
+                              ].divide(const SizedBox(height: 16.0)),
                             ),
-                          ].divide(SizedBox(height: 16.0)),
+                          ].divide(const SizedBox(height: 16.0)),
                         ),
-                      ].divide(SizedBox(height: 24.0)),
+                      ].divide(const SizedBox(height: 24.0)),
                     ),
                   ),
                   Expanded(
                     child: Padding(
                       padding:
-                          EdgeInsetsDirectional.fromSTEB(16.0, 0.0, 16.0, 0.0),
+                          const EdgeInsetsDirectional.fromSTEB(16.0, 0.0, 16.0, 0.0),
                       child: SingleChildScrollView(
                         child: Column(
                           mainAxisSize: MainAxisSize.max,
@@ -131,7 +129,7 @@ class _WorkoutFeedbackWidgetState extends State<WorkoutFeedbackWidget> {
                                   ),
                                 ),
                                 child: Padding(
-                                  padding: EdgeInsetsDirectional.fromSTEB(
+                                  padding: const EdgeInsetsDirectional.fromSTEB(
                                       12.0, 0.0, 12.0, 0.0),
                                   child: Row(
                                     mainAxisSize: MainAxisSize.max,
@@ -161,7 +159,7 @@ class _WorkoutFeedbackWidgetState extends State<WorkoutFeedbackWidget> {
                                                   fontWeight: FontWeight.w500,
                                                 ),
                                           ),
-                                        ].divide(SizedBox(width: 16.0)),
+                                        ].divide(const SizedBox(width: 16.0)),
                                       ),
                                       if (_model.select == 'Too easy')
                                         Container(
@@ -174,7 +172,7 @@ class _WorkoutFeedbackWidgetState extends State<WorkoutFeedbackWidget> {
                                           ),
                                           child: Align(
                                             alignment:
-                                                AlignmentDirectional(0.0, 0.0),
+                                                const AlignmentDirectional(0.0, 0.0),
                                             child: Icon(
                                               FFIcons.kcheck,
                                               color:
@@ -184,7 +182,7 @@ class _WorkoutFeedbackWidgetState extends State<WorkoutFeedbackWidget> {
                                             ),
                                           ),
                                         ),
-                                    ].divide(SizedBox(width: 16.0)),
+                                    ].divide(const SizedBox(width: 16.0)),
                                   ),
                                 ),
                               ),
@@ -218,7 +216,7 @@ class _WorkoutFeedbackWidgetState extends State<WorkoutFeedbackWidget> {
                                   ),
                                 ),
                                 child: Padding(
-                                  padding: EdgeInsetsDirectional.fromSTEB(
+                                  padding: const EdgeInsetsDirectional.fromSTEB(
                                       12.0, 0.0, 12.0, 0.0),
                                   child: Row(
                                     mainAxisSize: MainAxisSize.max,
@@ -248,7 +246,7 @@ class _WorkoutFeedbackWidgetState extends State<WorkoutFeedbackWidget> {
                                                   fontWeight: FontWeight.w500,
                                                 ),
                                           ),
-                                        ].divide(SizedBox(width: 16.0)),
+                                        ].divide(const SizedBox(width: 16.0)),
                                       ),
                                       if (_model.select == 'Too hard')
                                         Container(
@@ -261,7 +259,7 @@ class _WorkoutFeedbackWidgetState extends State<WorkoutFeedbackWidget> {
                                           ),
                                           child: Align(
                                             alignment:
-                                                AlignmentDirectional(0.0, 0.0),
+                                                const AlignmentDirectional(0.0, 0.0),
                                             child: Icon(
                                               FFIcons.kcheck,
                                               color:
@@ -271,7 +269,7 @@ class _WorkoutFeedbackWidgetState extends State<WorkoutFeedbackWidget> {
                                             ),
                                           ),
                                         ),
-                                    ].divide(SizedBox(width: 16.0)),
+                                    ].divide(const SizedBox(width: 16.0)),
                                   ),
                                 ),
                               ),
@@ -305,7 +303,7 @@ class _WorkoutFeedbackWidgetState extends State<WorkoutFeedbackWidget> {
                                   ),
                                 ),
                                 child: Padding(
-                                  padding: EdgeInsetsDirectional.fromSTEB(
+                                  padding: const EdgeInsetsDirectional.fromSTEB(
                                       12.0, 0.0, 12.0, 0.0),
                                   child: Row(
                                     mainAxisSize: MainAxisSize.max,
@@ -335,7 +333,7 @@ class _WorkoutFeedbackWidgetState extends State<WorkoutFeedbackWidget> {
                                                   fontWeight: FontWeight.w500,
                                                 ),
                                           ),
-                                        ].divide(SizedBox(width: 16.0)),
+                                        ].divide(const SizedBox(width: 16.0)),
                                       ),
                                       if (_model.select == 'Not enough time')
                                         Container(
@@ -348,7 +346,7 @@ class _WorkoutFeedbackWidgetState extends State<WorkoutFeedbackWidget> {
                                           ),
                                           child: Align(
                                             alignment:
-                                                AlignmentDirectional(0.0, 0.0),
+                                                const AlignmentDirectional(0.0, 0.0),
                                             child: Icon(
                                               FFIcons.kcheck,
                                               color:
@@ -358,7 +356,7 @@ class _WorkoutFeedbackWidgetState extends State<WorkoutFeedbackWidget> {
                                             ),
                                           ),
                                         ),
-                                    ].divide(SizedBox(width: 16.0)),
+                                    ].divide(const SizedBox(width: 16.0)),
                                   ),
                                 ),
                               ),
@@ -392,7 +390,7 @@ class _WorkoutFeedbackWidgetState extends State<WorkoutFeedbackWidget> {
                                   ),
                                 ),
                                 child: Padding(
-                                  padding: EdgeInsetsDirectional.fromSTEB(
+                                  padding: const EdgeInsetsDirectional.fromSTEB(
                                       12.0, 0.0, 12.0, 0.0),
                                   child: Row(
                                     mainAxisSize: MainAxisSize.max,
@@ -422,7 +420,7 @@ class _WorkoutFeedbackWidgetState extends State<WorkoutFeedbackWidget> {
                                                   fontWeight: FontWeight.w500,
                                                 ),
                                           ),
-                                        ].divide(SizedBox(width: 16.0)),
+                                        ].divide(const SizedBox(width: 16.0)),
                                       ),
                                       if (_model.select == 'Other reason')
                                         Container(
@@ -435,7 +433,7 @@ class _WorkoutFeedbackWidgetState extends State<WorkoutFeedbackWidget> {
                                           ),
                                           child: Align(
                                             alignment:
-                                                AlignmentDirectional(0.0, 0.0),
+                                                const AlignmentDirectional(0.0, 0.0),
                                             child: Icon(
                                               FFIcons.kcheck,
                                               color:
@@ -445,19 +443,19 @@ class _WorkoutFeedbackWidgetState extends State<WorkoutFeedbackWidget> {
                                             ),
                                           ),
                                         ),
-                                    ].divide(SizedBox(width: 16.0)),
+                                    ].divide(const SizedBox(width: 16.0)),
                                   ),
                                 ),
                               ),
                             ),
-                          ].divide(SizedBox(height: 12.0)),
+                          ].divide(const SizedBox(height: 12.0)),
                         ),
                       ),
                     ),
                   ),
                   Padding(
                     padding:
-                        EdgeInsetsDirectional.fromSTEB(16.0, 0.0, 16.0, 0.0),
+                        const EdgeInsetsDirectional.fromSTEB(16.0, 0.0, 16.0, 0.0),
                     child: Builder(
                       builder: (context) {
                         if (valueOrDefault<bool>(
@@ -485,7 +483,7 @@ class _WorkoutFeedbackWidgetState extends State<WorkoutFeedbackWidget> {
                               context.pushNamed(
                                 'Workouts',
                                 extra: <String, dynamic>{
-                                  kTransitionInfoKey: TransitionInfo(
+                                  kTransitionInfoKey: const TransitionInfo(
                                     hasTransition: true,
                                     transitionType:
                                         PageTransitionType.leftToRight,
@@ -497,7 +495,7 @@ class _WorkoutFeedbackWidgetState extends State<WorkoutFeedbackWidget> {
                             child: wrapWithModel(
                               model: _model.customButtonModel,
                               updateCallback: () => safeSetState(() {}),
-                              child: CustomButtonWidget(
+                              child: const CustomButtonWidget(
                                 title: 'Save',
                               ),
                             ),
@@ -511,9 +509,9 @@ class _WorkoutFeedbackWidgetState extends State<WorkoutFeedbackWidget> {
                             options: FFButtonOptions(
                               width: double.infinity,
                               height: 44.0,
-                              padding: EdgeInsetsDirectional.fromSTEB(
+                              padding: const EdgeInsetsDirectional.fromSTEB(
                                   24.0, 0.0, 24.0, 0.0),
-                              iconPadding: EdgeInsetsDirectional.fromSTEB(
+                              iconPadding: const EdgeInsetsDirectional.fromSTEB(
                                   0.0, 0.0, 0.0, 0.0),
                               color: Colors.transparent,
                               textStyle: FlutterFlowTheme.of(context)
@@ -524,7 +522,7 @@ class _WorkoutFeedbackWidgetState extends State<WorkoutFeedbackWidget> {
                                     letterSpacing: 0.0,
                                   ),
                               elevation: 0.0,
-                              borderSide: BorderSide(
+                              borderSide: const BorderSide(
                                 color: Color(0xFF0E448B),
                                 width: 1.5,
                               ),
@@ -536,9 +534,9 @@ class _WorkoutFeedbackWidgetState extends State<WorkoutFeedbackWidget> {
                     ),
                   ),
                 ]
-                    .divide(SizedBox(height: 60.0))
-                    .addToStart(SizedBox(height: 60.0))
-                    .addToEnd(SizedBox(height: 24.0)),
+                    .divide(const SizedBox(height: 60.0))
+                    .addToStart(const SizedBox(height: 60.0))
+                    .addToEnd(const SizedBox(height: 24.0)),
               ),
               Row(
                 mainAxisSize: MainAxisSize.max,
@@ -546,7 +544,7 @@ class _WorkoutFeedbackWidgetState extends State<WorkoutFeedbackWidget> {
                 children: [
                   Padding(
                     padding:
-                        EdgeInsetsDirectional.fromSTEB(16.0, 0.0, 0.0, 0.0),
+                        const EdgeInsetsDirectional.fromSTEB(16.0, 0.0, 0.0, 0.0),
                     child: InkWell(
                       splashColor: Colors.transparent,
                       focusColor: Colors.transparent,
@@ -556,7 +554,7 @@ class _WorkoutFeedbackWidgetState extends State<WorkoutFeedbackWidget> {
                         context.pushNamed(
                           'Workouts',
                           extra: <String, dynamic>{
-                            kTransitionInfoKey: TransitionInfo(
+                            kTransitionInfoKey: const TransitionInfo(
                               hasTransition: true,
                               transitionType: PageTransitionType.leftToRight,
                               duration: Duration(milliseconds: 200),
@@ -567,12 +565,12 @@ class _WorkoutFeedbackWidgetState extends State<WorkoutFeedbackWidget> {
                       child: Container(
                         width: 32.0,
                         height: 32.0,
-                        decoration: BoxDecoration(
+                        decoration: const BoxDecoration(
                           color: Color(0x67BDBDBD),
                           shape: BoxShape.circle,
                         ),
                         child: Align(
-                          alignment: AlignmentDirectional(0.0, 0.0),
+                          alignment: const AlignmentDirectional(0.0, 0.0),
                           child: Icon(
                             FFIcons.kx,
                             color: FlutterFlowTheme.of(context).info,
@@ -582,7 +580,7 @@ class _WorkoutFeedbackWidgetState extends State<WorkoutFeedbackWidget> {
                       ),
                     ),
                   ),
-                ].addToEnd(SizedBox(width: 36.0)),
+                ].addToEnd(const SizedBox(width: 36.0)),
               ),
             ],
           ),

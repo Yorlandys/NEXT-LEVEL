@@ -10,11 +10,8 @@ import '/components/user_review_card/user_review_card_widget.dart';
 import '/components/warmup_card/warmup_card_widget.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
-import '/flutter_flow/flutter_flow_widgets.dart';
-import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:provider/provider.dart';
 import 'about_workout_model.dart';
 export 'about_workout_model.dart';
 
@@ -61,13 +58,13 @@ class _AboutWorkoutWidgetState extends State<AboutWorkoutWidget> {
                   children: [
                     Container(
                       height: 420.0,
-                      decoration: BoxDecoration(),
+                      decoration: const BoxDecoration(),
                       child: Stack(
                         children: [
                           ClipRRect(
                             child: Container(
                               height: 420.0,
-                              decoration: BoxDecoration(),
+                              decoration: const BoxDecoration(),
                               child: Column(
                                 mainAxisSize: MainAxisSize.max,
                                 children: [
@@ -88,7 +85,7 @@ class _AboutWorkoutWidgetState extends State<AboutWorkoutWidget> {
                                           blurRadius: 40.0,
                                           color: FlutterFlowTheme.of(context)
                                               .primaryBackground2,
-                                          offset: Offset(
+                                          offset: const Offset(
                                             0.0,
                                             2.0,
                                           ),
@@ -102,7 +99,7 @@ class _AboutWorkoutWidgetState extends State<AboutWorkoutWidget> {
                             ),
                           ),
                           Align(
-                            alignment: AlignmentDirectional(0.0, 1.0),
+                            alignment: const AlignmentDirectional(0.0, 1.0),
                             child: Column(
                               mainAxisSize: MainAxisSize.min,
                               children: [
@@ -113,7 +110,7 @@ class _AboutWorkoutWidgetState extends State<AboutWorkoutWidget> {
                                     borderRadius: BorderRadius.circular(8.0),
                                   ),
                                   child: Padding(
-                                    padding: EdgeInsetsDirectional.fromSTEB(
+                                    padding: const EdgeInsetsDirectional.fromSTEB(
                                         8.0, 0.0, 8.0, 0.0),
                                     child: Row(
                                       mainAxisSize: MainAxisSize.min,
@@ -147,7 +144,7 @@ class _AboutWorkoutWidgetState extends State<AboutWorkoutWidget> {
                                       ),
                                 ),
                                 Padding(
-                                  padding: EdgeInsetsDirectional.fromSTEB(
+                                  padding: const EdgeInsetsDirectional.fromSTEB(
                                       0.0, 0.0, 0.0, 6.0),
                                   child: Row(
                                     mainAxisSize: MainAxisSize.max,
@@ -157,7 +154,7 @@ class _AboutWorkoutWidgetState extends State<AboutWorkoutWidget> {
                                         children: [
                                           Align(
                                             alignment:
-                                                AlignmentDirectional(0.0, 0.0),
+                                                const AlignmentDirectional(0.0, 0.0),
                                             child: Container(
                                               width: 30.0,
                                               height: 30.0,
@@ -177,7 +174,7 @@ class _AboutWorkoutWidgetState extends State<AboutWorkoutWidget> {
                                                 width: 120.0,
                                                 height: 120.0,
                                                 clipBehavior: Clip.antiAlias,
-                                                decoration: BoxDecoration(
+                                                decoration: const BoxDecoration(
                                                   shape: BoxShape.circle,
                                                 ),
                                                 child: Image.network(
@@ -189,9 +186,9 @@ class _AboutWorkoutWidgetState extends State<AboutWorkoutWidget> {
                                           ),
                                           Align(
                                             alignment:
-                                                AlignmentDirectional(0.0, 0.0),
+                                                const AlignmentDirectional(0.0, 0.0),
                                             child: Padding(
-                                              padding: EdgeInsetsDirectional
+                                              padding: const EdgeInsetsDirectional
                                                   .fromSTEB(
                                                       20.0, 0.0, 0.0, 0.0),
                                               child: Container(
@@ -213,7 +210,7 @@ class _AboutWorkoutWidgetState extends State<AboutWorkoutWidget> {
                                                   width: 120.0,
                                                   height: 120.0,
                                                   clipBehavior: Clip.antiAlias,
-                                                  decoration: BoxDecoration(
+                                                  decoration: const BoxDecoration(
                                                     shape: BoxShape.circle,
                                                   ),
                                                   child: Image.network(
@@ -226,9 +223,9 @@ class _AboutWorkoutWidgetState extends State<AboutWorkoutWidget> {
                                           ),
                                           Align(
                                             alignment:
-                                                AlignmentDirectional(0.0, 0.0),
+                                                const AlignmentDirectional(0.0, 0.0),
                                             child: Padding(
-                                              padding: EdgeInsetsDirectional
+                                              padding: const EdgeInsetsDirectional
                                                   .fromSTEB(
                                                       40.0, 0.0, 0.0, 0.0),
                                               child: Container(
@@ -267,11 +264,11 @@ class _AboutWorkoutWidgetState extends State<AboutWorkoutWidget> {
                                                       ),
                                                       child: Align(
                                                         alignment:
-                                                            AlignmentDirectional(
+                                                            const AlignmentDirectional(
                                                                 0.0, 0.0),
                                                         child: Padding(
                                                           padding:
-                                                              EdgeInsetsDirectional
+                                                              const EdgeInsetsDirectional
                                                                   .fromSTEB(
                                                                       8.0,
                                                                       0.0,
@@ -318,11 +315,11 @@ class _AboutWorkoutWidgetState extends State<AboutWorkoutWidget> {
                                               fontWeight: FontWeight.w500,
                                             ),
                                       ),
-                                    ].divide(SizedBox(width: 12.0)),
+                                    ].divide(const SizedBox(width: 12.0)),
                                   ),
                                 ),
                                 Padding(
-                                  padding: EdgeInsetsDirectional.fromSTEB(
+                                  padding: const EdgeInsetsDirectional.fromSTEB(
                                       16.0, 0.0, 16.0, 0.0),
                                   child: Row(
                                     mainAxisSize: MainAxisSize.max,
@@ -339,7 +336,7 @@ class _AboutWorkoutWidgetState extends State<AboutWorkoutWidget> {
                                           ),
                                           child: Padding(
                                             padding:
-                                                EdgeInsetsDirectional.fromSTEB(
+                                                const EdgeInsetsDirectional.fromSTEB(
                                                     12.0, 0.0, 12.0, 0.0),
                                             child: Column(
                                               mainAxisSize: MainAxisSize.max,
@@ -394,7 +391,7 @@ class _AboutWorkoutWidgetState extends State<AboutWorkoutWidget> {
                                                       ),
                                                     ),
                                                   ].divide(
-                                                      SizedBox(width: 3.0)),
+                                                      const SizedBox(width: 3.0)),
                                                 ),
                                                 Text(
                                                   'Cardio',
@@ -413,7 +410,7 @@ class _AboutWorkoutWidgetState extends State<AboutWorkoutWidget> {
                                                             FontWeight.w500,
                                                       ),
                                                 ),
-                                              ].divide(SizedBox(height: 6.0)),
+                                              ].divide(const SizedBox(height: 6.0)),
                                             ),
                                           ),
                                         ),
@@ -430,7 +427,7 @@ class _AboutWorkoutWidgetState extends State<AboutWorkoutWidget> {
                                           ),
                                           child: Padding(
                                             padding:
-                                                EdgeInsetsDirectional.fromSTEB(
+                                                const EdgeInsetsDirectional.fromSTEB(
                                                     12.0, 0.0, 12.0, 0.0),
                                             child: Column(
                                               mainAxisSize: MainAxisSize.max,
@@ -485,7 +482,7 @@ class _AboutWorkoutWidgetState extends State<AboutWorkoutWidget> {
                                                       ),
                                                     ),
                                                   ].divide(
-                                                      SizedBox(width: 3.0)),
+                                                      const SizedBox(width: 3.0)),
                                                 ),
                                                 Text(
                                                   'Strength',
@@ -504,7 +501,7 @@ class _AboutWorkoutWidgetState extends State<AboutWorkoutWidget> {
                                                             FontWeight.w500,
                                                       ),
                                                 ),
-                                              ].divide(SizedBox(height: 6.0)),
+                                              ].divide(const SizedBox(height: 6.0)),
                                             ),
                                           ),
                                         ),
@@ -521,7 +518,7 @@ class _AboutWorkoutWidgetState extends State<AboutWorkoutWidget> {
                                           ),
                                           child: Padding(
                                             padding:
-                                                EdgeInsetsDirectional.fromSTEB(
+                                                const EdgeInsetsDirectional.fromSTEB(
                                                     12.0, 0.0, 12.0, 0.0),
                                             child: Column(
                                               mainAxisSize: MainAxisSize.max,
@@ -562,17 +559,17 @@ class _AboutWorkoutWidgetState extends State<AboutWorkoutWidget> {
                                                             FontWeight.w500,
                                                       ),
                                                 ),
-                                              ].divide(SizedBox(height: 6.0)),
+                                              ].divide(const SizedBox(height: 6.0)),
                                             ),
                                           ),
                                         ),
                                       ),
-                                    ].divide(SizedBox(width: 8.0)),
+                                    ].divide(const SizedBox(width: 8.0)),
                                   ),
                                 ),
                               ]
-                                  .divide(SizedBox(height: 16.0))
-                                  .addToEnd(SizedBox(height: 24.0)),
+                                  .divide(const SizedBox(height: 16.0))
+                                  .addToEnd(const SizedBox(height: 24.0)),
                             ),
                           ),
                         ],
@@ -580,45 +577,45 @@ class _AboutWorkoutWidgetState extends State<AboutWorkoutWidget> {
                     ),
                     Padding(
                       padding:
-                          EdgeInsetsDirectional.fromSTEB(16.0, 0.0, 16.0, 0.0),
+                          const EdgeInsetsDirectional.fromSTEB(16.0, 0.0, 16.0, 0.0),
                       child: Column(
                         mainAxisSize: MainAxisSize.max,
                         children: [
                           wrapWithModel(
                             model: _model.aboutContentModel1,
                             updateCallback: () => safeSetState(() {}),
-                            child: AboutContentWidget(
+                            child: const AboutContentWidget(
                               title: 'Your Goal: Gain muscle',
                             ),
                           ),
                           wrapWithModel(
                             model: _model.aboutContentModel2,
                             updateCallback: () => safeSetState(() {}),
-                            child: AboutContentWidget(
+                            child: const AboutContentWidget(
                               title: 'Build muscle effectively',
                             ),
                           ),
                           wrapWithModel(
                             model: _model.aboutContentModel3,
                             updateCallback: () => safeSetState(() {}),
-                            child: AboutContentWidget(
+                            child: const AboutContentWidget(
                               title: 'Build functional strenght',
                             ),
                           ),
                           wrapWithModel(
                             model: _model.aboutContentModel4,
                             updateCallback: () => safeSetState(() {}),
-                            child: AboutContentWidget(
+                            child: const AboutContentWidget(
                               title:
                                   'Build discipline, look better, feel stronger',
                             ),
                           ),
-                        ].divide(SizedBox(height: 16.0)),
+                        ].divide(const SizedBox(height: 16.0)),
                       ),
                     ),
                     Padding(
                       padding:
-                          EdgeInsetsDirectional.fromSTEB(16.0, 24.0, 16.0, 0.0),
+                          const EdgeInsetsDirectional.fromSTEB(16.0, 24.0, 16.0, 0.0),
                       child: Container(
                         width: double.infinity,
                         decoration: BoxDecoration(
@@ -627,13 +624,13 @@ class _AboutWorkoutWidgetState extends State<AboutWorkoutWidget> {
                           borderRadius: BorderRadius.circular(12.0),
                         ),
                         child: Padding(
-                          padding: EdgeInsetsDirectional.fromSTEB(
+                          padding: const EdgeInsetsDirectional.fromSTEB(
                               0.0, 20.0, 0.0, 16.0),
                           child: Column(
                             mainAxisSize: MainAxisSize.max,
                             children: [
                               Padding(
-                                padding: EdgeInsetsDirectional.fromSTEB(
+                                padding: const EdgeInsetsDirectional.fromSTEB(
                                     0.0, 0.0, 0.0, 8.0),
                                 child: Text(
                                   'Your progress forecast',
@@ -657,19 +654,19 @@ class _AboutWorkoutWidgetState extends State<AboutWorkoutWidget> {
                                 ),
                               ),
                               Padding(
-                                padding: EdgeInsetsDirectional.fromSTEB(
+                                padding: const EdgeInsetsDirectional.fromSTEB(
                                     16.0, 4.0, 14.0, 0.0),
                                 child: Row(
                                   mainAxisSize: MainAxisSize.max,
                                   mainAxisAlignment:
                                       MainAxisAlignment.spaceBetween,
                                   children: [
-                                    Icon(
+                                    const Icon(
                                       FFIcons.kclipboardCheck,
                                       color: Color(0xFFFD0672),
                                       size: 20.0,
                                     ),
-                                    Padding(
+                                    const Padding(
                                       padding: EdgeInsetsDirectional.fromSTEB(
                                           54.0, 0.0, 0.0, 0.0),
                                       child: Icon(
@@ -678,7 +675,7 @@ class _AboutWorkoutWidgetState extends State<AboutWorkoutWidget> {
                                         size: 20.0,
                                       ),
                                     ),
-                                    Padding(
+                                    const Padding(
                                       padding: EdgeInsetsDirectional.fromSTEB(
                                           40.0, 0.0, 0.0, 0.0),
                                       child: Icon(
@@ -697,7 +694,7 @@ class _AboutWorkoutWidgetState extends State<AboutWorkoutWidget> {
                                 ),
                               ),
                               Padding(
-                                padding: EdgeInsetsDirectional.fromSTEB(
+                                padding: const EdgeInsetsDirectional.fromSTEB(
                                     0.0, 16.0, 0.0, 0.0),
                                 child: RichText(
                                   textScaler: MediaQuery.of(context).textScaler,
@@ -748,13 +745,13 @@ class _AboutWorkoutWidgetState extends State<AboutWorkoutWidget> {
                     ),
                     Padding(
                       padding:
-                          EdgeInsetsDirectional.fromSTEB(0.0, 24.0, 0.0, 0.0),
+                          const EdgeInsetsDirectional.fromSTEB(0.0, 24.0, 0.0, 0.0),
                       child: Column(
                         mainAxisSize: MainAxisSize.max,
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
                           Padding(
-                            padding: EdgeInsetsDirectional.fromSTEB(
+                            padding: const EdgeInsetsDirectional.fromSTEB(
                                 16.0, 0.0, 0.0, 0.0),
                             child: Text(
                               'How?',
@@ -827,17 +824,17 @@ class _AboutWorkoutWidgetState extends State<AboutWorkoutWidget> {
                                   ),
                                 ),
                               ]
-                                  .divide(SizedBox(width: 8.0))
-                                  .addToStart(SizedBox(width: 16.0))
-                                  .addToEnd(SizedBox(width: 16.0)),
+                                  .divide(const SizedBox(width: 8.0))
+                                  .addToStart(const SizedBox(width: 16.0))
+                                  .addToEnd(const SizedBox(width: 16.0)),
                             ),
                           ),
-                        ].divide(SizedBox(height: 12.0)),
+                        ].divide(const SizedBox(height: 12.0)),
                       ),
                     ),
                     Padding(
                       padding:
-                          EdgeInsetsDirectional.fromSTEB(16.0, 24.0, 16.0, 0.0),
+                          const EdgeInsetsDirectional.fromSTEB(16.0, 24.0, 16.0, 0.0),
                       child: Column(
                         mainAxisSize: MainAxisSize.max,
                         crossAxisAlignment: CrossAxisAlignment.start,
@@ -871,7 +868,7 @@ class _AboutWorkoutWidgetState extends State<AboutWorkoutWidget> {
                                 borderRadius: BorderRadius.circular(10.0),
                               ),
                               child: Padding(
-                                padding: EdgeInsets.all(20.0),
+                                padding: const EdgeInsets.all(20.0),
                                 child: Column(
                                   mainAxisSize: MainAxisSize.max,
                                   crossAxisAlignment: CrossAxisAlignment.start,
@@ -891,7 +888,7 @@ class _AboutWorkoutWidgetState extends State<AboutWorkoutWidget> {
                                           ),
                                           child: Padding(
                                             padding:
-                                                EdgeInsetsDirectional.fromSTEB(
+                                                const EdgeInsetsDirectional.fromSTEB(
                                                     8.0, 0.0, 8.0, 0.0),
                                             child: Row(
                                               mainAxisSize: MainAxisSize.min,
@@ -938,7 +935,7 @@ class _AboutWorkoutWidgetState extends State<AboutWorkoutWidget> {
                                       ],
                                     ),
                                     Padding(
-                                      padding: EdgeInsetsDirectional.fromSTEB(
+                                      padding: const EdgeInsetsDirectional.fromSTEB(
                                           0.0, 14.0, 0.0, 0.0),
                                       child: Row(
                                         mainAxisSize: MainAxisSize.max,
@@ -963,11 +960,11 @@ class _AboutWorkoutWidgetState extends State<AboutWorkoutWidget> {
                                                   fontWeight: FontWeight.w600,
                                                 ),
                                           ),
-                                        ].divide(SizedBox(width: 12.0)),
+                                        ].divide(const SizedBox(width: 12.0)),
                                       ),
                                     ),
                                     Padding(
-                                      padding: EdgeInsetsDirectional.fromSTEB(
+                                      padding: const EdgeInsetsDirectional.fromSTEB(
                                           0.0, 14.0, 0.0, 0.0),
                                       child: Text(
                                         'The coach will test your performance to build the\nperfect training plan',
@@ -985,7 +982,7 @@ class _AboutWorkoutWidgetState extends State<AboutWorkoutWidget> {
                                     ),
                                     if (_model.plan == 'Assessment Week')
                                       Padding(
-                                        padding: EdgeInsetsDirectional.fromSTEB(
+                                        padding: const EdgeInsetsDirectional.fromSTEB(
                                             0.0, 14.0, 0.0, 0.0),
                                         child: Row(
                                           mainAxisSize: MainAxisSize.max,
@@ -1026,7 +1023,7 @@ class _AboutWorkoutWidgetState extends State<AboutWorkoutWidget> {
                                                 ),
                                               ),
                                             ),
-                                          ].divide(SizedBox(width: 8.0)),
+                                          ].divide(const SizedBox(width: 8.0)),
                                         ),
                                       ),
                                   ],
@@ -1051,7 +1048,7 @@ class _AboutWorkoutWidgetState extends State<AboutWorkoutWidget> {
                                 borderRadius: BorderRadius.circular(10.0),
                               ),
                               child: Padding(
-                                padding: EdgeInsets.all(20.0),
+                                padding: const EdgeInsets.all(20.0),
                                 child: Column(
                                   mainAxisSize: MainAxisSize.max,
                                   crossAxisAlignment: CrossAxisAlignment.start,
@@ -1071,7 +1068,7 @@ class _AboutWorkoutWidgetState extends State<AboutWorkoutWidget> {
                                           ),
                                           child: Padding(
                                             padding:
-                                                EdgeInsetsDirectional.fromSTEB(
+                                                const EdgeInsetsDirectional.fromSTEB(
                                                     8.0, 0.0, 8.0, 0.0),
                                             child: Row(
                                               mainAxisSize: MainAxisSize.min,
@@ -1117,7 +1114,7 @@ class _AboutWorkoutWidgetState extends State<AboutWorkoutWidget> {
                                       ],
                                     ),
                                     Padding(
-                                      padding: EdgeInsetsDirectional.fromSTEB(
+                                      padding: const EdgeInsetsDirectional.fromSTEB(
                                           0.0, 14.0, 0.0, 0.0),
                                       child: Row(
                                         mainAxisSize: MainAxisSize.max,
@@ -1142,11 +1139,11 @@ class _AboutWorkoutWidgetState extends State<AboutWorkoutWidget> {
                                                   fontWeight: FontWeight.w600,
                                                 ),
                                           ),
-                                        ].divide(SizedBox(width: 12.0)),
+                                        ].divide(const SizedBox(width: 12.0)),
                                       ),
                                     ),
                                     Padding(
-                                      padding: EdgeInsetsDirectional.fromSTEB(
+                                      padding: const EdgeInsetsDirectional.fromSTEB(
                                           0.0, 14.0, 0.0, 0.0),
                                       child: Text(
                                         'Fully personalized training based on your\nperfomance',
@@ -1164,7 +1161,7 @@ class _AboutWorkoutWidgetState extends State<AboutWorkoutWidget> {
                                     ),
                                     if (_model.plan == 'Main Part')
                                       Padding(
-                                        padding: EdgeInsetsDirectional.fromSTEB(
+                                        padding: const EdgeInsetsDirectional.fromSTEB(
                                             0.0, 14.0, 0.0, 0.0),
                                         child: Row(
                                           mainAxisSize: MainAxisSize.max,
@@ -1205,7 +1202,7 @@ class _AboutWorkoutWidgetState extends State<AboutWorkoutWidget> {
                                                 ),
                                               ),
                                             ),
-                                          ].divide(SizedBox(width: 8.0)),
+                                          ].divide(const SizedBox(width: 8.0)),
                                         ),
                                       ),
                                   ],
@@ -1230,7 +1227,7 @@ class _AboutWorkoutWidgetState extends State<AboutWorkoutWidget> {
                                 borderRadius: BorderRadius.circular(10.0),
                               ),
                               child: Padding(
-                                padding: EdgeInsets.all(20.0),
+                                padding: const EdgeInsets.all(20.0),
                                 child: Column(
                                   mainAxisSize: MainAxisSize.max,
                                   crossAxisAlignment: CrossAxisAlignment.start,
@@ -1250,7 +1247,7 @@ class _AboutWorkoutWidgetState extends State<AboutWorkoutWidget> {
                                           ),
                                           child: Padding(
                                             padding:
-                                                EdgeInsetsDirectional.fromSTEB(
+                                                const EdgeInsetsDirectional.fromSTEB(
                                                     8.0, 0.0, 8.0, 0.0),
                                             child: Row(
                                               mainAxisSize: MainAxisSize.min,
@@ -1296,7 +1293,7 @@ class _AboutWorkoutWidgetState extends State<AboutWorkoutWidget> {
                                       ],
                                     ),
                                     Padding(
-                                      padding: EdgeInsetsDirectional.fromSTEB(
+                                      padding: const EdgeInsetsDirectional.fromSTEB(
                                           0.0, 14.0, 0.0, 0.0),
                                       child: Row(
                                         mainAxisSize: MainAxisSize.max,
@@ -1321,11 +1318,11 @@ class _AboutWorkoutWidgetState extends State<AboutWorkoutWidget> {
                                                   fontWeight: FontWeight.w600,
                                                 ),
                                           ),
-                                        ].divide(SizedBox(width: 12.0)),
+                                        ].divide(const SizedBox(width: 12.0)),
                                       ),
                                     ),
                                     Padding(
-                                      padding: EdgeInsetsDirectional.fromSTEB(
+                                      padding: const EdgeInsetsDirectional.fromSTEB(
                                           0.0, 14.0, 0.0, 0.0),
                                       child: Text(
                                         'Prepare the body for the increased demand in\nthe next week',
@@ -1343,7 +1340,7 @@ class _AboutWorkoutWidgetState extends State<AboutWorkoutWidget> {
                                     ),
                                     if (_model.plan == 'Deload Week')
                                       Padding(
-                                        padding: EdgeInsetsDirectional.fromSTEB(
+                                        padding: const EdgeInsetsDirectional.fromSTEB(
                                             0.0, 14.0, 0.0, 0.0),
                                         child: Row(
                                           mainAxisSize: MainAxisSize.max,
@@ -1384,7 +1381,7 @@ class _AboutWorkoutWidgetState extends State<AboutWorkoutWidget> {
                                                 ),
                                               ),
                                             ),
-                                          ].divide(SizedBox(width: 8.0)),
+                                          ].divide(const SizedBox(width: 8.0)),
                                         ),
                                       ),
                                   ],
@@ -1409,7 +1406,7 @@ class _AboutWorkoutWidgetState extends State<AboutWorkoutWidget> {
                                 borderRadius: BorderRadius.circular(10.0),
                               ),
                               child: Padding(
-                                padding: EdgeInsets.all(20.0),
+                                padding: const EdgeInsets.all(20.0),
                                 child: Column(
                                   mainAxisSize: MainAxisSize.max,
                                   crossAxisAlignment: CrossAxisAlignment.start,
@@ -1429,7 +1426,7 @@ class _AboutWorkoutWidgetState extends State<AboutWorkoutWidget> {
                                           ),
                                           child: Padding(
                                             padding:
-                                                EdgeInsetsDirectional.fromSTEB(
+                                                const EdgeInsetsDirectional.fromSTEB(
                                                     8.0, 0.0, 8.0, 0.0),
                                             child: Row(
                                               mainAxisSize: MainAxisSize.min,
@@ -1475,7 +1472,7 @@ class _AboutWorkoutWidgetState extends State<AboutWorkoutWidget> {
                                       ],
                                     ),
                                     Padding(
-                                      padding: EdgeInsetsDirectional.fromSTEB(
+                                      padding: const EdgeInsetsDirectional.fromSTEB(
                                           0.0, 14.0, 0.0, 0.0),
                                       child: Row(
                                         mainAxisSize: MainAxisSize.max,
@@ -1500,11 +1497,11 @@ class _AboutWorkoutWidgetState extends State<AboutWorkoutWidget> {
                                                   fontWeight: FontWeight.w600,
                                                 ),
                                           ),
-                                        ].divide(SizedBox(width: 12.0)),
+                                        ].divide(const SizedBox(width: 12.0)),
                                       ),
                                     ),
                                     Padding(
-                                      padding: EdgeInsetsDirectional.fromSTEB(
+                                      padding: const EdgeInsetsDirectional.fromSTEB(
                                           0.0, 14.0, 0.0, 0.0),
                                       child: Text(
                                         'Reach your full potential in the final week',
@@ -1522,7 +1519,7 @@ class _AboutWorkoutWidgetState extends State<AboutWorkoutWidget> {
                                     ),
                                     if (_model.plan == 'Brutal Week')
                                       Padding(
-                                        padding: EdgeInsetsDirectional.fromSTEB(
+                                        padding: const EdgeInsetsDirectional.fromSTEB(
                                             0.0, 14.0, 0.0, 0.0),
                                         child: Row(
                                           mainAxisSize: MainAxisSize.max,
@@ -1563,7 +1560,7 @@ class _AboutWorkoutWidgetState extends State<AboutWorkoutWidget> {
                                                 ),
                                               ),
                                             ),
-                                          ].divide(SizedBox(width: 8.0)),
+                                          ].divide(const SizedBox(width: 8.0)),
                                         ),
                                       ),
                                   ],
@@ -1572,13 +1569,13 @@ class _AboutWorkoutWidgetState extends State<AboutWorkoutWidget> {
                             ),
                           ),
                         ]
-                            .divide(SizedBox(height: 16.0))
-                            .addToEnd(SizedBox(height: 10.0)),
+                            .divide(const SizedBox(height: 16.0))
+                            .addToEnd(const SizedBox(height: 10.0)),
                       ),
                     ),
                     Padding(
                       padding:
-                          EdgeInsetsDirectional.fromSTEB(16.0, 24.0, 16.0, 0.0),
+                          const EdgeInsetsDirectional.fromSTEB(16.0, 24.0, 16.0, 0.0),
                       child: Column(
                         mainAxisSize: MainAxisSize.max,
                         crossAxisAlignment: CrossAxisAlignment.start,
@@ -1612,7 +1609,7 @@ class _AboutWorkoutWidgetState extends State<AboutWorkoutWidget> {
                                       fontWeight: FontWeight.normal,
                                     ),
                               ),
-                            ].divide(SizedBox(height: 8.0)),
+                            ].divide(const SizedBox(height: 8.0)),
                           ),
                           Container(
                             width: double.infinity,
@@ -1626,7 +1623,7 @@ class _AboutWorkoutWidgetState extends State<AboutWorkoutWidget> {
                               mainAxisSize: MainAxisSize.max,
                               children: [
                                 Padding(
-                                  padding: EdgeInsetsDirectional.fromSTEB(
+                                  padding: const EdgeInsetsDirectional.fromSTEB(
                                       16.0, 7.0, 7.0, 0.0),
                                   child: Row(
                                     mainAxisSize: MainAxisSize.max,
@@ -1636,7 +1633,7 @@ class _AboutWorkoutWidgetState extends State<AboutWorkoutWidget> {
                                         CrossAxisAlignment.start,
                                     children: [
                                       Padding(
-                                        padding: EdgeInsetsDirectional.fromSTEB(
+                                        padding: const EdgeInsetsDirectional.fromSTEB(
                                             0.0, 12.0, 0.0, 0.0),
                                         child: Text(
                                           'Weekly Schedule',
@@ -1661,7 +1658,7 @@ class _AboutWorkoutWidgetState extends State<AboutWorkoutWidget> {
                                         onTap: () async {
                                           showModalBottomSheet(
                                             isScrollControlled: true,
-                                            backgroundColor: Color(0x34000000),
+                                            backgroundColor: const Color(0x34000000),
                                             context: context,
                                             builder: (context) {
                                               return GestureDetector(
@@ -1672,7 +1669,7 @@ class _AboutWorkoutWidgetState extends State<AboutWorkoutWidget> {
                                                   padding:
                                                       MediaQuery.viewInsetsOf(
                                                           context),
-                                                  child: TrainingDaysWidget(),
+                                                  child: const TrainingDaysWidget(),
                                                 ),
                                               );
                                             },
@@ -1682,13 +1679,13 @@ class _AboutWorkoutWidgetState extends State<AboutWorkoutWidget> {
                                         child: Container(
                                           width: 22.0,
                                           height: 22.0,
-                                          decoration: BoxDecoration(
+                                          decoration: const BoxDecoration(
                                             color: Color(0x34BDBDBD),
                                             shape: BoxShape.circle,
                                           ),
                                           child: Align(
                                             alignment:
-                                                AlignmentDirectional(0.0, 0.0),
+                                                const AlignmentDirectional(0.0, 0.0),
                                             child: Icon(
                                               FFIcons.kdots,
                                               color:
@@ -1703,7 +1700,7 @@ class _AboutWorkoutWidgetState extends State<AboutWorkoutWidget> {
                                   ),
                                 ),
                                 Padding(
-                                  padding: EdgeInsetsDirectional.fromSTEB(
+                                  padding: const EdgeInsetsDirectional.fromSTEB(
                                       16.0, 0.0, 16.0, 0.0),
                                   child: Row(
                                     mainAxisSize: MainAxisSize.max,
@@ -1825,7 +1822,7 @@ class _AboutWorkoutWidgetState extends State<AboutWorkoutWidget> {
                                     ],
                                   ),
                                 ),
-                              ].divide(SizedBox(height: 16.0)),
+                              ].divide(const SizedBox(height: 16.0)),
                             ),
                           ),
                           Row(
@@ -1847,7 +1844,7 @@ class _AboutWorkoutWidgetState extends State<AboutWorkoutWidget> {
                                     popup: () async {
                                       showModalBottomSheet(
                                         isScrollControlled: true,
-                                        backgroundColor: Color(0x34000000),
+                                        backgroundColor: const Color(0x34000000),
                                         context: context,
                                         builder: (context) {
                                           return GestureDetector(
@@ -1856,7 +1853,7 @@ class _AboutWorkoutWidgetState extends State<AboutWorkoutWidget> {
                                             child: Padding(
                                               padding: MediaQuery.viewInsetsOf(
                                                   context),
-                                              child: WorkoutDurationWidget(),
+                                              child: const WorkoutDurationWidget(),
                                             ),
                                           );
                                         },
@@ -1881,7 +1878,7 @@ class _AboutWorkoutWidgetState extends State<AboutWorkoutWidget> {
                                     popup: () async {
                                       showModalBottomSheet(
                                         isScrollControlled: true,
-                                        backgroundColor: Color(0x34000000),
+                                        backgroundColor: const Color(0x34000000),
                                         context: context,
                                         builder: (context) {
                                           return GestureDetector(
@@ -1890,7 +1887,7 @@ class _AboutWorkoutWidgetState extends State<AboutWorkoutWidget> {
                                             child: Padding(
                                               padding: MediaQuery.viewInsetsOf(
                                                   context),
-                                              child: TrainingDaysWidget(),
+                                              child: const TrainingDaysWidget(),
                                             ),
                                           );
                                         },
@@ -1899,7 +1896,7 @@ class _AboutWorkoutWidgetState extends State<AboutWorkoutWidget> {
                                   ),
                                 ),
                               ),
-                            ].divide(SizedBox(width: 16.0)),
+                            ].divide(const SizedBox(width: 16.0)),
                           ),
                           Row(
                             mainAxisSize: MainAxisSize.max,
@@ -1920,7 +1917,7 @@ class _AboutWorkoutWidgetState extends State<AboutWorkoutWidget> {
                                     popup: () async {
                                       showModalBottomSheet(
                                         isScrollControlled: true,
-                                        backgroundColor: Color(0x34000000),
+                                        backgroundColor: const Color(0x34000000),
                                         context: context,
                                         builder: (context) {
                                           return GestureDetector(
@@ -1929,7 +1926,7 @@ class _AboutWorkoutWidgetState extends State<AboutWorkoutWidget> {
                                             child: Padding(
                                               padding: MediaQuery.viewInsetsOf(
                                                   context),
-                                              child: WarmupDurationWidget(),
+                                              child: const WarmupDurationWidget(),
                                             ),
                                           );
                                         },
@@ -1954,7 +1951,7 @@ class _AboutWorkoutWidgetState extends State<AboutWorkoutWidget> {
                                     popup: () async {
                                       showModalBottomSheet(
                                         isScrollControlled: true,
-                                        backgroundColor: Color(0x34000000),
+                                        backgroundColor: const Color(0x34000000),
                                         context: context,
                                         builder: (context) {
                                           return GestureDetector(
@@ -1963,7 +1960,7 @@ class _AboutWorkoutWidgetState extends State<AboutWorkoutWidget> {
                                             child: Padding(
                                               padding: MediaQuery.viewInsetsOf(
                                                   context),
-                                              child: RecoveryDurationWidget(),
+                                              child: const RecoveryDurationWidget(),
                                             ),
                                           );
                                         },
@@ -1972,16 +1969,16 @@ class _AboutWorkoutWidgetState extends State<AboutWorkoutWidget> {
                                   ),
                                 ),
                               ),
-                            ].divide(SizedBox(width: 16.0)),
+                            ].divide(const SizedBox(width: 16.0)),
                           ),
                         ]
-                            .divide(SizedBox(height: 16.0))
-                            .addToEnd(SizedBox(height: 20.0)),
+                            .divide(const SizedBox(height: 16.0))
+                            .addToEnd(const SizedBox(height: 20.0)),
                       ),
                     ),
                     Padding(
                       padding:
-                          EdgeInsetsDirectional.fromSTEB(16.0, 24.0, 16.0, 0.0),
+                          const EdgeInsetsDirectional.fromSTEB(16.0, 24.0, 16.0, 0.0),
                       child: Column(
                         mainAxisSize: MainAxisSize.max,
                         crossAxisAlignment: CrossAxisAlignment.start,
@@ -2001,7 +1998,7 @@ class _AboutWorkoutWidgetState extends State<AboutWorkoutWidget> {
                           wrapWithModel(
                             model: _model.userReviewCardModel1,
                             updateCallback: () => safeSetState(() {}),
-                            child: UserReviewCardWidget(
+                            child: const UserReviewCardWidget(
                               name: 'Ethan Q.',
                               comment:
                                   'Gained masss and strenght all over. it\'s a comprehensive\nmuscle-building plan',
@@ -2010,7 +2007,7 @@ class _AboutWorkoutWidgetState extends State<AboutWorkoutWidget> {
                           wrapWithModel(
                             model: _model.userReviewCardModel2,
                             updateCallback: () => safeSetState(() {}),
-                            child: UserReviewCardWidget(
+                            child: const UserReviewCardWidget(
                               name: 'Claire H.',
                               comment:
                                   'The gains are real! This plan targets the whole body\neffectively.',
@@ -2019,24 +2016,24 @@ class _AboutWorkoutWidgetState extends State<AboutWorkoutWidget> {
                           wrapWithModel(
                             model: _model.userReviewCardModel3,
                             updateCallback: () => safeSetState(() {}),
-                            child: UserReviewCardWidget(
+                            child: const UserReviewCardWidget(
                               name: 'Gregory T.',
                               comment:
                                   'Saw a significant increase in my overall muscle mass.',
                             ),
                           ),
                         ]
-                            .divide(SizedBox(height: 16.0))
-                            .addToEnd(SizedBox(height: 20.0)),
+                            .divide(const SizedBox(height: 16.0))
+                            .addToEnd(const SizedBox(height: 20.0)),
                       ),
                     ),
-                  ].addToEnd(SizedBox(height: 60.0)),
+                  ].addToEnd(const SizedBox(height: 60.0)),
                 ),
               ),
               Align(
-                alignment: AlignmentDirectional(0.0, 1.0),
+                alignment: const AlignmentDirectional(0.0, 1.0),
                 child: Padding(
-                  padding: EdgeInsetsDirectional.fromSTEB(16.0, 0.0, 16.0, 0.0),
+                  padding: const EdgeInsetsDirectional.fromSTEB(16.0, 0.0, 16.0, 0.0),
                   child: Container(
                     decoration: BoxDecoration(
                       color: FlutterFlowTheme.of(context).primaryBackground2,
@@ -2045,7 +2042,7 @@ class _AboutWorkoutWidgetState extends State<AboutWorkoutWidget> {
                           blurRadius: 20.0,
                           color:
                               FlutterFlowTheme.of(context).primaryBackground2,
-                          offset: Offset(
+                          offset: const Offset(
                             0.0,
                             2.0,
                           ),
@@ -2055,7 +2052,7 @@ class _AboutWorkoutWidgetState extends State<AboutWorkoutWidget> {
                     ),
                     child: Padding(
                       padding:
-                          EdgeInsetsDirectional.fromSTEB(0.0, 8.0, 0.0, 8.0),
+                          const EdgeInsetsDirectional.fromSTEB(0.0, 8.0, 0.0, 8.0),
                       child: InkWell(
                         splashColor: Colors.transparent,
                         focusColor: Colors.transparent,
@@ -2067,7 +2064,7 @@ class _AboutWorkoutWidgetState extends State<AboutWorkoutWidget> {
                         child: wrapWithModel(
                           model: _model.customButtonModel,
                           updateCallback: () => safeSetState(() {}),
-                          child: CustomButtonWidget(
+                          child: const CustomButtonWidget(
                             title: 'Start Plan',
                           ),
                         ),
@@ -2077,7 +2074,7 @@ class _AboutWorkoutWidgetState extends State<AboutWorkoutWidget> {
                 ),
               ),
               Padding(
-                padding: EdgeInsetsDirectional.fromSTEB(16.0, 16.0, 0.0, 0.0),
+                padding: const EdgeInsetsDirectional.fromSTEB(16.0, 16.0, 0.0, 0.0),
                 child: InkWell(
                   splashColor: Colors.transparent,
                   focusColor: Colors.transparent,
@@ -2089,12 +2086,12 @@ class _AboutWorkoutWidgetState extends State<AboutWorkoutWidget> {
                   child: Container(
                     width: 32.0,
                     height: 32.0,
-                    decoration: BoxDecoration(
+                    decoration: const BoxDecoration(
                       color: Color(0x67BDBDBD),
                       shape: BoxShape.circle,
                     ),
                     child: Align(
-                      alignment: AlignmentDirectional(0.0, 0.0),
+                      alignment: const AlignmentDirectional(0.0, 0.0),
                       child: Icon(
                         FFIcons.kchevronLeft,
                         color: FlutterFlowTheme.of(context).info,

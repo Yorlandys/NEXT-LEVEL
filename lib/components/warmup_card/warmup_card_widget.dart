@@ -1,8 +1,6 @@
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
-import 'package:provider/provider.dart';
 import 'warmup_card_model.dart';
 export 'warmup_card_model.dart';
 
@@ -56,12 +54,12 @@ class _WarmupCardWidgetState extends State<WarmupCardWidget> {
         borderRadius: BorderRadius.circular(10.0),
       ),
       child: Padding(
-        padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 6.0),
+        padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 6.0),
         child: Column(
           mainAxisSize: MainAxisSize.max,
           children: [
             Padding(
-              padding: EdgeInsetsDirectional.fromSTEB(16.0, 7.0, 7.0, 0.0),
+              padding: const EdgeInsetsDirectional.fromSTEB(16.0, 7.0, 7.0, 0.0),
               child: Row(
                 mainAxisSize: MainAxisSize.max,
                 mainAxisAlignment: MainAxisAlignment.end,
@@ -78,12 +76,12 @@ class _WarmupCardWidgetState extends State<WarmupCardWidget> {
                     child: Container(
                       width: 22.0,
                       height: 22.0,
-                      decoration: BoxDecoration(
+                      decoration: const BoxDecoration(
                         color: Color(0x34BDBDBD),
                         shape: BoxShape.circle,
                       ),
                       child: Align(
-                        alignment: AlignmentDirectional(0.0, 0.0),
+                        alignment: const AlignmentDirectional(0.0, 0.0),
                         child: Icon(
                           FFIcons.kdots,
                           color: FlutterFlowTheme.of(context).info,
@@ -106,13 +104,13 @@ class _WarmupCardWidgetState extends State<WarmupCardWidget> {
                     borderRadius: BorderRadius.circular(10.0),
                   ),
                   child: Align(
-                    alignment: AlignmentDirectional(0.0, 0.0),
-                    child: widget!.icon!,
+                    alignment: const AlignmentDirectional(0.0, 0.0),
+                    child: widget.icon!,
                   ),
                 ),
                 Text(
                   valueOrDefault<String>(
-                    widget!.title,
+                    widget.title,
                     'na',
                   ),
                   style: FlutterFlowTheme.of(context).bodyMedium.override(
@@ -124,7 +122,7 @@ class _WarmupCardWidgetState extends State<WarmupCardWidget> {
                 ),
                 Text(
                   valueOrDefault<String>(
-                    widget!.titme,
+                    widget.titme,
                     'na',
                   ),
                   style: FlutterFlowTheme.of(context).bodyMedium.override(
@@ -135,7 +133,7 @@ class _WarmupCardWidgetState extends State<WarmupCardWidget> {
                         fontWeight: FontWeight.w600,
                       ),
                 ),
-              ].divide(SizedBox(height: 6.0)),
+              ].divide(const SizedBox(height: 6.0)),
             ),
           ],
         ),

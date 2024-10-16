@@ -1,8 +1,6 @@
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
-import 'package:provider/provider.dart';
 import 'indicator_model.dart';
 export 'indicator_model.dart';
 
@@ -49,7 +47,7 @@ class _IndicatorWidgetState extends State<IndicatorWidget> {
   @override
   Widget build(BuildContext context) {
     return Container(
-      decoration: BoxDecoration(),
+      decoration: const BoxDecoration(),
       child: Row(
         mainAxisSize: MainAxisSize.max,
         crossAxisAlignment: CrossAxisAlignment.end,
@@ -58,7 +56,7 @@ class _IndicatorWidgetState extends State<IndicatorWidget> {
             width: 7.0,
             height: 7.0,
             decoration: BoxDecoration(
-              color: widget!.color1,
+              color: widget.color1,
               borderRadius: BorderRadius.circular(2.0),
             ),
           ),
@@ -66,7 +64,7 @@ class _IndicatorWidgetState extends State<IndicatorWidget> {
             width: 7.0,
             height: 11.0,
             decoration: BoxDecoration(
-              color: widget!.color2,
+              color: widget.color2,
               borderRadius: BorderRadius.circular(2.0),
             ),
           ),
@@ -74,15 +72,15 @@ class _IndicatorWidgetState extends State<IndicatorWidget> {
             width: 7.0,
             height: 16.0,
             decoration: BoxDecoration(
-              color: widget!.color3,
+              color: widget.color3,
               borderRadius: BorderRadius.circular(2.0),
             ),
           ),
           Padding(
-            padding: EdgeInsetsDirectional.fromSTEB(4.0, 0.0, 0.0, 0.0),
+            padding: const EdgeInsetsDirectional.fromSTEB(4.0, 0.0, 0.0, 0.0),
             child: Text(
               valueOrDefault<String>(
-                widget!.title,
+                widget.title,
                 'nna',
               ),
               style: FlutterFlowTheme.of(context).bodyMedium.override(
@@ -93,7 +91,7 @@ class _IndicatorWidgetState extends State<IndicatorWidget> {
                   ),
             ),
           ),
-        ].divide(SizedBox(width: 3.0)),
+        ].divide(const SizedBox(width: 3.0)),
       ),
     );
   }

@@ -5,8 +5,6 @@ import '/flutter_flow/flutter_flow_util.dart';
 import '/flutter_flow/flutter_flow_widgets.dart';
 import 'package:expandable/expandable.dart';
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
-import 'package:provider/provider.dart';
 import 'subscription_model.dart';
 export 'subscription_model.dart';
 
@@ -75,7 +73,7 @@ class _SubscriptionWidgetState extends State<SubscriptionWidget> {
                             blurRadius: 20.0,
                             color:
                                 FlutterFlowTheme.of(context).primaryBackground,
-                            offset: Offset(
+                            offset: const Offset(
                               0.0,
                               2.0,
                             ),
@@ -84,7 +82,7 @@ class _SubscriptionWidgetState extends State<SubscriptionWidget> {
                         ],
                       ),
                       child: Padding(
-                        padding: EdgeInsetsDirectional.fromSTEB(
+                        padding: const EdgeInsetsDirectional.fromSTEB(
                             20.0, 0.0, 20.0, 0.0),
                         child: Column(
                           mainAxisSize: MainAxisSize.max,
@@ -115,13 +113,13 @@ class _SubscriptionWidgetState extends State<SubscriptionWidget> {
                                     fontWeight: FontWeight.w500,
                                   ),
                             ),
-                          ].divide(SizedBox(height: 8.0)),
+                          ].divide(const SizedBox(height: 8.0)),
                         ),
                       ),
                     ),
                     Padding(
                       padding:
-                          EdgeInsetsDirectional.fromSTEB(20.0, 12.0, 20.0, 0.0),
+                          const EdgeInsetsDirectional.fromSTEB(20.0, 12.0, 20.0, 0.0),
                       child: Row(
                         mainAxisSize: MainAxisSize.max,
                         crossAxisAlignment: CrossAxisAlignment.end,
@@ -155,13 +153,13 @@ class _SubscriptionWidgetState extends State<SubscriptionWidget> {
                                   ),
                                 ),
                                 child: Padding(
-                                  padding: EdgeInsetsDirectional.fromSTEB(
+                                  padding: const EdgeInsetsDirectional.fromSTEB(
                                       0.0, 6.0, 0.0, 4.0),
                                   child: Column(
                                     mainAxisSize: MainAxisSize.max,
                                     children: [
                                       Padding(
-                                        padding: EdgeInsetsDirectional.fromSTEB(
+                                        padding: const EdgeInsetsDirectional.fromSTEB(
                                             0.0, 6.0, 0.0, 0.0),
                                         child: Text(
                                           '1',
@@ -197,7 +195,7 @@ class _SubscriptionWidgetState extends State<SubscriptionWidget> {
                                             ),
                                       ),
                                       Padding(
-                                        padding: EdgeInsetsDirectional.fromSTEB(
+                                        padding: const EdgeInsetsDirectional.fromSTEB(
                                             0.0, 2.0, 0.0, 0.0),
                                         child: Text(
                                           '₹227.59 \nper week',
@@ -250,17 +248,17 @@ class _SubscriptionWidgetState extends State<SubscriptionWidget> {
                                               fontWeight: FontWeight.w600,
                                             ),
                                       ),
-                                    ].divide(SizedBox(height: 1.2)),
+                                    ].divide(const SizedBox(height: 1.2)),
                                   ),
                                 ),
                               ),
                             ),
                           ),
                           Expanded(
-                            child: Container(
+                            child: SizedBox(
                               height: 160.0,
                               child: Stack(
-                                alignment: AlignmentDirectional(0.0, 1.0),
+                                alignment: const AlignmentDirectional(0.0, 1.0),
                                 children: [
                                   Container(
                                     width: double.infinity,
@@ -278,7 +276,7 @@ class _SubscriptionWidgetState extends State<SubscriptionWidget> {
                                       borderRadius: BorderRadius.circular(10.0),
                                     ),
                                     child: Padding(
-                                      padding: EdgeInsetsDirectional.fromSTEB(
+                                      padding: const EdgeInsetsDirectional.fromSTEB(
                                           0.0, 4.0, 0.0, 0.0),
                                       child: Column(
                                         mainAxisSize: MainAxisSize.max,
@@ -330,13 +328,13 @@ class _SubscriptionWidgetState extends State<SubscriptionWidget> {
                                         ),
                                       ),
                                       child: Padding(
-                                        padding: EdgeInsetsDirectional.fromSTEB(
+                                        padding: const EdgeInsetsDirectional.fromSTEB(
                                             0.0, 6.0, 0.0, 4.0),
                                         child: Column(
                                           mainAxisSize: MainAxisSize.max,
                                           children: [
                                             Padding(
-                                              padding: EdgeInsetsDirectional
+                                              padding: const EdgeInsetsDirectional
                                                   .fromSTEB(0.0, 6.0, 0.0, 0.0),
                                               child: Text(
                                                 '12',
@@ -375,7 +373,7 @@ class _SubscriptionWidgetState extends State<SubscriptionWidget> {
                                                   ),
                                             ),
                                             Padding(
-                                              padding: EdgeInsetsDirectional
+                                              padding: const EdgeInsetsDirectional
                                                   .fromSTEB(0.0, 2.0, 0.0, 0.0),
                                               child: Text(
                                                 '₹134.08 \nper week',
@@ -434,7 +432,7 @@ class _SubscriptionWidgetState extends State<SubscriptionWidget> {
                                                     fontWeight: FontWeight.w600,
                                                   ),
                                             ),
-                                          ].divide(SizedBox(height: 1.2)),
+                                          ].divide(const SizedBox(height: 1.2)),
                                         ),
                                       ),
                                     ),
@@ -444,10 +442,10 @@ class _SubscriptionWidgetState extends State<SubscriptionWidget> {
                             ),
                           ),
                           Expanded(
-                            child: Container(
+                            child: SizedBox(
                               height: 160.0,
                               child: Stack(
-                                alignment: AlignmentDirectional(0.0, 1.0),
+                                alignment: const AlignmentDirectional(0.0, 1.0),
                                 children: [
                                   Container(
                                     width: double.infinity,
@@ -465,7 +463,7 @@ class _SubscriptionWidgetState extends State<SubscriptionWidget> {
                                       borderRadius: BorderRadius.circular(10.0),
                                     ),
                                     child: Padding(
-                                      padding: EdgeInsetsDirectional.fromSTEB(
+                                      padding: const EdgeInsetsDirectional.fromSTEB(
                                           0.0, 4.0, 0.0, 0.0),
                                       child: Column(
                                         mainAxisSize: MainAxisSize.max,
@@ -517,13 +515,13 @@ class _SubscriptionWidgetState extends State<SubscriptionWidget> {
                                         ),
                                       ),
                                       child: Padding(
-                                        padding: EdgeInsetsDirectional.fromSTEB(
+                                        padding: const EdgeInsetsDirectional.fromSTEB(
                                             0.0, 6.0, 0.0, 4.0),
                                         child: Column(
                                           mainAxisSize: MainAxisSize.max,
                                           children: [
                                             Padding(
-                                              padding: EdgeInsetsDirectional
+                                              padding: const EdgeInsetsDirectional
                                                   .fromSTEB(0.0, 6.0, 0.0, 0.0),
                                               child: Text(
                                                 '3',
@@ -562,7 +560,7 @@ class _SubscriptionWidgetState extends State<SubscriptionWidget> {
                                                   ),
                                             ),
                                             Padding(
-                                              padding: EdgeInsetsDirectional
+                                              padding: const EdgeInsetsDirectional
                                                   .fromSTEB(0.0, 2.0, 0.0, 0.0),
                                               child: Text(
                                                 '₹187.74\nper week',
@@ -621,7 +619,7 @@ class _SubscriptionWidgetState extends State<SubscriptionWidget> {
                                                     fontWeight: FontWeight.w600,
                                                   ),
                                             ),
-                                          ].divide(SizedBox(height: 1.2)),
+                                          ].divide(const SizedBox(height: 1.2)),
                                         ),
                                       ),
                                     ),
@@ -630,17 +628,17 @@ class _SubscriptionWidgetState extends State<SubscriptionWidget> {
                               ),
                             ),
                           ),
-                        ].divide(SizedBox(width: 12.0)),
+                        ].divide(const SizedBox(width: 12.0)),
                       ),
                     ),
                     Padding(
                       padding:
-                          EdgeInsetsDirectional.fromSTEB(16.0, 50.0, 16.0, 0.0),
+                          const EdgeInsetsDirectional.fromSTEB(16.0, 50.0, 16.0, 0.0),
                       child: Column(
                         mainAxisSize: MainAxisSize.max,
                         children: [
                           Padding(
-                            padding: EdgeInsetsDirectional.fromSTEB(
+                            padding: const EdgeInsetsDirectional.fromSTEB(
                                 0.0, 0.0, 0.0, 8.0),
                             child: Column(
                               mainAxisSize: MainAxisSize.max,
@@ -688,13 +686,13 @@ class _SubscriptionWidgetState extends State<SubscriptionWidget> {
                                             fontWeight: FontWeight.w500,
                                           ),
                                     ),
-                                  ].divide(SizedBox(width: 6.0)),
+                                  ].divide(const SizedBox(width: 6.0)),
                                 ),
-                              ].divide(SizedBox(height: 12.0)),
+                              ].divide(const SizedBox(height: 12.0)),
                             ),
                           ),
                           Padding(
-                            padding: EdgeInsetsDirectional.fromSTEB(
+                            padding: const EdgeInsetsDirectional.fromSTEB(
                                 0.0, 12.0, 0.0, 0.0),
                             child: Row(
                               mainAxisSize: MainAxisSize.max,
@@ -703,7 +701,7 @@ class _SubscriptionWidgetState extends State<SubscriptionWidget> {
                                   child: wrapWithModel(
                                     model: _model.userReviewModel1,
                                     updateCallback: () => safeSetState(() {}),
-                                    child: UserReviewWidget(
+                                    child: const UserReviewWidget(
                                       name: 'Carlos D.',
                                       comment:
                                           'Well worth the cost! These exercise routines really woke up my muscles and I like how we can add different equipment!',
@@ -714,18 +712,18 @@ class _SubscriptionWidgetState extends State<SubscriptionWidget> {
                                   child: wrapWithModel(
                                     model: _model.userReviewModel2,
                                     updateCallback: () => safeSetState(() {}),
-                                    child: UserReviewWidget(
+                                    child: const UserReviewWidget(
                                       name: 'Emma M.',
                                       comment:
                                           'Buying this app has really made a difference in my lifestyle. It\'s the best app for fitness. Surprised by the quality!',
                                     ),
                                   ),
                                 ),
-                              ].divide(SizedBox(width: 8.0)),
+                              ].divide(const SizedBox(width: 8.0)),
                             ),
                           ),
                           Padding(
-                            padding: EdgeInsetsDirectional.fromSTEB(
+                            padding: const EdgeInsetsDirectional.fromSTEB(
                                 0.0, 8.0, 0.0, 0.0),
                             child: Row(
                               mainAxisSize: MainAxisSize.max,
@@ -734,7 +732,7 @@ class _SubscriptionWidgetState extends State<SubscriptionWidget> {
                                   child: wrapWithModel(
                                     model: _model.userReviewModel3,
                                     updateCallback: () => safeSetState(() {}),
-                                    child: UserReviewWidget(
+                                    child: const UserReviewWidget(
                                       name: 'Mary W',
                                       comment:
                                           'I wish I had found FitiPlus earlier, this was the best investment. Definitely the best workout app I have ever used.',
@@ -745,21 +743,21 @@ class _SubscriptionWidgetState extends State<SubscriptionWidget> {
                                   child: wrapWithModel(
                                     model: _model.userReviewModel4,
                                     updateCallback: () => safeSetState(() {}),
-                                    child: UserReviewWidget(
+                                    child: const UserReviewWidget(
                                       name: 'Carol M.',
                                       comment:
                                           'Really efficient and fun training. FitiPlus has really helped me become more enthusiastic about exercise.',
                                     ),
                                   ),
                                 ),
-                              ].divide(SizedBox(width: 8.0)),
+                              ].divide(const SizedBox(width: 8.0)),
                             ),
                           ),
                         ],
                       ),
                     ),
                     Padding(
-                      padding: EdgeInsetsDirectional.fromSTEB(
+                      padding: const EdgeInsetsDirectional.fromSTEB(
                           16.0, 44.0, 16.0, 44.0),
                       child: Column(
                         mainAxisSize: MainAxisSize.max,
@@ -767,7 +765,7 @@ class _SubscriptionWidgetState extends State<SubscriptionWidget> {
                           wrapWithModel(
                             model: _model.resultModel1,
                             updateCallback: () => safeSetState(() {}),
-                            child: ResultWidget(
+                            child: const ResultWidget(
                               title:
                                   'Weekly training plans for maximum results.',
                             ),
@@ -775,7 +773,7 @@ class _SubscriptionWidgetState extends State<SubscriptionWidget> {
                           wrapWithModel(
                             model: _model.resultModel2,
                             updateCallback: () => safeSetState(() {}),
-                            child: ResultWidget(
+                            child: const ResultWidget(
                               title:
                                   '10-30 minute daily workouts with over 1000 exercises',
                             ),
@@ -783,7 +781,7 @@ class _SubscriptionWidgetState extends State<SubscriptionWidget> {
                           wrapWithModel(
                             model: _model.resultModel3,
                             updateCallback: () => safeSetState(() {}),
-                            child: ResultWidget(
+                            child: const ResultWidget(
                               title:
                                   '10-30 minute daily workouts with over 1000 exercises',
                             ),
@@ -791,22 +789,22 @@ class _SubscriptionWidgetState extends State<SubscriptionWidget> {
                           wrapWithModel(
                             model: _model.resultModel4,
                             updateCallback: () => safeSetState(() {}),
-                            child: ResultWidget(
+                            child: const ResultWidget(
                               title: 'Ad-free experience.',
                             ),
                           ),
-                        ].divide(SizedBox(height: 12.0)),
+                        ].divide(const SizedBox(height: 12.0)),
                       ),
                     ),
                     Padding(
                       padding:
-                          EdgeInsetsDirectional.fromSTEB(16.0, 0.0, 16.0, 50.0),
+                          const EdgeInsetsDirectional.fromSTEB(16.0, 0.0, 16.0, 50.0),
                       child: Column(
                         mainAxisSize: MainAxisSize.max,
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
                           Padding(
-                            padding: EdgeInsetsDirectional.fromSTEB(
+                            padding: const EdgeInsetsDirectional.fromSTEB(
                                 0.0, 0.0, 0.0, 8.0),
                             child: Text(
                               'Common Questions',
@@ -828,7 +826,7 @@ class _SubscriptionWidgetState extends State<SubscriptionWidget> {
                                     .secondaryBackground,
                                 borderRadius: BorderRadius.circular(10.0),
                                 border: Border.all(
-                                  color: Color(0xFFEFEFEF),
+                                  color: const Color(0xFFEFEFEF),
                                   width: 1.0,
                                 ),
                               ),
@@ -840,14 +838,14 @@ class _SubscriptionWidgetState extends State<SubscriptionWidget> {
                                       _model.expandableExpandableController1,
                                   child: ExpandablePanel(
                                     header: Padding(
-                                      padding: EdgeInsetsDirectional.fromSTEB(
+                                      padding: const EdgeInsetsDirectional.fromSTEB(
                                           14.0, 0.0, 0.0, 0.0),
                                       child: Row(
                                         mainAxisSize: MainAxisSize.max,
                                         children: [
                                           Padding(
                                             padding:
-                                                EdgeInsetsDirectional.fromSTEB(
+                                                const EdgeInsetsDirectional.fromSTEB(
                                                     0.0, 16.0, 0.0, 16.0),
                                             child: Text(
                                               'What do I get?',
@@ -875,7 +873,7 @@ class _SubscriptionWidgetState extends State<SubscriptionWidget> {
                                       ),
                                     ),
                                     expanded: Padding(
-                                      padding: EdgeInsetsDirectional.fromSTEB(
+                                      padding: const EdgeInsetsDirectional.fromSTEB(
                                           14.0, 0.0, 14.0, 14.0),
                                       child: Row(
                                         mainAxisSize: MainAxisSize.max,
@@ -923,7 +921,7 @@ class _SubscriptionWidgetState extends State<SubscriptionWidget> {
                                     .secondaryBackground,
                                 borderRadius: BorderRadius.circular(10.0),
                                 border: Border.all(
-                                  color: Color(0xFFEFEFEF),
+                                  color: const Color(0xFFEFEFEF),
                                   width: 1.0,
                                 ),
                               ),
@@ -935,14 +933,14 @@ class _SubscriptionWidgetState extends State<SubscriptionWidget> {
                                       _model.expandableExpandableController2,
                                   child: ExpandablePanel(
                                     header: Padding(
-                                      padding: EdgeInsetsDirectional.fromSTEB(
+                                      padding: const EdgeInsetsDirectional.fromSTEB(
                                           14.0, 0.0, 0.0, 0.0),
                                       child: Row(
                                         mainAxisSize: MainAxisSize.max,
                                         children: [
                                           Padding(
                                             padding:
-                                                EdgeInsetsDirectional.fromSTEB(
+                                                const EdgeInsetsDirectional.fromSTEB(
                                                     0.0, 16.0, 0.0, 16.0),
                                             child: Text(
                                               'Can I cancel anytime?',
@@ -970,7 +968,7 @@ class _SubscriptionWidgetState extends State<SubscriptionWidget> {
                                       ),
                                     ),
                                     expanded: Padding(
-                                      padding: EdgeInsetsDirectional.fromSTEB(
+                                      padding: const EdgeInsetsDirectional.fromSTEB(
                                           14.0, 0.0, 14.0, 14.0),
                                       child: Row(
                                         mainAxisSize: MainAxisSize.max,
@@ -1010,17 +1008,17 @@ class _SubscriptionWidgetState extends State<SubscriptionWidget> {
                               ),
                             ),
                           ),
-                        ].divide(SizedBox(height: 12.0)),
+                        ].divide(const SizedBox(height: 12.0)),
                       ),
                     ),
                     Padding(
                       padding:
-                          EdgeInsetsDirectional.fromSTEB(16.0, 0.0, 16.0, 0.0),
+                          const EdgeInsetsDirectional.fromSTEB(16.0, 0.0, 16.0, 0.0),
                       child: Column(
                         mainAxisSize: MainAxisSize.max,
                         children: [
                           Padding(
-                            padding: EdgeInsetsDirectional.fromSTEB(
+                            padding: const EdgeInsetsDirectional.fromSTEB(
                                 0.0, 0.0, 0.0, 8.0),
                             child: Text(
                               'Common Questions',
@@ -1049,7 +1047,7 @@ class _SubscriptionWidgetState extends State<SubscriptionWidget> {
                                 ),
                           ),
                           Padding(
-                            padding: EdgeInsetsDirectional.fromSTEB(
+                            padding: const EdgeInsetsDirectional.fromSTEB(
                                 0.0, 24.0, 0.0, 0.0),
                             child: Row(
                               mainAxisSize: MainAxisSize.max,
@@ -1086,13 +1084,13 @@ class _SubscriptionWidgetState extends State<SubscriptionWidget> {
                                         ),
                                       ),
                                       child: Padding(
-                                        padding: EdgeInsetsDirectional.fromSTEB(
+                                        padding: const EdgeInsetsDirectional.fromSTEB(
                                             0.0, 6.0, 0.0, 4.0),
                                         child: Column(
                                           mainAxisSize: MainAxisSize.max,
                                           children: [
                                             Padding(
-                                              padding: EdgeInsetsDirectional
+                                              padding: const EdgeInsetsDirectional
                                                   .fromSTEB(0.0, 6.0, 0.0, 0.0),
                                               child: Text(
                                                 '1',
@@ -1131,7 +1129,7 @@ class _SubscriptionWidgetState extends State<SubscriptionWidget> {
                                                   ),
                                             ),
                                             Padding(
-                                              padding: EdgeInsetsDirectional
+                                              padding: const EdgeInsetsDirectional
                                                   .fromSTEB(0.0, 2.0, 0.0, 0.0),
                                               child: Text(
                                                 '₹227.59 \nper week',
@@ -1190,17 +1188,17 @@ class _SubscriptionWidgetState extends State<SubscriptionWidget> {
                                                     fontWeight: FontWeight.w600,
                                                   ),
                                             ),
-                                          ].divide(SizedBox(height: 1.2)),
+                                          ].divide(const SizedBox(height: 1.2)),
                                         ),
                                       ),
                                     ),
                                   ),
                                 ),
                                 Expanded(
-                                  child: Container(
+                                  child: SizedBox(
                                     height: 160.0,
                                     child: Stack(
-                                      alignment: AlignmentDirectional(0.0, 1.0),
+                                      alignment: const AlignmentDirectional(0.0, 1.0),
                                       children: [
                                         Container(
                                           width: double.infinity,
@@ -1220,7 +1218,7 @@ class _SubscriptionWidgetState extends State<SubscriptionWidget> {
                                           ),
                                           child: Padding(
                                             padding:
-                                                EdgeInsetsDirectional.fromSTEB(
+                                                const EdgeInsetsDirectional.fromSTEB(
                                                     0.0, 4.0, 0.0, 0.0),
                                             child: Column(
                                               mainAxisSize: MainAxisSize.max,
@@ -1277,14 +1275,14 @@ class _SubscriptionWidgetState extends State<SubscriptionWidget> {
                                               ),
                                             ),
                                             child: Padding(
-                                              padding: EdgeInsetsDirectional
+                                              padding: const EdgeInsetsDirectional
                                                   .fromSTEB(0.0, 6.0, 0.0, 4.0),
                                               child: Column(
                                                 mainAxisSize: MainAxisSize.max,
                                                 children: [
                                                   Padding(
                                                     padding:
-                                                        EdgeInsetsDirectional
+                                                        const EdgeInsetsDirectional
                                                             .fromSTEB(0.0, 6.0,
                                                                 0.0, 0.0),
                                                     child: Text(
@@ -1328,7 +1326,7 @@ class _SubscriptionWidgetState extends State<SubscriptionWidget> {
                                                   ),
                                                   Padding(
                                                     padding:
-                                                        EdgeInsetsDirectional
+                                                        const EdgeInsetsDirectional
                                                             .fromSTEB(0.0, 2.0,
                                                                 0.0, 0.0),
                                                     child: Text(
@@ -1393,7 +1391,7 @@ class _SubscriptionWidgetState extends State<SubscriptionWidget> {
                                                               FontWeight.w600,
                                                         ),
                                                   ),
-                                                ].divide(SizedBox(height: 1.2)),
+                                                ].divide(const SizedBox(height: 1.2)),
                                               ),
                                             ),
                                           ),
@@ -1403,10 +1401,10 @@ class _SubscriptionWidgetState extends State<SubscriptionWidget> {
                                   ),
                                 ),
                                 Expanded(
-                                  child: Container(
+                                  child: SizedBox(
                                     height: 160.0,
                                     child: Stack(
-                                      alignment: AlignmentDirectional(0.0, 1.0),
+                                      alignment: const AlignmentDirectional(0.0, 1.0),
                                       children: [
                                         Container(
                                           width: double.infinity,
@@ -1426,7 +1424,7 @@ class _SubscriptionWidgetState extends State<SubscriptionWidget> {
                                           ),
                                           child: Padding(
                                             padding:
-                                                EdgeInsetsDirectional.fromSTEB(
+                                                const EdgeInsetsDirectional.fromSTEB(
                                                     0.0, 4.0, 0.0, 0.0),
                                             child: Column(
                                               mainAxisSize: MainAxisSize.max,
@@ -1483,14 +1481,14 @@ class _SubscriptionWidgetState extends State<SubscriptionWidget> {
                                               ),
                                             ),
                                             child: Padding(
-                                              padding: EdgeInsetsDirectional
+                                              padding: const EdgeInsetsDirectional
                                                   .fromSTEB(0.0, 6.0, 0.0, 4.0),
                                               child: Column(
                                                 mainAxisSize: MainAxisSize.max,
                                                 children: [
                                                   Padding(
                                                     padding:
-                                                        EdgeInsetsDirectional
+                                                        const EdgeInsetsDirectional
                                                             .fromSTEB(0.0, 6.0,
                                                                 0.0, 0.0),
                                                     child: Text(
@@ -1534,7 +1532,7 @@ class _SubscriptionWidgetState extends State<SubscriptionWidget> {
                                                   ),
                                                   Padding(
                                                     padding:
-                                                        EdgeInsetsDirectional
+                                                        const EdgeInsetsDirectional
                                                             .fromSTEB(0.0, 2.0,
                                                                 0.0, 0.0),
                                                     child: Text(
@@ -1599,7 +1597,7 @@ class _SubscriptionWidgetState extends State<SubscriptionWidget> {
                                                               FontWeight.w600,
                                                         ),
                                                   ),
-                                                ].divide(SizedBox(height: 1.2)),
+                                                ].divide(const SizedBox(height: 1.2)),
                                               ),
                                             ),
                                           ),
@@ -1608,11 +1606,11 @@ class _SubscriptionWidgetState extends State<SubscriptionWidget> {
                                     ),
                                   ),
                                 ),
-                              ].divide(SizedBox(width: 12.0)),
+                              ].divide(const SizedBox(width: 12.0)),
                             ),
                           ),
                           Padding(
-                            padding: EdgeInsetsDirectional.fromSTEB(
+                            padding: const EdgeInsetsDirectional.fromSTEB(
                                 0.0, 20.0, 0.0, 0.0),
                             child: Text(
                               'Restor Purchases',
@@ -1633,11 +1631,11 @@ class _SubscriptionWidgetState extends State<SubscriptionWidget> {
                         ],
                       ),
                     ),
-                  ].addToEnd(SizedBox(height: 200.0)),
+                  ].addToEnd(const SizedBox(height: 200.0)),
                 ),
               ),
               Align(
-                alignment: AlignmentDirectional(0.0, 1.0),
+                alignment: const AlignmentDirectional(0.0, 1.0),
                 child: Container(
                   decoration: BoxDecoration(
                     color: FlutterFlowTheme.of(context).primaryBackground,
@@ -1645,7 +1643,7 @@ class _SubscriptionWidgetState extends State<SubscriptionWidget> {
                       BoxShadow(
                         blurRadius: 12.0,
                         color: FlutterFlowTheme.of(context).primaryBackground,
-                        offset: Offset(
+                        offset: const Offset(
                           0.0,
                           2.0,
                         ),
@@ -1655,7 +1653,7 @@ class _SubscriptionWidgetState extends State<SubscriptionWidget> {
                   ),
                   child: Padding(
                     padding:
-                        EdgeInsetsDirectional.fromSTEB(20.0, 8.0, 20.0, 8.0),
+                        const EdgeInsetsDirectional.fromSTEB(20.0, 8.0, 20.0, 8.0),
                     child: FFButtonWidget(
                       onPressed: () {
                         print('Button pressed ...');
@@ -1664,10 +1662,10 @@ class _SubscriptionWidgetState extends State<SubscriptionWidget> {
                       options: FFButtonOptions(
                         width: double.infinity,
                         height: 44.0,
-                        padding: EdgeInsetsDirectional.fromSTEB(
+                        padding: const EdgeInsetsDirectional.fromSTEB(
                             24.0, 0.0, 24.0, 0.0),
                         iconPadding:
-                            EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
+                            const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
                         color: FlutterFlowTheme.of(context).primary,
                         textStyle: FlutterFlowTheme.of(context)
                             .titleSmall
@@ -1679,7 +1677,7 @@ class _SubscriptionWidgetState extends State<SubscriptionWidget> {
                               fontWeight: FontWeight.bold,
                             ),
                         elevation: 0.0,
-                        borderSide: BorderSide(
+                        borderSide: const BorderSide(
                           color: Colors.transparent,
                           width: 1.0,
                         ),
@@ -1690,7 +1688,7 @@ class _SubscriptionWidgetState extends State<SubscriptionWidget> {
                 ),
               ),
               Padding(
-                padding: EdgeInsetsDirectional.fromSTEB(16.0, 16.0, 0.0, 0.0),
+                padding: const EdgeInsetsDirectional.fromSTEB(16.0, 16.0, 0.0, 0.0),
                 child: InkWell(
                   splashColor: Colors.transparent,
                   focusColor: Colors.transparent,
@@ -1700,7 +1698,7 @@ class _SubscriptionWidgetState extends State<SubscriptionWidget> {
                     context.pushNamed(
                       'Home',
                       extra: <String, dynamic>{
-                        kTransitionInfoKey: TransitionInfo(
+                        kTransitionInfoKey: const TransitionInfo(
                           hasTransition: true,
                           transitionType: PageTransitionType.rightToLeft,
                           duration: Duration(milliseconds: 200),
@@ -1712,14 +1710,14 @@ class _SubscriptionWidgetState extends State<SubscriptionWidget> {
                     width: 36.0,
                     height: 36.0,
                     decoration: BoxDecoration(
-                      color: Color(0x33F5F5F5),
+                      color: const Color(0x33F5F5F5),
                       shape: BoxShape.circle,
                       border: Border.all(
                         color: FlutterFlowTheme.of(context).accent4,
                       ),
                     ),
                     child: Align(
-                      alignment: AlignmentDirectional(0.0, 0.0),
+                      alignment: const AlignmentDirectional(0.0, 0.0),
                       child: Icon(
                         FFIcons.kx,
                         color: FlutterFlowTheme.of(context).secondaryText,

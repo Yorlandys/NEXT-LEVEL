@@ -1,8 +1,6 @@
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
-import 'package:provider/provider.dart';
 import 'workout_performance_model.dart';
 export 'workout_performance_model.dart';
 
@@ -48,14 +46,14 @@ class _WorkoutPerformanceWidgetState extends State<WorkoutPerformanceWidget> {
   @override
   Widget build(BuildContext context) {
     return Container(
-      decoration: BoxDecoration(),
+      decoration: const BoxDecoration(),
       child: Column(
         mainAxisSize: MainAxisSize.min,
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
           Text(
             valueOrDefault<String>(
-              widget!.title,
+              widget.title,
               'na',
             ),
             style: FlutterFlowTheme.of(context).bodyMedium.override(
@@ -69,10 +67,10 @@ class _WorkoutPerformanceWidgetState extends State<WorkoutPerformanceWidget> {
             mainAxisSize: MainAxisSize.min,
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
-              widget!.icon!,
+              widget.icon!,
               Text(
                 valueOrDefault<String>(
-                  widget!.value,
+                  widget.value,
                   'na',
                 ),
                 style: FlutterFlowTheme.of(context).bodyMedium.override(
@@ -83,9 +81,9 @@ class _WorkoutPerformanceWidgetState extends State<WorkoutPerformanceWidget> {
                       fontWeight: FontWeight.w600,
                     ),
               ),
-            ].divide(SizedBox(width: 4.0)),
+            ].divide(const SizedBox(width: 4.0)),
           ),
-        ].divide(SizedBox(height: 6.0)),
+        ].divide(const SizedBox(height: 6.0)),
       ),
     );
   }

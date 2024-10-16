@@ -4,13 +4,8 @@ import '/components/title/title_widget.dart';
 import '/flutter_flow/flutter_flow_animations.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
-import '/flutter_flow/flutter_flow_widgets.dart';
-import 'dart:math';
 import 'package:flutter/material.dart';
-import 'package:flutter/scheduler.dart';
 import 'package:flutter_animate/flutter_animate.dart';
-import 'package:google_fonts/google_fonts.dart';
-import 'package:provider/provider.dart';
 import 'home_model.dart';
 export 'home_model.dart';
 
@@ -48,8 +43,8 @@ class _HomeWidgetState extends State<HomeWidget> with TickerProviderStateMixin {
             curve: Curves.easeInOutQuint,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(-300.0, 0.0),
-            end: Offset(0.0, 0.0),
+            begin: const Offset(-300.0, 0.0),
+            end: const Offset(0.0, 0.0),
           ),
         ],
       ),
@@ -67,8 +62,8 @@ class _HomeWidgetState extends State<HomeWidget> with TickerProviderStateMixin {
             curve: Curves.easeInOutQuint,
             delay: 300.0.ms,
             duration: 600.0.ms,
-            begin: Offset(-300.0, 0.0),
-            end: Offset(0.0, 0.0),
+            begin: const Offset(-300.0, 0.0),
+            end: const Offset(0.0, 0.0),
           ),
         ],
       ),
@@ -86,8 +81,8 @@ class _HomeWidgetState extends State<HomeWidget> with TickerProviderStateMixin {
             curve: Curves.easeInOut,
             delay: 400.0.ms,
             duration: 600.0.ms,
-            begin: Offset(1.5, 1.5),
-            end: Offset(1.0, 1.0),
+            begin: const Offset(1.5, 1.5),
+            end: const Offset(1.0, 1.0),
           ),
         ],
       ),
@@ -105,8 +100,8 @@ class _HomeWidgetState extends State<HomeWidget> with TickerProviderStateMixin {
             curve: Curves.easeInOutQuint,
             delay: 700.0.ms,
             duration: 600.0.ms,
-            begin: Offset(-300.0, 0.0),
-            end: Offset(0.0, 0.0),
+            begin: const Offset(-300.0, 0.0),
+            end: const Offset(0.0, 0.0),
           ),
         ],
       ),
@@ -117,8 +112,8 @@ class _HomeWidgetState extends State<HomeWidget> with TickerProviderStateMixin {
             curve: Curves.easeInOutQuint,
             delay: 1000.0.ms,
             duration: 600.0.ms,
-            begin: Offset(0.0, -1.0),
-            end: Offset(1.0, 1.0),
+            begin: const Offset(0.0, -1.0),
+            end: const Offset(1.0, 1.0),
           ),
           FadeEffect(
             curve: Curves.easeInOut,
@@ -136,8 +131,8 @@ class _HomeWidgetState extends State<HomeWidget> with TickerProviderStateMixin {
             curve: Curves.easeInOutQuint,
             delay: 1100.0.ms,
             duration: 600.0.ms,
-            begin: Offset(0.0, -1.0),
-            end: Offset(1.0, 1.0),
+            begin: const Offset(0.0, -1.0),
+            end: const Offset(1.0, 1.0),
           ),
           FadeEffect(
             curve: Curves.easeInOut,
@@ -172,7 +167,7 @@ class _HomeWidgetState extends State<HomeWidget> with TickerProviderStateMixin {
               mainAxisSize: MainAxisSize.max,
               children: [
                 Padding(
-                  padding: EdgeInsetsDirectional.fromSTEB(16.0, 0.0, 16.0, 0.0),
+                  padding: const EdgeInsetsDirectional.fromSTEB(16.0, 0.0, 16.0, 0.0),
                   child: Column(
                     mainAxisSize: MainAxisSize.max,
                     crossAxisAlignment: CrossAxisAlignment.start,
@@ -207,15 +202,15 @@ class _HomeWidgetState extends State<HomeWidget> with TickerProviderStateMixin {
                                 ),
                           ).animateOnPageLoad(
                               animationsMap['textOnPageLoadAnimation2']!),
-                        ].divide(SizedBox(height: 6.0)),
+                        ].divide(const SizedBox(height: 6.0)),
                       ),
                       wrapWithModel(
                         model: _model.mainCardModel,
                         updateCallback: () => safeSetState(() {}),
-                        child: MainCardWidget(),
+                        child: const MainCardWidget(),
                       ).animateOnPageLoad(
                           animationsMap['mainCardOnPageLoadAnimation']!),
-                    ].divide(SizedBox(height: 16.0)),
+                    ].divide(const SizedBox(height: 16.0)),
                   ),
                 ),
                 Column(
@@ -225,7 +220,7 @@ class _HomeWidgetState extends State<HomeWidget> with TickerProviderStateMixin {
                     wrapWithModel(
                       model: _model.titleModel1,
                       updateCallback: () => safeSetState(() {}),
-                      child: TitleWidget(
+                      child: const TitleWidget(
                         title: 'Gain muscle',
                         subtitle:
                             'Focus on muscle tone and strength with plans\ncomposed mostly of low-repetition strength training.',
@@ -324,12 +319,12 @@ class _HomeWidgetState extends State<HomeWidget> with TickerProviderStateMixin {
                             ),
                           ),
                         ]
-                            .divide(SizedBox(width: 16.0))
-                            .addToStart(SizedBox(width: 16.0))
-                            .addToEnd(SizedBox(width: 16.0)),
+                            .divide(const SizedBox(width: 16.0))
+                            .addToStart(const SizedBox(width: 16.0))
+                            .addToEnd(const SizedBox(width: 16.0)),
                       ),
                     ),
-                  ].divide(SizedBox(height: 16.0)),
+                  ].divide(const SizedBox(height: 16.0)),
                 ),
                 Column(
                   mainAxisSize: MainAxisSize.max,
@@ -338,7 +333,7 @@ class _HomeWidgetState extends State<HomeWidget> with TickerProviderStateMixin {
                     wrapWithModel(
                       model: _model.titleModel2,
                       updateCallback: () => safeSetState(() {}),
-                      child: TitleWidget(
+                      child: const TitleWidget(
                         title: 'Get fitter',
                         subtitle:
                             'Training plans designed to improve or maintain your\nphysical condition.',
@@ -434,12 +429,12 @@ class _HomeWidgetState extends State<HomeWidget> with TickerProviderStateMixin {
                             ),
                           ),
                         ]
-                            .divide(SizedBox(width: 16.0))
-                            .addToStart(SizedBox(width: 16.0))
-                            .addToEnd(SizedBox(width: 16.0)),
+                            .divide(const SizedBox(width: 16.0))
+                            .addToStart(const SizedBox(width: 16.0))
+                            .addToEnd(const SizedBox(width: 16.0)),
                       ),
                     ),
-                  ].divide(SizedBox(height: 16.0)),
+                  ].divide(const SizedBox(height: 16.0)),
                 ),
                 Column(
                   mainAxisSize: MainAxisSize.max,
@@ -448,7 +443,7 @@ class _HomeWidgetState extends State<HomeWidget> with TickerProviderStateMixin {
                     wrapWithModel(
                       model: _model.titleModel3,
                       updateCallback: () => safeSetState(() {}),
-                      child: TitleWidget(
+                      child: const TitleWidget(
                         title: 'Lose fat',
                         subtitle:
                             'You need to get your heart rate up to burn calories, and that\'s what these plans are for.',
@@ -544,14 +539,14 @@ class _HomeWidgetState extends State<HomeWidget> with TickerProviderStateMixin {
                             ),
                           ),
                         ]
-                            .divide(SizedBox(width: 16.0))
-                            .addToStart(SizedBox(width: 16.0))
-                            .addToEnd(SizedBox(width: 16.0)),
+                            .divide(const SizedBox(width: 16.0))
+                            .addToStart(const SizedBox(width: 16.0))
+                            .addToEnd(const SizedBox(width: 16.0)),
                       ),
                     ),
-                  ].divide(SizedBox(height: 16.0)),
+                  ].divide(const SizedBox(height: 16.0)),
                 ),
-              ].divide(SizedBox(height: 32.0)).addToEnd(SizedBox(height: 32.0)),
+              ].divide(const SizedBox(height: 32.0)).addToEnd(const SizedBox(height: 32.0)),
             ),
           ),
         ),

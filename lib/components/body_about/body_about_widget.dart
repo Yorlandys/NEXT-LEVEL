@@ -1,8 +1,6 @@
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
-import 'package:provider/provider.dart';
 import 'body_about_model.dart';
 export 'body_about_model.dart';
 
@@ -52,7 +50,7 @@ class _BodyAboutWidgetState extends State<BodyAboutWidget> {
         borderRadius: BorderRadius.circular(10.0),
       ),
       child: Padding(
-        padding: EdgeInsetsDirectional.fromSTEB(12.0, 14.0, 12.0, 0.0),
+        padding: const EdgeInsetsDirectional.fromSTEB(12.0, 14.0, 12.0, 0.0),
         child: Column(
           mainAxisSize: MainAxisSize.max,
           crossAxisAlignment: CrossAxisAlignment.start,
@@ -64,11 +62,11 @@ class _BodyAboutWidgetState extends State<BodyAboutWidget> {
                 color: FlutterFlowTheme.of(context).primary,
                 borderRadius: BorderRadius.circular(10.0),
               ),
-              child: widget!.icon!,
+              child: widget.icon!,
             ),
             Text(
               valueOrDefault<String>(
-                widget!.title,
+                widget.title,
                 'na',
               ),
               style: FlutterFlowTheme.of(context).bodyMedium.override(
@@ -79,7 +77,7 @@ class _BodyAboutWidgetState extends State<BodyAboutWidget> {
                     fontWeight: FontWeight.w500,
                   ),
             ),
-          ].divide(SizedBox(height: 16.0)),
+          ].divide(const SizedBox(height: 16.0)),
         ),
       ),
     );

@@ -2,12 +2,8 @@ import '/flutter_flow/flutter_flow_animations.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import '/flutter_flow/flutter_flow_widgets.dart';
-import 'dart:math';
 import 'package:flutter/material.dart';
-import 'package:flutter/scheduler.dart';
 import 'package:flutter_animate/flutter_animate.dart';
-import 'package:google_fonts/google_fonts.dart';
-import 'package:provider/provider.dart';
 import 'forgot_password_model.dart';
 export 'forgot_password_model.dart';
 
@@ -42,8 +38,8 @@ class _ForgotPasswordWidgetState extends State<ForgotPasswordWidget>
             curve: Curves.easeInOutQuint,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(0.0, 100.0),
-            end: Offset(0.0, 0.0),
+            begin: const Offset(0.0, 100.0),
+            end: const Offset(0.0, 0.0),
           ),
           FadeEffect(
             curve: Curves.easeInOut,
@@ -61,8 +57,8 @@ class _ForgotPasswordWidgetState extends State<ForgotPasswordWidget>
             curve: Curves.easeInOut,
             delay: 500.0.ms,
             duration: 400.0.ms,
-            begin: Offset(0.0, 200.0),
-            end: Offset(0.0, 0.0),
+            begin: const Offset(0.0, 200.0),
+            end: const Offset(0.0, 0.0),
           ),
           FadeEffect(
             curve: Curves.easeInOut,
@@ -95,14 +91,14 @@ class _ForgotPasswordWidgetState extends State<ForgotPasswordWidget>
           child: Stack(
             children: [
               Padding(
-                padding: EdgeInsetsDirectional.fromSTEB(20.0, 0.0, 20.0, 0.0),
+                padding: const EdgeInsetsDirectional.fromSTEB(20.0, 0.0, 20.0, 0.0),
                 child: Column(
                   mainAxisSize: MainAxisSize.max,
                   crossAxisAlignment: CrossAxisAlignment.center,
                   children: [
                     Padding(
                       padding:
-                          EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 12.0),
+                          const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 12.0),
                       child: Row(
                         mainAxisSize: MainAxisSize.max,
                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -123,7 +119,7 @@ class _ForgotPasswordWidgetState extends State<ForgotPasswordWidget>
                                 shape: BoxShape.circle,
                               ),
                               child: Align(
-                                alignment: AlignmentDirectional(0.0, 0.0),
+                                alignment: const AlignmentDirectional(0.0, 0.0),
                                 child: Icon(
                                   FFIcons.kchevronLeft,
                                   color:
@@ -146,12 +142,12 @@ class _ForgotPasswordWidgetState extends State<ForgotPasswordWidget>
                                   fontWeight: FontWeight.bold,
                                 ),
                           ),
-                        ].addToEnd(SizedBox(width: 36.0)),
+                        ].addToEnd(const SizedBox(width: 36.0)),
                       ),
                     ),
                     Padding(
                       padding:
-                          EdgeInsetsDirectional.fromSTEB(0.0, 20.0, 0.0, 0.0),
+                          const EdgeInsetsDirectional.fromSTEB(0.0, 20.0, 0.0, 0.0),
                       child: Column(
                         mainAxisSize: MainAxisSize.max,
                         crossAxisAlignment: CrossAxisAlignment.start,
@@ -168,12 +164,12 @@ class _ForgotPasswordWidgetState extends State<ForgotPasswordWidget>
                                 ),
                           ).animateOnPageLoad(
                               animationsMap['textOnPageLoadAnimation']!),
-                        ].divide(SizedBox(height: 4.0)),
+                        ].divide(const SizedBox(height: 4.0)),
                       ),
                     ),
                     Padding(
                       padding:
-                          EdgeInsetsDirectional.fromSTEB(0.0, 40.0, 0.0, 0.0),
+                          const EdgeInsetsDirectional.fromSTEB(0.0, 40.0, 0.0, 0.0),
                       child: Column(
                         mainAxisSize: MainAxisSize.max,
                         children: [
@@ -229,7 +225,7 @@ class _ForgotPasswordWidgetState extends State<ForgotPasswordWidget>
                                 ),
                                 borderRadius: BorderRadius.circular(10.0),
                               ),
-                              contentPadding: EdgeInsetsDirectional.fromSTEB(
+                              contentPadding: const EdgeInsetsDirectional.fromSTEB(
                                   16.0, 32.0, 16.0, 32.0),
                             ),
                             style: FlutterFlowTheme.of(context)
@@ -242,25 +238,25 @@ class _ForgotPasswordWidgetState extends State<ForgotPasswordWidget>
                                 .asValidator(context),
                           ).animateOnPageLoad(
                               animationsMap['textFieldOnPageLoadAnimation']!),
-                        ].divide(SizedBox(height: 16.0)),
+                        ].divide(const SizedBox(height: 16.0)),
                       ),
                     ),
                   ]
-                      .addToStart(SizedBox(height: 24.0))
-                      .addToEnd(SizedBox(height: 24.0)),
+                      .addToStart(const SizedBox(height: 24.0))
+                      .addToEnd(const SizedBox(height: 24.0)),
                 ),
               ),
               Align(
-                alignment: AlignmentDirectional(0.0, 1.0),
+                alignment: const AlignmentDirectional(0.0, 1.0),
                 child: Padding(
                   padding:
-                      EdgeInsetsDirectional.fromSTEB(20.0, 0.0, 20.0, 24.0),
+                      const EdgeInsetsDirectional.fromSTEB(20.0, 0.0, 20.0, 24.0),
                   child: FFButtonWidget(
                     onPressed: () async {
                       context.pushNamed(
                         'ResetPassword',
                         extra: <String, dynamic>{
-                          kTransitionInfoKey: TransitionInfo(
+                          kTransitionInfoKey: const TransitionInfo(
                             hasTransition: true,
                             transitionType: PageTransitionType.rightToLeft,
                             duration: Duration(milliseconds: 200),
@@ -273,9 +269,9 @@ class _ForgotPasswordWidgetState extends State<ForgotPasswordWidget>
                       width: double.infinity,
                       height: 50.0,
                       padding:
-                          EdgeInsetsDirectional.fromSTEB(24.0, 0.0, 24.0, 0.0),
+                          const EdgeInsetsDirectional.fromSTEB(24.0, 0.0, 24.0, 0.0),
                       iconPadding:
-                          EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
+                          const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
                       color: FlutterFlowTheme.of(context).primary,
                       textStyle:
                           FlutterFlowTheme.of(context).titleSmall.override(
@@ -286,7 +282,7 @@ class _ForgotPasswordWidgetState extends State<ForgotPasswordWidget>
                                 fontWeight: FontWeight.bold,
                               ),
                       elevation: 0.0,
-                      borderSide: BorderSide(
+                      borderSide: const BorderSide(
                         color: Colors.transparent,
                         width: 1.0,
                       ),

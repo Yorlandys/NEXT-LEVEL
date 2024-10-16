@@ -1,10 +1,7 @@
 import '/components/exercise_card/exercise_card_widget.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
-import '/flutter_flow/flutter_flow_widgets.dart';
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
-import 'package:provider/provider.dart';
 import 'exercise_packs_model.dart';
 export 'exercise_packs_model.dart';
 
@@ -51,13 +48,13 @@ class _ExercisePacksWidgetState extends State<ExercisePacksWidget> {
                   children: [
                     Container(
                       height: 220.0,
-                      decoration: BoxDecoration(),
+                      decoration: const BoxDecoration(),
                       child: Stack(
                         children: [
                           ClipRRect(
                             child: Container(
                               height: 420.0,
-                              decoration: BoxDecoration(),
+                              decoration: const BoxDecoration(),
                               child: Column(
                                 mainAxisSize: MainAxisSize.max,
                                 children: [
@@ -79,7 +76,7 @@ class _ExercisePacksWidgetState extends State<ExercisePacksWidget> {
                                           blurRadius: 80.0,
                                           color: FlutterFlowTheme.of(context)
                                               .primaryBackground2,
-                                          offset: Offset(
+                                          offset: const Offset(
                                             0.0,
                                             2.0,
                                           ),
@@ -93,9 +90,9 @@ class _ExercisePacksWidgetState extends State<ExercisePacksWidget> {
                             ),
                           ),
                           Align(
-                            alignment: AlignmentDirectional(-1.0, 1.0),
+                            alignment: const AlignmentDirectional(-1.0, 1.0),
                             child: Padding(
-                              padding: EdgeInsetsDirectional.fromSTEB(
+                              padding: const EdgeInsetsDirectional.fromSTEB(
                                   16.0, 0.0, 16.0, 0.0),
                               child: Column(
                                 mainAxisSize: MainAxisSize.min,
@@ -136,7 +133,7 @@ class _ExercisePacksWidgetState extends State<ExercisePacksWidget> {
                                       download: true,
                                     ),
                                   ),
-                                ].divide(SizedBox(height: 20.0)),
+                                ].divide(const SizedBox(height: 20.0)),
                               ),
                             ),
                           ),
@@ -145,7 +142,7 @@ class _ExercisePacksWidgetState extends State<ExercisePacksWidget> {
                     ),
                     Padding(
                       padding:
-                          EdgeInsetsDirectional.fromSTEB(16.0, 0.0, 16.0, 0.0),
+                          const EdgeInsetsDirectional.fromSTEB(16.0, 0.0, 16.0, 0.0),
                       child: Column(
                         mainAxisSize: MainAxisSize.max,
                         crossAxisAlignment: CrossAxisAlignment.start,
@@ -456,16 +453,16 @@ class _ExercisePacksWidgetState extends State<ExercisePacksWidget> {
                               ],
                             ),
                           ),
-                        ].divide(SizedBox(height: 16.0)),
+                        ].divide(const SizedBox(height: 16.0)),
                       ),
                     ),
                   ]
-                      .divide(SizedBox(height: 24.0))
-                      .addToEnd(SizedBox(height: 32.0)),
+                      .divide(const SizedBox(height: 24.0))
+                      .addToEnd(const SizedBox(height: 32.0)),
                 ),
               ),
               Padding(
-                padding: EdgeInsetsDirectional.fromSTEB(16.0, 16.0, 0.0, 0.0),
+                padding: const EdgeInsetsDirectional.fromSTEB(16.0, 16.0, 0.0, 0.0),
                 child: InkWell(
                   splashColor: Colors.transparent,
                   focusColor: Colors.transparent,
@@ -477,12 +474,12 @@ class _ExercisePacksWidgetState extends State<ExercisePacksWidget> {
                   child: Container(
                     width: 32.0,
                     height: 32.0,
-                    decoration: BoxDecoration(
+                    decoration: const BoxDecoration(
                       color: Color(0x80BDBDBD),
                       shape: BoxShape.circle,
                     ),
                     child: Align(
-                      alignment: AlignmentDirectional(0.0, 0.0),
+                      alignment: const AlignmentDirectional(0.0, 0.0),
                       child: Icon(
                         FFIcons.kchevronLeft,
                         color: FlutterFlowTheme.of(context).info,

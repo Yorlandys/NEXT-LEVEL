@@ -2,8 +2,6 @@ import '/components/indicator/indicator_widget.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
-import 'package:provider/provider.dart';
 import 'main_card_model.dart';
 export 'main_card_model.dart';
 
@@ -47,7 +45,7 @@ class _MainCardWidgetState extends State<MainCardWidget> {
         context.pushNamed(
           'AboutWorkout',
           extra: <String, dynamic>{
-            kTransitionInfoKey: TransitionInfo(
+            kTransitionInfoKey: const TransitionInfo(
               hasTransition: true,
               transitionType: PageTransitionType.rightToLeft,
               duration: Duration(milliseconds: 200),
@@ -63,7 +61,7 @@ class _MainCardWidgetState extends State<MainCardWidget> {
           borderRadius: BorderRadius.circular(20.0),
         ),
         child: Stack(
-          alignment: AlignmentDirectional(0.0, 1.0),
+          alignment: const AlignmentDirectional(0.0, 1.0),
           children: [
             ClipRRect(
               borderRadius: BorderRadius.circular(20.0),
@@ -76,7 +74,7 @@ class _MainCardWidgetState extends State<MainCardWidget> {
                   children: [
                     Expanded(
                       child: ClipRRect(
-                        borderRadius: BorderRadius.only(
+                        borderRadius: const BorderRadius.only(
                           bottomLeft: Radius.circular(0.0),
                           bottomRight: Radius.circular(0.0),
                           topLeft: Radius.circular(20.0),
@@ -96,7 +94,7 @@ class _MainCardWidgetState extends State<MainCardWidget> {
                       decoration: BoxDecoration(
                         color:
                             FlutterFlowTheme.of(context).secondaryBackground2,
-                        boxShadow: [
+                        boxShadow: const [
                           BoxShadow(
                             blurRadius: 60.0,
                             color: Color(0xFF0C3D7D),
@@ -107,7 +105,7 @@ class _MainCardWidgetState extends State<MainCardWidget> {
                             spreadRadius: 90.0,
                           )
                         ],
-                        borderRadius: BorderRadius.only(
+                        borderRadius: const BorderRadius.only(
                           bottomLeft: Radius.circular(20.0),
                           bottomRight: Radius.circular(20.0),
                           topLeft: Radius.circular(0.0),
@@ -120,7 +118,7 @@ class _MainCardWidgetState extends State<MainCardWidget> {
               ),
             ),
             Padding(
-              padding: EdgeInsets.all(16.0),
+              padding: const EdgeInsets.all(16.0),
               child: Column(
                 mainAxisSize: MainAxisSize.min,
                 mainAxisAlignment: MainAxisAlignment.end,
@@ -136,7 +134,7 @@ class _MainCardWidgetState extends State<MainCardWidget> {
                           borderRadius: BorderRadius.circular(8.0),
                         ),
                         child: Padding(
-                          padding: EdgeInsetsDirectional.fromSTEB(
+                          padding: const EdgeInsetsDirectional.fromSTEB(
                               8.0, 0.0, 8.0, 0.0),
                           child: Row(
                             mainAxisSize: MainAxisSize.max,
@@ -159,11 +157,11 @@ class _MainCardWidgetState extends State<MainCardWidget> {
                       Container(
                         height: 24.0,
                         decoration: BoxDecoration(
-                          color: Color(0x66212121),
+                          color: const Color(0x66212121),
                           borderRadius: BorderRadius.circular(8.0),
                         ),
                         child: Padding(
-                          padding: EdgeInsetsDirectional.fromSTEB(
+                          padding: const EdgeInsetsDirectional.fromSTEB(
                               8.0, 0.0, 8.0, 0.0),
                           child: Row(
                             mainAxisSize: MainAxisSize.max,
@@ -184,7 +182,7 @@ class _MainCardWidgetState extends State<MainCardWidget> {
                           ),
                         ),
                       ),
-                    ].divide(SizedBox(width: 8.0)),
+                    ].divide(const SizedBox(width: 8.0)),
                   ),
                   Text(
                     'Full Body Gainer',
@@ -197,7 +195,7 @@ class _MainCardWidgetState extends State<MainCardWidget> {
                         ),
                   ),
                   Padding(
-                    padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 2.0),
+                    padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 2.0),
                     child: Row(
                       mainAxisSize: MainAxisSize.max,
                       crossAxisAlignment: CrossAxisAlignment.end,
@@ -222,10 +220,10 @@ class _MainCardWidgetState extends State<MainCardWidget> {
                             color3: FlutterFlowTheme.of(context).accent1,
                           ),
                         ),
-                      ].divide(SizedBox(width: 20.0)),
+                      ].divide(const SizedBox(width: 20.0)),
                     ),
                   ),
-                ].divide(SizedBox(height: 12.0)),
+                ].divide(const SizedBox(height: 12.0)),
               ),
             ),
           ],

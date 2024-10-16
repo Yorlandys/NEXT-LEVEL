@@ -3,13 +3,9 @@ import '/flutter_flow/flutter_flow_animations.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import '/flutter_flow/flutter_flow_widgets.dart';
-import 'dart:math';
 import 'package:flutter/material.dart';
-import 'package:flutter/scheduler.dart';
 import 'package:flutter_animate/flutter_animate.dart';
-import 'package:google_fonts/google_fonts.dart';
 import 'package:percent_indicator/percent_indicator.dart';
-import 'package:provider/provider.dart';
 import 'where_workout_model.dart';
 export 'where_workout_model.dart';
 
@@ -41,8 +37,8 @@ class _WhereWorkoutWidgetState extends State<WhereWorkoutWidget>
             curve: Curves.easeInOutQuint,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(-300.0, 0.0),
-            end: Offset(0.0, 0.0),
+            begin: const Offset(-300.0, 0.0),
+            end: const Offset(0.0, 0.0),
           ),
           FadeEffect(
             curve: Curves.easeInOut,
@@ -73,7 +69,7 @@ class _WhereWorkoutWidgetState extends State<WhereWorkoutWidget>
         body: SafeArea(
           top: true,
           child: Padding(
-            padding: EdgeInsetsDirectional.fromSTEB(20.0, 0.0, 20.0, 0.0),
+            padding: const EdgeInsetsDirectional.fromSTEB(20.0, 0.0, 20.0, 0.0),
             child: Column(
               mainAxisSize: MainAxisSize.max,
               crossAxisAlignment: CrossAxisAlignment.start,
@@ -98,7 +94,7 @@ class _WhereWorkoutWidgetState extends State<WhereWorkoutWidget>
                           shape: BoxShape.circle,
                         ),
                         child: Align(
-                          alignment: AlignmentDirectional(0.0, 0.0),
+                          alignment: const AlignmentDirectional(0.0, 0.0),
                           child: Icon(
                             FFIcons.kchevronLeft,
                             color: FlutterFlowTheme.of(context).primaryText,
@@ -119,7 +115,7 @@ class _WhereWorkoutWidgetState extends State<WhereWorkoutWidget>
                   ],
                 ),
                 Padding(
-                  padding: EdgeInsetsDirectional.fromSTEB(0.0, 32.0, 0.0, 0.0),
+                  padding: const EdgeInsetsDirectional.fromSTEB(0.0, 32.0, 0.0, 0.0),
                   child: Column(
                     mainAxisSize: MainAxisSize.max,
                     crossAxisAlignment: CrossAxisAlignment.start,
@@ -135,54 +131,54 @@ class _WhereWorkoutWidgetState extends State<WhereWorkoutWidget>
                             ),
                       ).animateOnPageLoad(
                           animationsMap['textOnPageLoadAnimation']!),
-                    ].divide(SizedBox(height: 6.0)),
+                    ].divide(const SizedBox(height: 6.0)),
                   ),
                 ),
                 Padding(
-                  padding: EdgeInsetsDirectional.fromSTEB(0.0, 40.0, 0.0, 0.0),
+                  padding: const EdgeInsetsDirectional.fromSTEB(0.0, 40.0, 0.0, 0.0),
                   child: Column(
                     mainAxisSize: MainAxisSize.max,
                     children: [
                       wrapWithModel(
                         model: _model.habitsCardModel1,
                         updateCallback: () => safeSetState(() {}),
-                        child: HabitsCardWidget(
+                        child: const HabitsCardWidget(
                           title: 'At home',
                         ),
                       ),
                       wrapWithModel(
                         model: _model.habitsCardModel2,
                         updateCallback: () => safeSetState(() {}),
-                        child: HabitsCardWidget(
+                        child: const HabitsCardWidget(
                           title: 'At the gym',
                         ),
                       ),
                       wrapWithModel(
                         model: _model.habitsCardModel3,
                         updateCallback: () => safeSetState(() {}),
-                        child: HabitsCardWidget(
+                        child: const HabitsCardWidget(
                           title: 'Studio classes',
                         ),
                       ),
                       wrapWithModel(
                         model: _model.habitsCardModel4,
                         updateCallback: () => safeSetState(() {}),
-                        child: HabitsCardWidget(
+                        child: const HabitsCardWidget(
                           title: 'Outdoor',
                         ),
                       ),
-                    ].divide(SizedBox(height: 8.0)),
+                    ].divide(const SizedBox(height: 8.0)),
                   ),
                 ),
                 Expanded(
                   child: Align(
-                    alignment: AlignmentDirectional(0.0, 1.0),
+                    alignment: const AlignmentDirectional(0.0, 1.0),
                     child: FFButtonWidget(
                       onPressed: () async {
                         context.pushNamed(
                           'Exercises',
                           extra: <String, dynamic>{
-                            kTransitionInfoKey: TransitionInfo(
+                            kTransitionInfoKey: const TransitionInfo(
                               hasTransition: true,
                               transitionType: PageTransitionType.rightToLeft,
                               duration: Duration(milliseconds: 200),
@@ -194,10 +190,10 @@ class _WhereWorkoutWidgetState extends State<WhereWorkoutWidget>
                       options: FFButtonOptions(
                         width: double.infinity,
                         height: 44.0,
-                        padding: EdgeInsetsDirectional.fromSTEB(
+                        padding: const EdgeInsetsDirectional.fromSTEB(
                             24.0, 0.0, 24.0, 0.0),
                         iconPadding:
-                            EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
+                            const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
                         color: FlutterFlowTheme.of(context).primary,
                         textStyle: FlutterFlowTheme.of(context)
                             .titleSmall
@@ -209,7 +205,7 @@ class _WhereWorkoutWidgetState extends State<WhereWorkoutWidget>
                               fontWeight: FontWeight.bold,
                             ),
                         elevation: 0.0,
-                        borderSide: BorderSide(
+                        borderSide: const BorderSide(
                           color: Colors.transparent,
                           width: 1.0,
                         ),
@@ -219,8 +215,8 @@ class _WhereWorkoutWidgetState extends State<WhereWorkoutWidget>
                   ),
                 ),
               ]
-                  .addToStart(SizedBox(height: 24.0))
-                  .addToEnd(SizedBox(height: 24.0)),
+                  .addToStart(const SizedBox(height: 24.0))
+                  .addToEnd(const SizedBox(height: 24.0)),
             ),
           ),
         ),

@@ -12,10 +12,7 @@ import '/components/modals/upload_media/upload_media_widget.dart';
 import '/components/settings_menu_btn/settings_menu_btn_widget.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
-import '/flutter_flow/flutter_flow_widgets.dart';
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
-import 'package:provider/provider.dart';
 import 'profile_edit_model.dart';
 export 'profile_edit_model.dart';
 
@@ -60,7 +57,7 @@ class _ProfileEditWidgetState extends State<ProfileEditWidget> {
                   mainAxisSize: MainAxisSize.max,
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-                    Container(
+                    SizedBox(
                       height: 424.0,
                       child: Stack(
                         children: [
@@ -97,7 +94,7 @@ class _ProfileEditWidgetState extends State<ProfileEditWidget> {
                                           blurRadius: 60.0,
                                           color: FlutterFlowTheme.of(context)
                                               .primaryBackground2,
-                                          offset: Offset(
+                                          offset: const Offset(
                                             0.0,
                                             2.0,
                                           ),
@@ -113,24 +110,24 @@ class _ProfileEditWidgetState extends State<ProfileEditWidget> {
                           Container(
                             width: double.infinity,
                             height: double.infinity,
-                            decoration: BoxDecoration(
+                            decoration: const BoxDecoration(
                               color: Color(0xB3083168),
                             ),
                           ),
                         ],
                       ),
                     ),
-                  ].addToEnd(SizedBox(height: 32.0)),
+                  ].addToEnd(const SizedBox(height: 32.0)),
                 ),
               ),
               Align(
-                alignment: AlignmentDirectional(0.0, -1.0),
+                alignment: const AlignmentDirectional(0.0, -1.0),
                 child: Padding(
                   padding:
-                      EdgeInsetsDirectional.fromSTEB(16.0, 20.0, 16.0, 0.0),
+                      const EdgeInsetsDirectional.fromSTEB(16.0, 20.0, 16.0, 0.0),
                   child: Container(
                     height: 34.0,
-                    decoration: BoxDecoration(),
+                    decoration: const BoxDecoration(),
                   ),
                 ),
               ),
@@ -140,7 +137,7 @@ class _ProfileEditWidgetState extends State<ProfileEditWidget> {
                   children: [
                     Padding(
                       padding:
-                          EdgeInsetsDirectional.fromSTEB(16.0, 20.0, 16.0, 0.0),
+                          const EdgeInsetsDirectional.fromSTEB(16.0, 20.0, 16.0, 0.0),
                       child: Column(
                         mainAxisSize: MainAxisSize.min,
                         children: [
@@ -151,7 +148,7 @@ class _ProfileEditWidgetState extends State<ProfileEditWidget> {
                             children: [
                               Expanded(
                                 child: Align(
-                                  alignment: AlignmentDirectional(-1.0, 0.0),
+                                  alignment: const AlignmentDirectional(-1.0, 0.0),
                                   child: InkWell(
                                     splashColor: Colors.transparent,
                                     focusColor: Colors.transparent,
@@ -163,13 +160,13 @@ class _ProfileEditWidgetState extends State<ProfileEditWidget> {
                                     child: Container(
                                       width: 32.0,
                                       height: 32.0,
-                                      decoration: BoxDecoration(
+                                      decoration: const BoxDecoration(
                                         color: Color(0x67BDBDBD),
                                         shape: BoxShape.circle,
                                       ),
                                       child: Align(
                                         alignment:
-                                            AlignmentDirectional(0.0, 0.0),
+                                            const AlignmentDirectional(0.0, 0.0),
                                         child: Icon(
                                           FFIcons.kchevronLeft,
                                           color:
@@ -183,7 +180,7 @@ class _ProfileEditWidgetState extends State<ProfileEditWidget> {
                               ),
                               Expanded(
                                 child: Align(
-                                  alignment: AlignmentDirectional(0.0, 0.0),
+                                  alignment: const AlignmentDirectional(0.0, 0.0),
                                   child: Text(
                                     'Edit profile',
                                     style: FlutterFlowTheme.of(context)
@@ -201,7 +198,7 @@ class _ProfileEditWidgetState extends State<ProfileEditWidget> {
                               ),
                               Expanded(
                                 child: Align(
-                                  alignment: AlignmentDirectional(1.0, 0.0),
+                                  alignment: const AlignmentDirectional(1.0, 0.0),
                                   child: Text(
                                     'SAVE',
                                     style: FlutterFlowTheme.of(context)
@@ -219,7 +216,7 @@ class _ProfileEditWidgetState extends State<ProfileEditWidget> {
                             ],
                           ),
                           Padding(
-                            padding: EdgeInsetsDirectional.fromSTEB(
+                            padding: const EdgeInsetsDirectional.fromSTEB(
                                 0.0, 12.0, 0.0, 24.0),
                             child: InkWell(
                               splashColor: Colors.transparent,
@@ -229,7 +226,7 @@ class _ProfileEditWidgetState extends State<ProfileEditWidget> {
                               onTap: () async {
                                 showModalBottomSheet(
                                   isScrollControlled: true,
-                                  backgroundColor: Color(0x34000000),
+                                  backgroundColor: const Color(0x34000000),
                                   context: context,
                                   builder: (context) {
                                     return GestureDetector(
@@ -238,20 +235,20 @@ class _ProfileEditWidgetState extends State<ProfileEditWidget> {
                                       child: Padding(
                                         padding:
                                             MediaQuery.viewInsetsOf(context),
-                                        child: UploadMediaWidget(),
+                                        child: const UploadMediaWidget(),
                                       ),
                                     );
                                   },
                                 ).then((value) => safeSetState(() {}));
                               },
                               child: Stack(
-                                alignment: AlignmentDirectional(1.0, 1.0),
+                                alignment: const AlignmentDirectional(1.0, 1.0),
                                 children: [
                                   Container(
                                     width: 90.0,
                                     height: 90.0,
                                     clipBehavior: Clip.antiAlias,
-                                    decoration: BoxDecoration(
+                                    decoration: const BoxDecoration(
                                       shape: BoxShape.circle,
                                     ),
                                     child: Image.network(
@@ -298,7 +295,7 @@ class _ProfileEditWidgetState extends State<ProfileEditWidget> {
                                       highlightColor: Colors.transparent,
                                       onTap: () async {
                                         showDialog(
-                                          barrierColor: Color(0x34000000),
+                                          barrierColor: const Color(0x34000000),
                                           context: context,
                                           builder: (dialogContext) {
                                             return Dialog(
@@ -307,7 +304,7 @@ class _ProfileEditWidgetState extends State<ProfileEditWidget> {
                                               backgroundColor:
                                                   Colors.transparent,
                                               alignment:
-                                                  AlignmentDirectional(0.0, 0.0)
+                                                  const AlignmentDirectional(0.0, 0.0)
                                                       .resolve(
                                                           Directionality.of(
                                                               context)),
@@ -315,7 +312,7 @@ class _ProfileEditWidgetState extends State<ProfileEditWidget> {
                                                 onTap: () =>
                                                     FocusScope.of(dialogContext)
                                                         .unfocus(),
-                                                child: EditNameWidget(),
+                                                child: const EditNameWidget(),
                                               ),
                                             );
                                           },
@@ -325,7 +322,7 @@ class _ProfileEditWidgetState extends State<ProfileEditWidget> {
                                         model: _model.settingsMenuBtnModel1,
                                         updateCallback: () =>
                                             safeSetState(() {}),
-                                        child: SettingsMenuBtnWidget(
+                                        child: const SettingsMenuBtnWidget(
                                           title: 'Name',
                                           subtitle: 'Furkan Sarkar',
                                         ),
@@ -348,7 +345,7 @@ class _ProfileEditWidgetState extends State<ProfileEditWidget> {
                                       highlightColor: Colors.transparent,
                                       onTap: () async {
                                         showDialog(
-                                          barrierColor: Color(0x34000000),
+                                          barrierColor: const Color(0x34000000),
                                           context: context,
                                           builder: (dialogContext) {
                                             return Dialog(
@@ -357,7 +354,7 @@ class _ProfileEditWidgetState extends State<ProfileEditWidget> {
                                               backgroundColor:
                                                   Colors.transparent,
                                               alignment:
-                                                  AlignmentDirectional(0.0, 0.0)
+                                                  const AlignmentDirectional(0.0, 0.0)
                                                       .resolve(
                                                           Directionality.of(
                                                               context)),
@@ -365,7 +362,7 @@ class _ProfileEditWidgetState extends State<ProfileEditWidget> {
                                                 onTap: () =>
                                                     FocusScope.of(dialogContext)
                                                         .unfocus(),
-                                                child: EditGenderWidget(),
+                                                child: const EditGenderWidget(),
                                               ),
                                             );
                                           },
@@ -375,7 +372,7 @@ class _ProfileEditWidgetState extends State<ProfileEditWidget> {
                                         model: _model.settingsMenuBtnModel2,
                                         updateCallback: () =>
                                             safeSetState(() {}),
-                                        child: SettingsMenuBtnWidget(
+                                        child: const SettingsMenuBtnWidget(
                                           title: 'Geander',
                                           subtitle: 'Male',
                                         ),
@@ -398,7 +395,7 @@ class _ProfileEditWidgetState extends State<ProfileEditWidget> {
                                       highlightColor: Colors.transparent,
                                       onTap: () async {
                                         showDialog(
-                                          barrierColor: Color(0x34000000),
+                                          barrierColor: const Color(0x34000000),
                                           context: context,
                                           builder: (dialogContext) {
                                             return Dialog(
@@ -407,7 +404,7 @@ class _ProfileEditWidgetState extends State<ProfileEditWidget> {
                                               backgroundColor:
                                                   Colors.transparent,
                                               alignment:
-                                                  AlignmentDirectional(0.0, 0.0)
+                                                  const AlignmentDirectional(0.0, 0.0)
                                                       .resolve(
                                                           Directionality.of(
                                                               context)),
@@ -415,7 +412,7 @@ class _ProfileEditWidgetState extends State<ProfileEditWidget> {
                                                 onTap: () =>
                                                     FocusScope.of(dialogContext)
                                                         .unfocus(),
-                                                child: BirthdayWidget(),
+                                                child: const BirthdayWidget(),
                                               ),
                                             );
                                           },
@@ -425,7 +422,7 @@ class _ProfileEditWidgetState extends State<ProfileEditWidget> {
                                         model: _model.settingsMenuBtnModel3,
                                         updateCallback: () =>
                                             safeSetState(() {}),
-                                        child: SettingsMenuBtnWidget(
+                                        child: const SettingsMenuBtnWidget(
                                           title: 'Birthday',
                                           subtitle: '02/06/2005',
                                         ),
@@ -448,7 +445,7 @@ class _ProfileEditWidgetState extends State<ProfileEditWidget> {
                                       highlightColor: Colors.transparent,
                                       onTap: () async {
                                         showDialog(
-                                          barrierColor: Color(0x34000000),
+                                          barrierColor: const Color(0x34000000),
                                           context: context,
                                           builder: (dialogContext) {
                                             return Dialog(
@@ -457,7 +454,7 @@ class _ProfileEditWidgetState extends State<ProfileEditWidget> {
                                               backgroundColor:
                                                   Colors.transparent,
                                               alignment:
-                                                  AlignmentDirectional(0.0, 0.0)
+                                                  const AlignmentDirectional(0.0, 0.0)
                                                       .resolve(
                                                           Directionality.of(
                                                               context)),
@@ -465,7 +462,7 @@ class _ProfileEditWidgetState extends State<ProfileEditWidget> {
                                                 onTap: () =>
                                                     FocusScope.of(dialogContext)
                                                         .unfocus(),
-                                                child: UnitsWidget(),
+                                                child: const UnitsWidget(),
                                               ),
                                             );
                                           },
@@ -475,7 +472,7 @@ class _ProfileEditWidgetState extends State<ProfileEditWidget> {
                                         model: _model.settingsMenuBtnModel4,
                                         updateCallback: () =>
                                             safeSetState(() {}),
-                                        child: SettingsMenuBtnWidget(
+                                        child: const SettingsMenuBtnWidget(
                                           title: 'Units',
                                           subtitle: 'fit/kg',
                                         ),
@@ -498,7 +495,7 @@ class _ProfileEditWidgetState extends State<ProfileEditWidget> {
                                       highlightColor: Colors.transparent,
                                       onTap: () async {
                                         showDialog(
-                                          barrierColor: Color(0x34000000),
+                                          barrierColor: const Color(0x34000000),
                                           context: context,
                                           builder: (dialogContext) {
                                             return Dialog(
@@ -507,7 +504,7 @@ class _ProfileEditWidgetState extends State<ProfileEditWidget> {
                                               backgroundColor:
                                                   Colors.transparent,
                                               alignment:
-                                                  AlignmentDirectional(0.0, 0.0)
+                                                  const AlignmentDirectional(0.0, 0.0)
                                                       .resolve(
                                                           Directionality.of(
                                                               context)),
@@ -515,7 +512,7 @@ class _ProfileEditWidgetState extends State<ProfileEditWidget> {
                                                 onTap: () =>
                                                     FocusScope.of(dialogContext)
                                                         .unfocus(),
-                                                child: EditHeightWidget(),
+                                                child: const EditHeightWidget(),
                                               ),
                                             );
                                           },
@@ -525,7 +522,7 @@ class _ProfileEditWidgetState extends State<ProfileEditWidget> {
                                         model: _model.settingsMenuBtnModel5,
                                         updateCallback: () =>
                                             safeSetState(() {}),
-                                        child: SettingsMenuBtnWidget(
+                                        child: const SettingsMenuBtnWidget(
                                           title: 'Height',
                                           subtitle: '5.11 fit',
                                         ),
@@ -548,7 +545,7 @@ class _ProfileEditWidgetState extends State<ProfileEditWidget> {
                                       highlightColor: Colors.transparent,
                                       onTap: () async {
                                         showDialog(
-                                          barrierColor: Color(0x34000000),
+                                          barrierColor: const Color(0x34000000),
                                           context: context,
                                           builder: (dialogContext) {
                                             return Dialog(
@@ -557,7 +554,7 @@ class _ProfileEditWidgetState extends State<ProfileEditWidget> {
                                               backgroundColor:
                                                   Colors.transparent,
                                               alignment:
-                                                  AlignmentDirectional(0.0, 0.0)
+                                                  const AlignmentDirectional(0.0, 0.0)
                                                       .resolve(
                                                           Directionality.of(
                                                               context)),
@@ -565,7 +562,7 @@ class _ProfileEditWidgetState extends State<ProfileEditWidget> {
                                                 onTap: () =>
                                                     FocusScope.of(dialogContext)
                                                         .unfocus(),
-                                                child: EditWeightWidget(),
+                                                child: const EditWeightWidget(),
                                               ),
                                             );
                                           },
@@ -575,7 +572,7 @@ class _ProfileEditWidgetState extends State<ProfileEditWidget> {
                                         model: _model.settingsMenuBtnModel6,
                                         updateCallback: () =>
                                             safeSetState(() {}),
-                                        child: SettingsMenuBtnWidget(
+                                        child: const SettingsMenuBtnWidget(
                                           title: 'Weight',
                                           subtitle: '56.0 kg',
                                         ),
@@ -598,7 +595,7 @@ class _ProfileEditWidgetState extends State<ProfileEditWidget> {
                                       highlightColor: Colors.transparent,
                                       onTap: () async {
                                         showDialog(
-                                          barrierColor: Color(0x34000000),
+                                          barrierColor: const Color(0x34000000),
                                           context: context,
                                           builder: (dialogContext) {
                                             return Dialog(
@@ -607,7 +604,7 @@ class _ProfileEditWidgetState extends State<ProfileEditWidget> {
                                               backgroundColor:
                                                   Colors.transparent,
                                               alignment:
-                                                  AlignmentDirectional(0.0, 0.0)
+                                                  const AlignmentDirectional(0.0, 0.0)
                                                       .resolve(
                                                           Directionality.of(
                                                               context)),
@@ -615,7 +612,7 @@ class _ProfileEditWidgetState extends State<ProfileEditWidget> {
                                                 onTap: () =>
                                                     FocusScope.of(dialogContext)
                                                         .unfocus(),
-                                                child: EditGoalWidget(),
+                                                child: const EditGoalWidget(),
                                               ),
                                             );
                                           },
@@ -625,7 +622,7 @@ class _ProfileEditWidgetState extends State<ProfileEditWidget> {
                                         model: _model.settingsMenuBtnModel7,
                                         updateCallback: () =>
                                             safeSetState(() {}),
-                                        child: SettingsMenuBtnWidget(
+                                        child: const SettingsMenuBtnWidget(
                                           title: 'Goal',
                                           subtitle: 'Gain muscle',
                                         ),
@@ -648,7 +645,7 @@ class _ProfileEditWidgetState extends State<ProfileEditWidget> {
                                       highlightColor: Colors.transparent,
                                       onTap: () async {
                                         showDialog(
-                                          barrierColor: Color(0x34000000),
+                                          barrierColor: const Color(0x34000000),
                                           context: context,
                                           builder: (dialogContext) {
                                             return Dialog(
@@ -657,7 +654,7 @@ class _ProfileEditWidgetState extends State<ProfileEditWidget> {
                                               backgroundColor:
                                                   Colors.transparent,
                                               alignment:
-                                                  AlignmentDirectional(0.0, 0.0)
+                                                  const AlignmentDirectional(0.0, 0.0)
                                                       .resolve(
                                                           Directionality.of(
                                                               context)),
@@ -665,7 +662,7 @@ class _ProfileEditWidgetState extends State<ProfileEditWidget> {
                                                 onTap: () =>
                                                     FocusScope.of(dialogContext)
                                                         .unfocus(),
-                                                child: KneePainWidget(),
+                                                child: const KneePainWidget(),
                                               ),
                                             );
                                           },
@@ -675,7 +672,7 @@ class _ProfileEditWidgetState extends State<ProfileEditWidget> {
                                         model: _model.settingsMenuBtnModel8,
                                         updateCallback: () =>
                                             safeSetState(() {}),
-                                        child: SettingsMenuBtnWidget(
+                                        child: const SettingsMenuBtnWidget(
                                           title: 'Knee Pain',
                                           subtitle: 'No problems',
                                         ),
@@ -698,7 +695,7 @@ class _ProfileEditWidgetState extends State<ProfileEditWidget> {
                                       highlightColor: Colors.transparent,
                                       onTap: () async {
                                         showDialog(
-                                          barrierColor: Color(0x34000000),
+                                          barrierColor: const Color(0x34000000),
                                           context: context,
                                           builder: (dialogContext) {
                                             return Dialog(
@@ -707,7 +704,7 @@ class _ProfileEditWidgetState extends State<ProfileEditWidget> {
                                               backgroundColor:
                                                   Colors.transparent,
                                               alignment:
-                                                  AlignmentDirectional(0.0, 0.0)
+                                                  const AlignmentDirectional(0.0, 0.0)
                                                       .resolve(
                                                           Directionality.of(
                                                               context)),
@@ -715,7 +712,7 @@ class _ProfileEditWidgetState extends State<ProfileEditWidget> {
                                                 onTap: () =>
                                                     FocusScope.of(dialogContext)
                                                         .unfocus(),
-                                                child: NewsletterWidget(),
+                                                child: const NewsletterWidget(),
                                               ),
                                             );
                                           },
@@ -725,7 +722,7 @@ class _ProfileEditWidgetState extends State<ProfileEditWidget> {
                                         model: _model.settingsMenuBtnModel9,
                                         updateCallback: () =>
                                             safeSetState(() {}),
-                                        child: SettingsMenuBtnWidget(
+                                        child: const SettingsMenuBtnWidget(
                                           title: 'Newsletter',
                                           subtitle: 'Yes',
                                         ),
@@ -761,7 +758,7 @@ class _ProfileEditWidgetState extends State<ProfileEditWidget> {
                                     color: FlutterFlowTheme.of(context).info,
                                     size: 22.0,
                                   ),
-                                ].divide(SizedBox(width: 8.0)),
+                                ].divide(const SizedBox(width: 8.0)),
                               ),
                               Builder(
                                 builder: (context) => InkWell(
@@ -771,14 +768,14 @@ class _ProfileEditWidgetState extends State<ProfileEditWidget> {
                                   highlightColor: Colors.transparent,
                                   onTap: () async {
                                     showDialog(
-                                      barrierColor: Color(0x34000000),
+                                      barrierColor: const Color(0x34000000),
                                       context: context,
                                       builder: (dialogContext) {
                                         return Dialog(
                                           elevation: 0,
                                           insetPadding: EdgeInsets.zero,
                                           backgroundColor: Colors.transparent,
-                                          alignment: AlignmentDirectional(
+                                          alignment: const AlignmentDirectional(
                                                   0.0, 0.0)
                                               .resolve(
                                                   Directionality.of(context)),
@@ -786,7 +783,7 @@ class _ProfileEditWidgetState extends State<ProfileEditWidget> {
                                             onTap: () =>
                                                 FocusScope.of(dialogContext)
                                                     .unfocus(),
-                                            child: DeleteAccountWidget(),
+                                            child: const DeleteAccountWidget(),
                                           ),
                                         );
                                       },
@@ -808,11 +805,11 @@ class _ProfileEditWidgetState extends State<ProfileEditWidget> {
                                   ),
                                 ),
                               ),
-                            ].divide(SizedBox(height: 24.0)),
+                            ].divide(const SizedBox(height: 24.0)),
                           ),
                         ]
-                            .divide(SizedBox(height: 20.0))
-                            .addToEnd(SizedBox(height: 32.0)),
+                            .divide(const SizedBox(height: 20.0))
+                            .addToEnd(const SizedBox(height: 32.0)),
                       ),
                     ),
                   ],

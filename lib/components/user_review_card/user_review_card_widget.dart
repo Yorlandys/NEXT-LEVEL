@@ -2,8 +2,6 @@ import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_rating_bar/flutter_rating_bar.dart';
-import 'package:google_fonts/google_fonts.dart';
-import 'package:provider/provider.dart';
 import 'user_review_card_model.dart';
 export 'user_review_card_model.dart';
 
@@ -52,14 +50,14 @@ class _UserReviewCardWidgetState extends State<UserReviewCardWidget> {
         borderRadius: BorderRadius.circular(10.0),
       ),
       child: Padding(
-        padding: EdgeInsets.all(12.0),
+        padding: const EdgeInsets.all(12.0),
         child: Column(
           mainAxisSize: MainAxisSize.max,
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             Text(
               valueOrDefault<String>(
-                widget!.name,
+                widget.name,
                 'na',
               ),
               style: FlutterFlowTheme.of(context).bodyMedium.override(
@@ -81,13 +79,13 @@ class _UserReviewCardWidgetState extends State<UserReviewCardWidget> {
               initialRating: _model.ratingBarValue ??= 5.0,
               unratedColor: FlutterFlowTheme.of(context).accent4,
               itemCount: 5,
-              itemPadding: EdgeInsets.fromLTRB(2.0, 0.0, 0.0, 0.0),
+              itemPadding: const EdgeInsets.fromLTRB(2.0, 0.0, 0.0, 0.0),
               itemSize: 18.0,
               glowColor: FlutterFlowTheme.of(context).warning,
             ),
             Text(
               valueOrDefault<String>(
-                widget!.comment,
+                widget.comment,
                 'na',
               ),
               style: FlutterFlowTheme.of(context).bodyMedium.override(
@@ -97,7 +95,7 @@ class _UserReviewCardWidgetState extends State<UserReviewCardWidget> {
                     letterSpacing: 0.0,
                   ),
             ),
-          ].divide(SizedBox(height: 4.0)),
+          ].divide(const SizedBox(height: 4.0)),
         ),
       ),
     );

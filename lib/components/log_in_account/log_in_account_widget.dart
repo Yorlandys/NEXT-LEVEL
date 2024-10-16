@@ -2,13 +2,9 @@ import '/components/login_button/login_button_widget.dart';
 import '/flutter_flow/flutter_flow_animations.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
-import 'dart:math';
-import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/scheduler.dart';
 import 'package:flutter_animate/flutter_animate.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:provider/provider.dart';
 import 'log_in_account_model.dart';
 export 'log_in_account_model.dart';
 
@@ -51,8 +47,8 @@ class _LogInAccountWidgetState extends State<LogInAccountWidget>
             curve: Curves.easeInOut,
             delay: 0.0.ms,
             duration: 300.0.ms,
-            begin: Offset(0.0, 320.0),
-            end: Offset(0.0, 0.0),
+            begin: const Offset(0.0, 320.0),
+            end: const Offset(0.0, 0.0),
           ),
         ],
       ),
@@ -70,8 +66,8 @@ class _LogInAccountWidgetState extends State<LogInAccountWidget>
             curve: Curves.easeInOut,
             delay: 300.0.ms,
             duration: 300.0.ms,
-            begin: Offset(0.0, 50.0),
-            end: Offset(0.0, 0.0),
+            begin: const Offset(0.0, 50.0),
+            end: const Offset(0.0, 0.0),
           ),
         ],
       ),
@@ -89,8 +85,8 @@ class _LogInAccountWidgetState extends State<LogInAccountWidget>
             curve: Curves.easeInOut,
             delay: 350.0.ms,
             duration: 300.0.ms,
-            begin: Offset(0.0, 50.0),
-            end: Offset(0.0, 0.0),
+            begin: const Offset(0.0, 50.0),
+            end: const Offset(0.0, 0.0),
           ),
         ],
       ),
@@ -108,8 +104,8 @@ class _LogInAccountWidgetState extends State<LogInAccountWidget>
             curve: Curves.easeInOut,
             delay: 400.0.ms,
             duration: 300.0.ms,
-            begin: Offset(0.0, 50.0),
-            end: Offset(0.0, 0.0),
+            begin: const Offset(0.0, 50.0),
+            end: const Offset(0.0, 0.0),
           ),
         ],
       ),
@@ -127,8 +123,8 @@ class _LogInAccountWidgetState extends State<LogInAccountWidget>
             curve: Curves.easeInOut,
             delay: 450.0.ms,
             duration: 300.0.ms,
-            begin: Offset(0.0, 50.0),
-            end: Offset(0.0, 0.0),
+            begin: const Offset(0.0, 50.0),
+            end: const Offset(0.0, 0.0),
           ),
         ],
       ),
@@ -145,13 +141,13 @@ class _LogInAccountWidgetState extends State<LogInAccountWidget>
   @override
   Widget build(BuildContext context) {
     return Align(
-      alignment: AlignmentDirectional(0.0, 1.0),
+      alignment: const AlignmentDirectional(0.0, 1.0),
       child: Container(
         width: double.infinity,
         height: 420.0,
         decoration: BoxDecoration(
           color: FlutterFlowTheme.of(context).secondaryBackground,
-          borderRadius: BorderRadius.only(
+          borderRadius: const BorderRadius.only(
             bottomLeft: Radius.circular(0.0),
             bottomRight: Radius.circular(0.0),
             topLeft: Radius.circular(16.0),
@@ -159,12 +155,12 @@ class _LogInAccountWidgetState extends State<LogInAccountWidget>
           ),
         ),
         child: Padding(
-          padding: EdgeInsetsDirectional.fromSTEB(24.0, 0.0, 24.0, 0.0),
+          padding: const EdgeInsetsDirectional.fromSTEB(24.0, 0.0, 24.0, 0.0),
           child: Column(
             mainAxisSize: MainAxisSize.max,
             children: [
               Padding(
-                padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 16.0),
+                padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 16.0),
                 child: Text(
                   'We will sync your profile across all your device',
                   textAlign: TextAlign.center,
@@ -186,7 +182,7 @@ class _LogInAccountWidgetState extends State<LogInAccountWidget>
                   context.pushNamed(
                     'Subscription',
                     extra: <String, dynamic>{
-                      kTransitionInfoKey: TransitionInfo(
+                      kTransitionInfoKey: const TransitionInfo(
                         hasTransition: true,
                         transitionType: PageTransitionType.rightToLeft,
                         duration: Duration(milliseconds: 200),
@@ -197,7 +193,7 @@ class _LogInAccountWidgetState extends State<LogInAccountWidget>
                 child: wrapWithModel(
                   model: _model.loginButtonModel1,
                   updateCallback: () => safeSetState(() {}),
-                  child: LoginButtonWidget(
+                  child: const LoginButtonWidget(
                     logo:
                         'https://storage.googleapis.com/flutterflow-io-6f20.appspot.com/projects/fiti-plus-qvr2h3/assets/grpevtjsvuel/Google__G__logo(1).svg.png',
                     title: 'Continue with Google',
@@ -214,7 +210,7 @@ class _LogInAccountWidgetState extends State<LogInAccountWidget>
                   context.pushNamed(
                     'Subscription',
                     extra: <String, dynamic>{
-                      kTransitionInfoKey: TransitionInfo(
+                      kTransitionInfoKey: const TransitionInfo(
                         hasTransition: true,
                         transitionType: PageTransitionType.rightToLeft,
                         duration: Duration(milliseconds: 200),
@@ -225,7 +221,7 @@ class _LogInAccountWidgetState extends State<LogInAccountWidget>
                 child: wrapWithModel(
                   model: _model.loginButtonModel2,
                   updateCallback: () => safeSetState(() {}),
-                  child: LoginButtonWidget(
+                  child: const LoginButtonWidget(
                     logo:
                         'https://storage.googleapis.com/flutterflow-io-6f20.appspot.com/projects/fiti-plus-qvr2h3/assets/tsq05gmh1k0g/facebook-logo.png',
                     title: 'Continue with Facebook',
@@ -242,7 +238,7 @@ class _LogInAccountWidgetState extends State<LogInAccountWidget>
                   context.pushNamed(
                     'Subscription',
                     extra: <String, dynamic>{
-                      kTransitionInfoKey: TransitionInfo(
+                      kTransitionInfoKey: const TransitionInfo(
                         hasTransition: true,
                         transitionType: PageTransitionType.rightToLeft,
                         duration: Duration(milliseconds: 200),
@@ -253,7 +249,7 @@ class _LogInAccountWidgetState extends State<LogInAccountWidget>
                 child: wrapWithModel(
                   model: _model.loginButtonModel3,
                   updateCallback: () => safeSetState(() {}),
-                  child: LoginButtonWidget(
+                  child: const LoginButtonWidget(
                     logo:
                         'https://storage.googleapis.com/flutterflow-io-6f20.appspot.com/projects/fiti-plus-qvr2h3/assets/go5lgnfy3v5v/apple-logo.png',
                     title: 'Continue with Apple',
@@ -270,7 +266,7 @@ class _LogInAccountWidgetState extends State<LogInAccountWidget>
                   context.pushNamed(
                     'SignIn',
                     extra: <String, dynamic>{
-                      kTransitionInfoKey: TransitionInfo(
+                      kTransitionInfoKey: const TransitionInfo(
                         hasTransition: true,
                         transitionType: PageTransitionType.rightToLeft,
                         duration: Duration(milliseconds: 200),
@@ -290,7 +286,7 @@ class _LogInAccountWidgetState extends State<LogInAccountWidget>
                     ),
                   ),
                   child: Align(
-                    alignment: AlignmentDirectional(0.0, 0.0),
+                    alignment: const AlignmentDirectional(0.0, 0.0),
                     child: Text(
                       'Log In with Email',
                       style: FlutterFlowTheme.of(context).bodyMedium.override(
@@ -305,7 +301,7 @@ class _LogInAccountWidgetState extends State<LogInAccountWidget>
               ).animateOnPageLoad(
                   animationsMap['containerOnPageLoadAnimation2']!),
               Padding(
-                padding: EdgeInsetsDirectional.fromSTEB(0.0, 12.0, 0.0, 0.0),
+                padding: const EdgeInsetsDirectional.fromSTEB(0.0, 12.0, 0.0, 0.0),
                 child: RichText(
                   textScaler: MediaQuery.of(context).textScaler,
                   text: TextSpan(
@@ -358,9 +354,9 @@ class _LogInAccountWidgetState extends State<LogInAccountWidget>
                 ),
               ),
             ]
-                .divide(SizedBox(height: 10.0))
-                .addToStart(SizedBox(height: 28.0))
-                .addToEnd(SizedBox(height: 24.0)),
+                .divide(const SizedBox(height: 10.0))
+                .addToStart(const SizedBox(height: 28.0))
+                .addToEnd(const SizedBox(height: 24.0)),
           ),
         ),
       ).animateOnPageLoad(animationsMap['containerOnPageLoadAnimation1']!),

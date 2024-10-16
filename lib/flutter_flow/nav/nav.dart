@@ -1,17 +1,11 @@
 import 'dart:async';
 
 import 'package:flutter/material.dart';
-import 'package:go_router/go_router.dart';
-import 'package:page_transition/page_transition.dart';
 import 'package:provider/provider.dart';
 
 import '/index.dart';
 import '/main.dart';
-import '/flutter_flow/flutter_flow_theme.dart';
-import '/flutter_flow/lat_lng.dart';
-import '/flutter_flow/place.dart';
 import '/flutter_flow/flutter_flow_util.dart';
-import 'serialization_util.dart';
 
 export 'package:go_router/go_router.dart';
 export 'serialization_util.dart';
@@ -36,413 +30,413 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
       initialLocation: '/',
       debugLogDiagnostics: true,
       refreshListenable: appStateNotifier,
-      errorBuilder: (context, state) => NavBarPage(),
+      errorBuilder: (context, state) => const NavBarPage(),
       routes: [
         FFRoute(
           name: '_initialize',
           path: '/',
-          builder: (context, _) => NavBarPage(),
+          builder: (context, _) => const NavBarPage(),
         ),
         FFRoute(
           name: 'Home',
           path: '/home',
           builder: (context, params) =>
-              params.isEmpty ? NavBarPage(initialPage: 'Home') : HomeWidget(),
+              params.isEmpty ? const NavBarPage(initialPage: 'Home') : const HomeWidget(),
         ),
         FFRoute(
           name: 'Gender',
           path: '/gender',
-          builder: (context, params) => GenderWidget(),
+          builder: (context, params) => const GenderWidget(),
         ),
         FFRoute(
           name: 'SignIn',
           path: '/signIn',
-          builder: (context, params) => SignInWidget(),
+          builder: (context, params) => const SignInWidget(),
         ),
         FFRoute(
           name: 'ForgotPassword',
           path: '/forgotPassword',
-          builder: (context, params) => ForgotPasswordWidget(),
+          builder: (context, params) => const ForgotPasswordWidget(),
         ),
         FFRoute(
           name: 'ResetPassword',
           path: '/resetPassword',
-          builder: (context, params) => ResetPasswordWidget(),
+          builder: (context, params) => const ResetPasswordWidget(),
         ),
         FFRoute(
           name: 'M_YourName',
           path: '/mYourName',
-          builder: (context, params) => MYourNameWidget(),
+          builder: (context, params) => const MYourNameWidget(),
         ),
         FFRoute(
           name: 'M_YourGoal',
           path: '/mYourGoal',
-          builder: (context, params) => MYourGoalWidget(),
+          builder: (context, params) => const MYourGoalWidget(),
         ),
         FFRoute(
           name: 'F_YourName',
           path: '/fYourName',
-          builder: (context, params) => FYourNameWidget(),
+          builder: (context, params) => const FYourNameWidget(),
         ),
         FFRoute(
           name: 'F_YourGoal',
           path: '/fYourGoal',
-          builder: (context, params) => FYourGoalWidget(),
+          builder: (context, params) => const FYourGoalWidget(),
         ),
         FFRoute(
           name: 'M_GainMuscle',
           path: '/mGainMuscle',
-          builder: (context, params) => MGainMuscleWidget(),
+          builder: (context, params) => const MGainMuscleWidget(),
         ),
         FFRoute(
           name: 'M_LoseWeight',
           path: '/mLoseWeight',
-          builder: (context, params) => MLoseWeightWidget(),
+          builder: (context, params) => const MLoseWeightWidget(),
         ),
         FFRoute(
           name: 'M_BodyType',
           path: '/mBodyType',
-          builder: (context, params) => MBodyTypeWidget(),
+          builder: (context, params) => const MBodyTypeWidget(),
         ),
         FFRoute(
           name: 'F_LoseWeight',
           path: '/fLoseWeight',
-          builder: (context, params) => FLoseWeightWidget(),
+          builder: (context, params) => const FLoseWeightWidget(),
         ),
         FFRoute(
           name: 'F_Toned',
           path: '/fToned',
-          builder: (context, params) => FTonedWidget(),
+          builder: (context, params) => const FTonedWidget(),
         ),
         FFRoute(
           name: 'F_BodyType',
           path: '/fBodyType',
-          builder: (context, params) => FBodyTypeWidget(),
+          builder: (context, params) => const FBodyTypeWidget(),
         ),
         FFRoute(
           name: 'M_PartFocus',
           path: '/mPartFocus',
-          builder: (context, params) => MPartFocusWidget(),
+          builder: (context, params) => const MPartFocusWidget(),
         ),
         FFRoute(
           name: 'F_PartFocus',
           path: '/fPartFocus',
-          builder: (context, params) => FPartFocusWidget(),
+          builder: (context, params) => const FPartFocusWidget(),
         ),
         FFRoute(
           name: 'Experience',
           path: '/experience',
-          builder: (context, params) => ExperienceWidget(),
+          builder: (context, params) => const ExperienceWidget(),
         ),
         FFRoute(
           name: 'HowFit',
           path: '/howFit',
-          builder: (context, params) => HowFitWidget(),
+          builder: (context, params) => const HowFitWidget(),
         ),
         FFRoute(
           name: 'YourProgress',
           path: '/yourProgress',
-          builder: (context, params) => YourProgressWidget(),
+          builder: (context, params) => const YourProgressWidget(),
         ),
         FFRoute(
           name: 'Statement',
           path: '/statement',
-          builder: (context, params) => StatementWidget(),
+          builder: (context, params) => const StatementWidget(),
         ),
         FFRoute(
           name: 'Age',
           path: '/age',
-          builder: (context, params) => AgeWidget(),
+          builder: (context, params) => const AgeWidget(),
         ),
         FFRoute(
           name: 'Height',
           path: '/height',
-          builder: (context, params) => HeightWidget(),
+          builder: (context, params) => const HeightWidget(),
         ),
         FFRoute(
           name: 'YourWeight',
           path: '/yourWeight',
-          builder: (context, params) => YourWeightWidget(),
+          builder: (context, params) => const YourWeightWidget(),
         ),
         FFRoute(
           name: 'Suffer',
           path: '/suffer',
-          builder: (context, params) => SufferWidget(),
+          builder: (context, params) => const SufferWidget(),
         ),
         FFRoute(
           name: 'Yourknees',
           path: '/yourknees',
-          builder: (context, params) => YourkneesWidget(),
+          builder: (context, params) => const YourkneesWidget(),
         ),
         FFRoute(
           name: 'Statement2',
           path: '/statement2',
-          builder: (context, params) => Statement2Widget(),
+          builder: (context, params) => const Statement2Widget(),
         ),
         FFRoute(
           name: 'Pushups',
           path: '/pushups',
-          builder: (context, params) => PushupsWidget(),
+          builder: (context, params) => const PushupsWidget(),
         ),
         FFRoute(
           name: 'WalkDaily',
           path: '/walkDaily',
-          builder: (context, params) => WalkDailyWidget(),
+          builder: (context, params) => const WalkDailyWidget(),
         ),
         FFRoute(
           name: 'BadHabits',
           path: '/badHabits',
-          builder: (context, params) => BadHabitsWidget(),
+          builder: (context, params) => const BadHabitsWidget(),
         ),
         FFRoute(
           name: 'Statement3',
           path: '/statement3',
-          builder: (context, params) => Statement3Widget(),
+          builder: (context, params) => const Statement3Widget(),
         ),
         FFRoute(
           name: 'SleepNight',
           path: '/sleepNight',
-          builder: (context, params) => SleepNightWidget(),
+          builder: (context, params) => const SleepNightWidget(),
         ),
         FFRoute(
           name: 'Stressed',
           path: '/stressed',
-          builder: (context, params) => StressedWidget(),
+          builder: (context, params) => const StressedWidget(),
         ),
         FFRoute(
           name: 'Motivate',
           path: '/motivate',
-          builder: (context, params) => MotivateWidget(),
+          builder: (context, params) => const MotivateWidget(),
         ),
         FFRoute(
           name: 'Happier',
           path: '/happier',
-          builder: (context, params) => HappierWidget(),
+          builder: (context, params) => const HappierWidget(),
         ),
         FFRoute(
           name: 'WhereWorkout',
           path: '/whereWorkout',
-          builder: (context, params) => WhereWorkoutWidget(),
+          builder: (context, params) => const WhereWorkoutWidget(),
         ),
         FFRoute(
           name: 'Exercises',
           path: '/exercises',
-          builder: (context, params) => ExercisesWidget(),
+          builder: (context, params) => const ExercisesWidget(),
         ),
         FFRoute(
           name: 'Statement4',
           path: '/statement4',
-          builder: (context, params) => Statement4Widget(),
+          builder: (context, params) => const Statement4Widget(),
         ),
         FFRoute(
           name: 'YouStart',
           path: '/youStart',
-          builder: (context, params) => YouStartWidget(),
+          builder: (context, params) => const YouStartWidget(),
         ),
         FFRoute(
           name: 'Commit',
           path: '/commit',
-          builder: (context, params) => CommitWidget(),
+          builder: (context, params) => const CommitWidget(),
         ),
         FFRoute(
           name: 'Committing',
           path: '/committing',
-          builder: (context, params) => CommittingWidget(),
+          builder: (context, params) => const CommittingWidget(),
         ),
         FFRoute(
           name: 'WorkoutLength',
           path: '/workoutLength',
-          builder: (context, params) => WorkoutLengthWidget(),
+          builder: (context, params) => const WorkoutLengthWidget(),
         ),
         FFRoute(
           name: 'Onboarding_1',
           path: '/onboarding1',
-          builder: (context, params) => Onboarding1Widget(),
+          builder: (context, params) => const Onboarding1Widget(),
         ),
         FFRoute(
           name: 'Onboarding_2',
           path: '/onboarding2',
-          builder: (context, params) => Onboarding2Widget(),
+          builder: (context, params) => const Onboarding2Widget(),
         ),
         FFRoute(
           name: 'Onboarding_3',
           path: '/onboarding3',
-          builder: (context, params) => Onboarding3Widget(),
+          builder: (context, params) => const Onboarding3Widget(),
         ),
         FFRoute(
           name: 'Commitment',
           path: '/commitment',
-          builder: (context, params) => CommitmentWidget(),
+          builder: (context, params) => const CommitmentWidget(),
         ),
         FFRoute(
           name: 'PlanPreference',
           path: '/planPreference',
-          builder: (context, params) => PlanPreferenceWidget(),
+          builder: (context, params) => const PlanPreferenceWidget(),
         ),
         FFRoute(
           name: 'PickDays',
           path: '/pickDays',
-          builder: (context, params) => PickDaysWidget(),
+          builder: (context, params) => const PickDaysWidget(),
         ),
         FFRoute(
           name: 'HearFitify',
           path: '/hearFitify',
-          builder: (context, params) => HearFitifyWidget(),
+          builder: (context, params) => const HearFitifyWidget(),
         ),
         FFRoute(
           name: 'CreatingPlan',
           path: '/creatingPlan',
-          builder: (context, params) => CreatingPlanWidget(),
+          builder: (context, params) => const CreatingPlanWidget(),
         ),
         FFRoute(
           name: 'PlanReady',
           path: '/planReady',
-          builder: (context, params) => PlanReadyWidget(),
+          builder: (context, params) => const PlanReadyWidget(),
         ),
         FFRoute(
           name: 'Subscription',
           path: '/subscription',
-          builder: (context, params) => SubscriptionWidget(),
+          builder: (context, params) => const SubscriptionWidget(),
         ),
         FFRoute(
           name: 'Workouts',
           path: '/workouts',
           builder: (context, params) => params.isEmpty
-              ? NavBarPage(initialPage: 'Workouts')
-              : WorkoutsWidget(),
+              ? const NavBarPage(initialPage: 'Workouts')
+              : const WorkoutsWidget(),
         ),
         FFRoute(
           name: 'Food',
           path: '/food',
           builder: (context, params) =>
-              params.isEmpty ? NavBarPage(initialPage: 'Food') : FoodWidget(),
+              params.isEmpty ? const NavBarPage(initialPage: 'Food') : const FoodWidget(),
         ),
         FFRoute(
           name: 'Profile',
           path: '/profile',
           builder: (context, params) => params.isEmpty
-              ? NavBarPage(initialPage: 'Profile')
-              : ProfileWidget(),
+              ? const NavBarPage(initialPage: 'Profile')
+              : const ProfileWidget(),
         ),
         FFRoute(
           name: 'AboutWorkout',
           path: '/aboutWorkout',
-          builder: (context, params) => AboutWorkoutWidget(),
+          builder: (context, params) => const AboutWorkoutWidget(),
         ),
         FFRoute(
           name: 'WorkoutList',
           path: '/workoutList',
-          builder: (context, params) => WorkoutListWidget(),
+          builder: (context, params) => const WorkoutListWidget(),
         ),
         FFRoute(
           name: 'WorkoutDetails',
           path: '/workoutDetails',
-          builder: (context, params) => WorkoutDetailsWidget(),
+          builder: (context, params) => const WorkoutDetailsWidget(),
         ),
         FFRoute(
           name: 'Music',
           path: '/music',
-          builder: (context, params) => MusicWidget(),
+          builder: (context, params) => const MusicWidget(),
         ),
         FFRoute(
           name: 'SoundSettings',
           path: '/soundSettings',
-          builder: (context, params) => SoundSettingsWidget(),
+          builder: (context, params) => const SoundSettingsWidget(),
         ),
         FFRoute(
           name: 'ExerciesList',
           path: '/exerciesList',
-          builder: (context, params) => ExerciesListWidget(),
+          builder: (context, params) => const ExerciesListWidget(),
         ),
         FFRoute(
           name: 'FoodFilter',
           path: '/foodFilter',
-          builder: (context, params) => FoodFilterWidget(),
+          builder: (context, params) => const FoodFilterWidget(),
         ),
         FFRoute(
           name: 'ExerciseDetails',
           path: '/exerciseDetails',
-          builder: (context, params) => ExerciseDetailsWidget(),
+          builder: (context, params) => const ExerciseDetailsWidget(),
         ),
         FFRoute(
           name: 'Instructions',
           path: '/instructions',
-          builder: (context, params) => InstructionsWidget(),
+          builder: (context, params) => const InstructionsWidget(),
         ),
         FFRoute(
           name: 'FitnessList',
           path: '/fitnessList',
-          builder: (context, params) => FitnessListWidget(),
+          builder: (context, params) => const FitnessListWidget(),
         ),
         FFRoute(
           name: 'ExerciesStart',
           path: '/exerciesStart',
-          builder: (context, params) => ExerciesStartWidget(),
+          builder: (context, params) => const ExerciesStartWidget(),
         ),
         FFRoute(
           name: 'ViewList',
           path: '/viewList',
-          builder: (context, params) => ViewListWidget(),
+          builder: (context, params) => const ViewListWidget(),
         ),
         FFRoute(
           name: 'WorkoutFeedback',
           path: '/workoutFeedback',
-          builder: (context, params) => WorkoutFeedbackWidget(),
+          builder: (context, params) => const WorkoutFeedbackWidget(),
         ),
         FFRoute(
           name: 'WorkoutCompleted',
           path: '/workoutCompleted',
-          builder: (context, params) => WorkoutCompletedWidget(),
+          builder: (context, params) => const WorkoutCompletedWidget(),
         ),
         FFRoute(
           name: 'FoodSetting',
           path: '/foodSetting',
-          builder: (context, params) => FoodSettingWidget(),
+          builder: (context, params) => const FoodSettingWidget(),
         ),
         FFRoute(
           name: 'ExercisePacks',
           path: '/exercisePacks',
-          builder: (context, params) => ExercisePacksWidget(),
+          builder: (context, params) => const ExercisePacksWidget(),
         ),
         FFRoute(
           name: 'ProfileEdit',
           path: '/profileEdit',
-          builder: (context, params) => ProfileEditWidget(),
+          builder: (context, params) => const ProfileEditWidget(),
         ),
         FFRoute(
           name: 'Reminders',
           path: '/reminders',
-          builder: (context, params) => RemindersWidget(),
+          builder: (context, params) => const RemindersWidget(),
         ),
         FFRoute(
           name: 'Integrations',
           path: '/integrations',
-          builder: (context, params) => IntegrationsWidget(),
+          builder: (context, params) => const IntegrationsWidget(),
         ),
         FFRoute(
           name: 'Achievements',
           path: '/achievements',
-          builder: (context, params) => AchievementsWidget(),
+          builder: (context, params) => const AchievementsWidget(),
         ),
         FFRoute(
           name: 'Favorites',
           path: '/favorites',
-          builder: (context, params) => FavoritesWidget(),
+          builder: (context, params) => const FavoritesWidget(),
         ),
         FFRoute(
           name: 'SearchFood',
           path: '/searchFood',
-          builder: (context, params) => SearchFoodWidget(),
+          builder: (context, params) => const SearchFoodWidget(),
         ),
         FFRoute(
           name: 'ViewAll',
           path: '/viewAll',
-          builder: (context, params) => ViewAllWidget(),
+          builder: (context, params) => const ViewAllWidget(),
         ),
         FFRoute(
           name: 'FilterWorkouts',
           path: '/filterWorkouts',
-          builder: (context, params) => FilterWorkoutsWidget(),
+          builder: (context, params) => const FilterWorkoutsWidget(),
         )
       ].map((r) => r.toRoute(appStateNotifier)).toList(),
     );
@@ -606,7 +600,7 @@ class TransitionInfo {
   final Duration duration;
   final Alignment? alignment;
 
-  static TransitionInfo appDefault() => TransitionInfo(hasTransition: false);
+  static TransitionInfo appDefault() => const TransitionInfo(hasTransition: false);
 }
 
 class RootPageContext {
